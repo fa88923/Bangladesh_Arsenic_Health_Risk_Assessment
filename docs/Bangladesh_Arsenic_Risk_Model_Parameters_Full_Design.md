@@ -1,5 +1,7 @@
 # Bangladesh Arsenic Health-Risk Model: Agreed Data Sources, Parameters, and Formulas
 
+**Approved project stance:** apply the Punjab model of Yadav and Kalkal (2024) to Bangladesh. Retain the Punjab model structure and equations while replacing the planned location-specific inputs with the approved Bangladesh arsenic and body-weight data and documenting every retained assumption.
+
 ## 1. Arsenic concentration, $C$
 
 **Data source:** DPHE/BGS National Hydrochemical Survey of Bangladesh groundwater.
@@ -44,7 +46,7 @@ $$
 IR_i=F_{IR}^{-1}(U_i).
 $$
 
-**Important:** the base paper reports the Lognormal distribution as $1.26\pm0.66\ \text{L/day}$ but does not explicitly state whether these are arithmetic-scale mean/SD or log-space parameters. The implementation must document the interpretation used rather than silently treating them as NumPy log-space parameters.
+**Approved interpretation:** treat `1.26` and `0.66` directly as the Lognormal log-space parameters $\mu_{\log}$ and $\sigma_{\log}$, respectively, for adults and children. They are not arithmetic-scale mean and standard deviation and must not be converted as such. Under the SciPy parameterization, use `s=0.66`, `loc=0`, and `scale=exp(1.26)`.
 
 ---
 
@@ -89,7 +91,7 @@ Useful variables include child weight, height/length, age in months, sex, distri
 
 **Unit:** kg.
 
-The child age definition must be finalized before fitting BW because weight is strongly age-dependent.
+The child BW population is approved as ages 0-59 months, matching the available MICS measurements. The planned child exposure duration remains 6 years. Because the BW source does not directly cover ages 60-71 months, this mismatch remains an explicit model factor and must be carried into the sensitivity discussion and final limitations rather than hidden or described as measured 0-6-year coverage.
 
 ---
 
@@ -107,9 +109,9 @@ For consistency with the base paper, retain the paper's **exposed skin surface a
 - Adult: **Lognormal**, reported as $1.42\pm0.31\ \text{m}^2$
 - Child: **Triangular**, reported as $0.6800\pm0.600\ \text{m}^2$
 
-**Important:** the paper does not provide an explicit minimum-mode-maximum triplet for the child triangular distribution. Therefore, the value is retained exactly as reported and should not be converted into triangular parameters without an explicit interpretation. $SA$ refers to **exposed skin surface area**, not total body surface area.
+**Approved distribution family:** use a Triangular distribution for child exposed skin surface area. The paper does not provide an explicit minimum-mode-maximum triplet, so the family is fixed but its three required parameters remain a hold point. The reported notation must not be converted into a triplet by inventing a missing value. $SA$ refers to **exposed skin surface area**, not total body surface area.
 
-For Monte Carlo simulation, adult $SA$ is sampled parametrically from the reported Lognormal distribution. Child $SA$ is sampled from the reported Triangular distribution only after a defensible minimum-mode-maximum interpretation is established.
+For Monte Carlo simulation, adult $SA$ is sampled from the reported Lognormal distribution by treating `1.42` and `0.31` directly as $\mu_{\log}$ and $\sigma_{\log}$, respectively. Under the SciPy parameterization, use `s=0.31`, `loc=0`, and `scale=exp(1.42)`. Child $SA$ is sampled from the approved Triangular family after its minimum-mode-maximum triplet is established.
 
 ---
 
@@ -341,7 +343,7 @@ $$
 IR_i=F_{IR}^{-1}(U_i).
 $$
 
-Document the interpretation used to map the reported $1.26\pm0.66$ values to the Lognormal parameters before coding.
+Use the approved direct Lognormal parameterization: $\mu_{\log}=1.26$ and $\sigma_{\log}=0.66$, corresponding to `s=0.66`, `loc=0`, and `scale=exp(1.26)` in SciPy. Do not apply arithmetic-moment conversion.
 
 ### 10.4 Exposure frequency, $EF$
 
@@ -399,12 +401,9 @@ $$
 
 **Tools:** `numpy.random.default_rng`, `Generator.uniform`, `scipy.stats.lognorm.ppf` for adult $SA$, and `scipy.stats.triang.ppf` only when a defensible $(\text{left},\text{mode},\text{right})$ triplet is available.
 
-For adult SA, convert the reported arithmetic mean/SD to log-space parameters before sampling if that interpretation is retained.
+For adult SA, use the approved direct Lognormal parameterization $\mu_{\log}=1.42$ and $\sigma_{\log}=0.31$, corresponding to `s=0.31`, `loc=0`, and `scale=exp(1.42)` in SciPy. Do not apply arithmetic-moment conversion.
 
-For child SA, **do not invent triangular parameters** from the reported $0.6800\pm0.600$ notation. Until the triangle is resolved from an authoritative source, the academically defensible implementation is either:
-
-1. use the deterministic child value $SA=0.6\ \text{m}^2$ and label this clearly as a temporary fixed-input implementation; or
-2. delay the final probabilistic child run until the triangular parameters are resolved.
+For child SA, the Triangular family is approved. **Do not invent triangular parameters** from the reported $0.6800\pm0.600$ notation. The final probabilistic child run requires a documented minimum, mode, and maximum from an authoritative interpretation or an explicit project decision.
 
 ### 10.8 Sections 6–8: ADD, HQ, HI, and ELCR calculations
 
@@ -639,9 +638,9 @@ f( C,IR,BW,EF,ET,SA )
 f_C(C)f_{IR}(IR)f_{BW}(BW)f_{EF}(EF)f_{ET}(ET)f_{SA}(SA).
 $$
 
-This assumption must be written explicitly in the report. US EPA guidance notes that Monte Carlo inputs are often treated as independent when dependence information is unavailable, but known correlations should be modeled rather than ignored.
+Independent sampling is approved for the primary model and must be written explicitly in the report. US EPA guidance notes that Monte Carlo inputs are often treated as independent when dependence information is unavailable, but known correlations should be modeled rather than ignored.
 
-Because the selected Bangladesh sources do not provide a common individual-level dataset linking arsenic concentration, IR, BW, EF, ET, and SA, the primary implementation may use independence, with this limitation stated clearly.
+Because the selected Bangladesh sources do not provide a common individual-level dataset linking arsenic concentration, IR, BW, EF, ET, and SA, the primary implementation will maintain independence, with this limitation stated clearly.
 
 ---
 
@@ -1132,7 +1131,7 @@ Reject a final model configuration if it produces impossible values such as nega
 The recommended order of work is:
 
 1. freeze the adult and child population definitions;
-2. resolve the child SA triangular-distribution ambiguity or declare child SA fixed for the primary run;
+2. resolve the minimum-mode-maximum triplet for the approved child SA Triangular distribution;
 3. preprocess district arsenic data;
 4. fit and select district arsenic distributions;
 5. prepare and fit adult and child BW distributions;

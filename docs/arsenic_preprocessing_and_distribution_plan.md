@@ -20,11 +20,11 @@ The fitted Normal, Lognormal, or Gamma distribution for each selected district i
 
 ---
 
-## 1. Freeze the selected 10 districts
+## 1. Approved 10 districts
 
 Use the exact strings stored in the dataset column `DISTRICT`.
 
-Recommended districts:
+Approved districts:
 
 1. Dhaka
 2. Chittagong
@@ -48,6 +48,8 @@ The selection is purposive rather than based only on sample count. It gives prio
 - two additional major regional districts with comparatively strong sample counts.
 
 Rajshahi has particularly high censoring and should therefore be retained with an explicit high-uncertainty warning rather than treated as equivalent to a lightly censored district.
+
+This district set is frozen for the planned analysis.
 
 ---
 

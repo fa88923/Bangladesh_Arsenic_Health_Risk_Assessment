@@ -3,7 +3,7 @@
 
 ## 1. Purpose and methodological position
 
-This plan prepares Bangladesh-specific body-weight (`BW`) distributions for the adult and child Monte Carlo populations in the CSE 402 arsenic risk project.
+This plan prepares Bangladesh-specific body-weight (`BW`) distributions for the adult and child Monte Carlo populations while applying the Punjab model of Yadav and Kalkal (2024) to Bangladesh.
 
 The project specification requires **least-squares distribution fitting**. The base paper, Yadav & Kalkal (2024), treats body weight as a stochastic Monte Carlo input and uses a **Lognormal adult BW model** and a **Triangular child BW model**. The Bangladesh extension replaces those assumed BW distributions with distributions fitted to Bangladesh survey microdata.
 
@@ -230,7 +230,7 @@ $$
 
 The report should call this the **under-5 child BW distribution**.
 
-Important model limitation: the base paper uses a child exposure duration of 6 years, but this MICS file does not provide measured BW for ages 60–71 months. Do not extrapolate the fitted under-5 BW distribution and then claim that it was directly measured for ages 0–6 years. If the project requires a 0–6-year BW population, an additional dataset covering 60–71 months is required.
+Approved model treatment and continuing limitation: retain the planned child exposure duration of 6 years while fitting child BW from the available MICS measurements at ages 0–59 months. The fitted distribution remains an **under-5 measured BW distribution** and must not be described as directly measured for ages 60–71 months. This age-coverage mismatch remains an explicit model factor in sensitivity analysis and an explicit limitation in the methods and final interpretation.
 
 ## 3.5 Child preprocessing algorithm
 
@@ -1063,4 +1063,3 @@ This uncertainty analysis is optional for the CSE 402 BW-fitting stage unless ex
 A concise defensible description is:
 
 > Adult body weight was obtained from measured weight (`m12`) in Bangladesh STEPS 2018 and weighted using the Step-2 physical-measurement analysis weight (`wstep2`). Under-5 child body weight was obtained from measured weight (`AN8`) in the Bangladesh MICS7 child anthropometry file (`ch.sav`) and weighted using `chweight`. Non-measurement codes and survey-defined anthropometric error records were removed according to the source coding. Normal, Lognormal, Gamma, and Triangular distributions were fitted using a survey-weighted CDF least-squares minimum-distance criterion to satisfy the project's least-squares numerical-method requirement. Survey-weighted pseudo-maximum-likelihood fits were used as robustness checks. The final adult and child distributions were selected separately using weighted CDF error, graphical diagnostics, tail behaviour, physical support, and robustness-fit agreement. Monte Carlo body weights were then generated in kilograms by inverse-CDF sampling from the selected fitted distributions.
-
