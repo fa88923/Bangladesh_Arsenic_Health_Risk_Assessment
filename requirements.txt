@@ -1,0 +1,11 @@
+# Versions recorded in results/provenance/environment.json (Python 3.12.1).
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.17.1
+matplotlib==3.11.1
+pyarrow==25.0.0
+pytest==9.1.1
+# Planned but not yet installed in the recording environment:
+lifelines        # reverse Kaplan-Meier arsenic ECDF (Phase 4)
+pyreadstat       # MICS .sav reading (Phase 3)
+statsmodels      # Wilson interval for P(HI>1) (Phase 8)

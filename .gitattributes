@@ -1,0 +1,2 @@
+# Raw data must be byte-identical on every checkout so frozen SHA-256 hashes verify.
+data/raw/** -text
