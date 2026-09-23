@@ -1,0 +1,11 @@
+DISTRICT,DIVISION,total_n,detected_n,censored_n,missing_n,malformed_n,censoring_percent,number_of_distinct_censoring_limits,censoring_limits_mgL,censored_at_0.0005_mgL_n,censored_at_0.006_mgL_n,detected_below_max_limit_n,minimum_detected_As_mgL,median_detected_As_mgL,maximum_detected_As_mgL,detected_gt_0.01_mgL_n,detected_gt_0.05_mgL_n,high_censoring_warning
+Dhaka,Dhaka,45,23,22,0,0,48.89,2,0.0005;0.006,19,3,4,0.001,0.0704,0.262,19,14,False
+Chittagong,Chittagong,44,39,5,0,0,11.36,1,0.006,0,5,19,0.0005,0.0062,0.344,14,7,False
+Rajshahi,Rajshahi,78,22,56,0,0,71.79,2,0.0005;0.006,52,4,8,0.0006,0.01485,0.0918,14,5,True
+Khulna,Khulna,76,44,32,0,0,42.11,2,0.0005;0.006,27,5,14,0.0005,0.0379,0.538,29,17,False
+Barisal,Barisal,92,76,16,0,0,17.39,2,0.0005;0.006,14,2,34,0.0006,0.01115,0.862,39,28,False
+Sylhet,Sylhet,77,52,25,0,0,32.47,2,0.0005;0.006,19,6,12,0.0015,0.02075,0.157,34,14,False
+Rangpur,Rajshahi,86,47,39,0,0,45.35,1,0.0005,39,0,0,0.0005,0.0047,0.298,14,1,False
+Mymensingh,Dhaka,108,56,52,0,0,48.15,1,0.0005,52,0,0,0.0005,0.00785,0.2,27,14,False
+Comilla,Chittagong,110,101,9,0,0,8.18,2,0.0005;0.006,5,4,21,0.0008,0.115,0.698,78,72,False
+Bogra,Rajshahi,94,64,30,0,0,31.91,1,0.0005,30,0,0,0.0005,0.00205,0.632,22,8,False

@@ -1,0 +1,24 @@
+parameter,symbol,population,value_or_family,parameterization,unit,source,type,status,owner,open_question
+arsenic_concentration,C,both,"district-specific: Normal / Lognormal / Gamma candidates",selected per district (Phase 4),mg/L,DPHE/BGS National Hydrochemical Survey (results/arsenic/arsenic_selected_districts_preprocessed.csv),fitted,preprocessing frozen; family open,Member 1 (preprocessing) / Member 2 (fit),final family per district is a hold point
+ingestion_rate,IR,adult,Lognormal,"mu_log=1.26, sigma_log=0.66; scipy s=0.66 loc=0 scale=exp(1.26)",L/day,Yadav & Kalkal (2024),specified,approved,Member 4,
+ingestion_rate,IR,child,Lognormal,"mu_log=1.26, sigma_log=0.66; scipy s=0.66 loc=0 scale=exp(1.26)",L/day,Yadav & Kalkal (2024),specified,approved,Member 4,same values as adults per base paper
+body_weight,BW,adult,"Normal / Lognormal / Gamma / Triangular candidates",selected in Phase 5,kg,WHO STEPS Bangladesh 2018 (m12; weight wstep2; age 18-69),fitted,population approved; family open,Member 3,final family is a hold point
+body_weight,BW,child,"Normal / Lognormal / Gamma / Triangular candidates",selected in Phase 5,kg,UNICEF Bangladesh MICS7 2025 ch.sav (AN8; weight chweight; age 0-59 months),fitted,population approved; family open,Member 3,"final family is a hold point; design doc Section 4 still says 'MICS 2019' - raw data are MICS7 2025"
+exposure_frequency,EF,both,"deterministic 365; probabilistic Triangular(180, 345, 365)","scipy c=(345-180)/185 loc=180 scale=185",days/year,Yadav & Kalkal (2024),specified,awaiting sign-off,Member 4,master plan 5.6 lists EF definition as a hold point
+exposure_duration,ED,adult,70 (fixed),,years,Yadav & Kalkal (2024),fixed,awaiting sign-off,Member 4,
+exposure_duration,ED,child,6 (fixed),,years,Yadav & Kalkal (2024),fixed,approved (retained),Member 4,0-59-month BW vs 6-year ED mismatch must be carried into sensitivity and limitations
+averaging_time,AT,both,ED x 365 (non-cancer),,days,design doc Section 3,fixed,OPEN,Member 4,"ELCR uses ADD_ing with AT = ED x 365; decide whether cancer AT should be a 70-year lifetime (70 x 365), especially for children"
+exposure_time,ET,both,"Triangular(0.13, 0.20, 0.33)","scipy c=(0.20-0.13)/0.20 loc=0.13 scale=0.20",h/day,Yadav & Kalkal (2024),specified,awaiting sign-off,Member 4,master plan 5.6 lists ET definition as a hold point
+skin_area,SA,adult,"deterministic 1.8; probabilistic Lognormal","mu_log=1.42, sigma_log=0.31; scipy s=0.31 loc=0 scale=exp(1.42)",m^2,Yadav & Kalkal (2024),specified,approved,Member 4,exposed skin area (not total body surface area)
+skin_area,SA,child,"deterministic 0.6; probabilistic Triangular",min/mode/max NOT YET DEFINED,m^2,Yadav & Kalkal (2024) reports 0.6800 +/- 0.600,specified,OPEN,Member 4,triplet must be documented before the final child run; do not invent it from the reported notation
+permeability_coefficient,Kp,both,0.001 (fixed),,cm/h,Yadav & Kalkal (2024),fixed,awaiting sign-off,Member 4,design doc Section 7 table row for Kp is garbled by a paste error; value 0.001 cm/h is readable
+conversion_factor,CF,both,10 (fixed),,L*m/(m^3*cm) as printed in base paper,Yadav & Kalkal (2024),fixed,OPEN,Member 4,dimensional check of CF=10 against Kp in cm/h and SA in m^2 required (unit-critical)
+oral_reference_dose,RfD_ing,both,0.0003 (fixed),,mg/kg/day,Yadav & Kalkal (2024),fixed,awaiting sign-off,Member 4,
+dermal_reference_dose,RfD_dermal,both,0.000285 (fixed),,mg/kg/day,Yadav & Kalkal (2024),fixed,awaiting sign-off,Member 4,
+cancer_slope_factor,CSF,both,1.5 (fixed),,(mg/kg/day)^-1,Yadav & Kalkal (2024); unit corrected to inverse dose,fixed,awaiting sign-off,Member 4,base paper prints CSF as a dose unit; inverse dose used so ELCR is dimensionless
+input_dependence,,both,independent sampling of C IR BW EF ET SA,,,master plan 4,assumption,approved,Member 4,report as a limitation
+simulation_size,N,both,"primary 10000; convergence 1000/5000/10000/20000; 5 replicate seeds",,iterations,design doc 12 and 17,configuration,approved,Member 4,
+master_seed,,both,20260923,SeedSequence spawn by district/population/N/replicate,,config/run_config.json,configuration,proposed,Member 4,Member 4 may change before the first recorded run; after that it is frozen
+district_set,,both,Dhaka Chittagong Rajshahi Khulna Barisal Sylhet Rangpur Mymensingh Comilla Bogra,exact DISTRICT strings,,master plan 5.1,decision,frozen,Member 1,Rajshahi high-censoring warning (71.8% censored)
+censoring_policy,,both,"reverse-KM empirical CDF + CDF least squares; censored MLE robustness; no substitution",,,master plan 5.3,decision,frozen,Member 2,
+highly_censored_district_treatment,,both,retain with warning,,,master plan 18,decision,OPEN,Member 2,Rajshahi 71.8% censored; Dhaka 48.9% and Mymensingh 48.1% near half
