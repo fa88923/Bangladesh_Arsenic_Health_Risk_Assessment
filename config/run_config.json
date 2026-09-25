@@ -32,7 +32,15 @@
     "robustness_fit": "censored maximum likelihood",
     "censored_substitution": "none",
     "lognormal_gamma_location": 0.0,
-    "bootstrap_replicates": 1000
+    "bootstrap_replicates": 1000,
+    "objective_region": "above_initial_mass",
+    "objective_region_rationale": "Decision 9.1 variant V2: the reverse-KM curve is flat at height F_hat_0 (the censored mass) for every x below the smallest detected value, and cumulative_density_ opens with a placeholder point at x=0. Those plateau points carry no shape information about the fitted density and the placeholder actively pulls the fit, so the CDF least-squares objective uses only the points strictly above the initial mass.",
+    "normal_max_nonpositive_prob": 1e-4,
+    "selection_rule": "lowest_cdf_rmse_among_admissible",
+    "parameter_magnitude_band": {"min": 1e-08, "max": 1000000.0},
+    "bootstrap_seed": 20260923,
+    "bootstrap_tie_tolerance": 1e-09,
+    "selection_status": "provisional - requires team review before freezing"
   },
   "bodyweight": {
     "adult_population": "STEPS 2018, age 18-69 years",
