@@ -1,0 +1,29 @@
+population,parameter,role,unit,value,family,parameterization,deterministic_value,reported,dist_mean,dist_median,dist_P5,dist_P95
+adult,ED_years,fixed,years,70.0,Point,,70.0,,,,,
+adult,AT_noncancer_days,fixed,days,25550.0,Point,,25550.0,,,,,
+adult,AT_cancer_days,fixed,days,25550.0,Point,,25550.0,,,,,
+adult,Kp_cm_per_h,fixed,cm/h,0.001,Point,,0.001,,,,,
+adult,CF_L_per_cm_m2,fixed,L/(cm*m^2)  [= L*m/(m^3*cm) as printed in the base paper],10.0,Point,,10.0,,,,,
+adult,RfD_ing_mg_per_kg_day,fixed,mg/(kg*day),0.0003,Point,,0.0003,,,,,
+adult,RfD_dermal_mg_per_kg_day,fixed,mg/(kg*day),0.000285,Point,,0.000285,,,,,
+adult,CSF_per_mg_per_kg_day,fixed,(mg/(kg*day))^-1,1.5,Point,,1.5,,,,,
+adult,IR_L_per_day,sampled,L/day,,Lognormal,mu_log=0.109883; sigma_log=0.492399 [arithmetic_mean_sd],2.0,reported_mean=1.26; reported_sd=0.66,1.26,1.1161477344529958,0.49656475546377143,2.508808270053401
+adult,EF_days_per_year,sampled,days/year,,Triangular,min=180; mode=345; max=365 [min/mode/max],365.0,min=180.0; mode=345.0; max=365.0,296.6666666666667,303.5414910060584,219.06724971123512,351.3985294912645
+adult,ET_h_per_day,sampled,h/day,,Triangular,min=0.13; mode=0.2; max=0.33 [min/mode/max],0.58,min=0.13; mode=0.2; max=0.33,0.22000000000000003,0.2159824574900862,0.15645751311064593,0.29394448724536015
+adult,SA_m2,sampled,m^2,,Lognormal,mu_log=0.327378; sigma_log=0.215774 [arithmetic_mean_sd],1.8,reported_mean=1.42; reported_sd=0.31,1.42,1.3873253753324848,0.9728371004953126,1.9784110783413662
+adult,C_mg_per_L,sampled,mg/L,,"Phase 4 selected fit, per district",results/arsenic/arsenic_selected_distributions.json,,,,,,
+adult,BW_kg,sampled,kg,,Phase 5 selected fit,results/bodyweight/bodyweight_selected_distributions.json,,,,,,
+child,ED_years,fixed,years,6.0,Point,,6.0,,,,,
+child,AT_noncancer_days,fixed,days,2190.0,Point,,2190.0,,,,,
+child,AT_cancer_days,fixed,days,25550.0,Point,,25550.0,,,,,
+child,Kp_cm_per_h,fixed,cm/h,0.001,Point,,0.001,,,,,
+child,CF_L_per_cm_m2,fixed,L/(cm*m^2)  [= L*m/(m^3*cm) as printed in the base paper],10.0,Point,,10.0,,,,,
+child,RfD_ing_mg_per_kg_day,fixed,mg/(kg*day),0.0003,Point,,0.0003,,,,,
+child,RfD_dermal_mg_per_kg_day,fixed,mg/(kg*day),0.000285,Point,,0.000285,,,,,
+child,CSF_per_mg_per_kg_day,fixed,(mg/(kg*day))^-1,1.5,Point,,1.5,,,,,
+child,IR_L_per_day,sampled,L/day,,Lognormal,mu_log=0.109883; sigma_log=0.492399 [arithmetic_mean_sd],1.8,reported_mean=1.26; reported_sd=0.66,1.26,1.1161477344529958,0.49656475546377143,2.508808270053401
+child,EF_days_per_year,sampled,days/year,,Triangular,min=180; mode=345; max=365 [min/mode/max],365.0,min=180.0; mode=345.0; max=365.0,296.6666666666667,303.5414910060584,219.06724971123512,351.3985294912645
+child,ET_h_per_day,sampled,h/day,,Triangular,min=0.13; mode=0.2; max=0.33 [min/mode/max],0.58,min=0.13; mode=0.2; max=0.33,0.22000000000000003,0.2159824574900862,0.15645751311064593,0.29394448724536015
+child,SA_m2,sampled,m^2,,Triangular,min=0.29; mode=0.6; max=0.95 [min/mode/max],0.6,min=0.29; mode=0.6; max=0.95,0.6133333333333333,0.6101470906406714,0.39114346246792225,0.8425290736989766
+child,C_mg_per_L,sampled,mg/L,,"Phase 4 selected fit, per district",results/arsenic/arsenic_selected_distributions.json,,,,,,
+child,BW_kg,sampled,kg,,Phase 5 selected fit,results/bodyweight/bodyweight_selected_distributions.json,,,,,,

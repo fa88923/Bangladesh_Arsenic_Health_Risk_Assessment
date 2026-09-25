@@ -1,0 +1,296 @@
+{
+  "generated_utc": "2026-09-25T18:43:39+00:00",
+  "script": "scripts/run_simulation.py",
+  "config_version": "1.0.0",
+  "config_sha256": "61a31723b8b8bb3bde5859f1dbc3f5e41dc3339c59d75c2e4f9b9f6484095d5b",
+  "upstream_inputs": {
+    "results/arsenic/arsenic_selected_distributions.json": "3b074f57096552dcdb715d10bcbc91c409229927ded8414937194c662a09a1ab",
+    "results/arsenic/arsenic_distribution_fit_results.csv": "aadbb23efc88c9abd52c0fc22668736c3c64e88da4a7c3e53a745a0cdfbc19bd",
+    "results/arsenic/arsenic_selected_districts_preprocessed.csv": "e12dbd96af3c537fb459320067e55be1cb8796e73dca24799eab35bc49080449",
+    "results/bodyweight/bodyweight_selected_distributions.json": "3c9d40db99f6c245efbd594e3f75a7c90c669fa4d94fd7a814506843c915addd",
+    "results/bodyweight/child_bw_clean.csv": "112dae71c0936fb32b28947eedebe323ac63bbcc82d07f3ec9191c53c72486a7",
+    "results/bodyweight/bodyweight_weighted_summary.csv": "535d7c6934e3955def8566862e2243421cba184cd448e4c444400656c9eecd08"
+  },
+  "upstream_unchanged_during_run": true,
+  "software": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "pyarrow": "25.0.0",
+    "matplotlib": "3.11.1"
+  },
+  "master_seed": 20260923,
+  "seed_derivation": "numpy.random.SeedSequence(master_seed, spawn_key=(district_index, population_index, n_index, replicate))",
+  "N": 10000,
+  "replicate": 0,
+  "input_dependence": "independent",
+  "input_selection": {
+    "decided": "2026-09-25, Member 4; rationale in reports/simulation_report.md",
+    "arsenic_family_overrides": {
+      "Barisal": "Gamma"
+    },
+    "child_bw": {
+      "family": "TruncatedNormal",
+      "lower_kg": 1.6
+    },
+    "deterministic_C": "reverse_km_mean"
+  },
+  "risk_model": {
+    "plus_minus_interpretation": "arithmetic_mean_sd",
+    "cancer_averaging_time": "lifetime"
+  },
+  "checks": {
+    "same_seed_rerun_identical": true,
+    "sampled_inputs_finite_and_physical": true,
+    "ks_within_0.1pct_all": true,
+    "ks_within_5pct": "112/120",
+    "distinct_spawn_keys": true
+  },
+  "runs": [
+    {
+      "run_id": "dhaka_adult_N10000_r0",
+      "spawn_key": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/dhaka_adult_N10000_r0.parquet",
+      "sha256": "95a42cf2be9c956724005b510dd4501b984d7909f5a5ba6e573c90758967f3a4"
+    },
+    {
+      "run_id": "dhaka_child_N10000_r0",
+      "spawn_key": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/dhaka_child_N10000_r0.parquet",
+      "sha256": "c0807e20a49504c6b7ee46be8b8254eae004ab30eab1f8ac0ae1b3236796a809"
+    },
+    {
+      "run_id": "chittagong_adult_N10000_r0",
+      "spawn_key": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/chittagong_adult_N10000_r0.parquet",
+      "sha256": "6c70c0a1c7765a25687e4fcc0005b204ca7e8aa6b0e645061f9b588cbfba6d63"
+    },
+    {
+      "run_id": "chittagong_child_N10000_r0",
+      "spawn_key": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/chittagong_child_N10000_r0.parquet",
+      "sha256": "93718751bca5960f272595dc534ce9c4b6528f89c595546ceca1eea9d8a5cb19"
+    },
+    {
+      "run_id": "rajshahi_adult_N10000_r0",
+      "spawn_key": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/rajshahi_adult_N10000_r0.parquet",
+      "sha256": "653763b64481551cc1eb8a4ecbdd5c59dcc7d56cecc1023eff4ed253b792ba13"
+    },
+    {
+      "run_id": "rajshahi_child_N10000_r0",
+      "spawn_key": [
+        2,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/rajshahi_child_N10000_r0.parquet",
+      "sha256": "3ba5f94225d20eb6a1d239f18ccaa61dab6525155ae5fb072490798dc911da0e"
+    },
+    {
+      "run_id": "khulna_adult_N10000_r0",
+      "spawn_key": [
+        3,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/khulna_adult_N10000_r0.parquet",
+      "sha256": "c696212fd175c55ae53355412c0cd4c7bd91fffca323a9933572c04c2c728590"
+    },
+    {
+      "run_id": "khulna_child_N10000_r0",
+      "spawn_key": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/khulna_child_N10000_r0.parquet",
+      "sha256": "c587c2591f419c79894a50f97c71bea6431427e73db4cd959e3a345c5a460701"
+    },
+    {
+      "run_id": "barisal_adult_N10000_r0",
+      "spawn_key": [
+        4,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/barisal_adult_N10000_r0.parquet",
+      "sha256": "0c6344268828a65a24c6d7e01046a224c4aaa1b39ea0d1103227aac902c7f431"
+    },
+    {
+      "run_id": "barisal_child_N10000_r0",
+      "spawn_key": [
+        4,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/barisal_child_N10000_r0.parquet",
+      "sha256": "7d881c57ea94478bcdfdb702e81fa0456ea7e7e0d44e184767585e84f6522efc"
+    },
+    {
+      "run_id": "sylhet_adult_N10000_r0",
+      "spawn_key": [
+        5,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/sylhet_adult_N10000_r0.parquet",
+      "sha256": "14ea241d025a12666e1b33237e0a41f561ea6b8b462ed3608384f45652f9e06b"
+    },
+    {
+      "run_id": "sylhet_child_N10000_r0",
+      "spawn_key": [
+        5,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/sylhet_child_N10000_r0.parquet",
+      "sha256": "772909da969aaf0d866dc1ce58d8d39c2420d255adea0f052572b7ed48c12d9d"
+    },
+    {
+      "run_id": "rangpur_adult_N10000_r0",
+      "spawn_key": [
+        6,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/rangpur_adult_N10000_r0.parquet",
+      "sha256": "47662d9b85c289f2e88776b407107082bd60dfff6c5c31f92ce3dea3ec463518"
+    },
+    {
+      "run_id": "rangpur_child_N10000_r0",
+      "spawn_key": [
+        6,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/rangpur_child_N10000_r0.parquet",
+      "sha256": "a64e4f956637db7c475481cff8ae0da71146bf73a9508fff04c722ee0dad326c"
+    },
+    {
+      "run_id": "mymensingh_adult_N10000_r0",
+      "spawn_key": [
+        7,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/mymensingh_adult_N10000_r0.parquet",
+      "sha256": "830d92fdfe25ed7a71dd3a164f43020a2ca91f60f920144c4597eb6cb580266c"
+    },
+    {
+      "run_id": "mymensingh_child_N10000_r0",
+      "spawn_key": [
+        7,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/mymensingh_child_N10000_r0.parquet",
+      "sha256": "c6e41e22fbaef1668a625316e7a40cf408d6e63aed2d92b2647a8b90b65e0bd0"
+    },
+    {
+      "run_id": "comilla_adult_N10000_r0",
+      "spawn_key": [
+        8,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/comilla_adult_N10000_r0.parquet",
+      "sha256": "2b7ff6f710e20349cbbdd77d51ac4c02481d47ea7a1b04d3622b25230fbbd9d0"
+    },
+    {
+      "run_id": "comilla_child_N10000_r0",
+      "spawn_key": [
+        8,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/comilla_child_N10000_r0.parquet",
+      "sha256": "f5e77f0c0f57309bb341fdea87fe80aef0fa2ea0171ffbbec0b40d8614eb3cdb"
+    },
+    {
+      "run_id": "bogra_adult_N10000_r0",
+      "spawn_key": [
+        9,
+        0,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/bogra_adult_N10000_r0.parquet",
+      "sha256": "945cd4e6fc43bdc980883819cda97ff9df1d0273e4b0f773ef77a16869456cda"
+    },
+    {
+      "run_id": "bogra_child_N10000_r0",
+      "spawn_key": [
+        9,
+        1,
+        2,
+        0
+      ],
+      "output": "results/simulation/iterations/bogra_child_N10000_r0.parquet",
+      "sha256": "bfd7320e3eff117d4373e61fef885ff601ce1823cb89fcc8e83bd246ab8dfeec"
+    }
+  ],
+  "outputs": {
+    "inputs_json": "results/simulation/simulation_input_distributions.json",
+    "inputs_csv": "results/simulation/simulation_input_distributions.csv",
+    "arsenic_review": "results/simulation/arsenic_selection_review.csv",
+    "child_bw_review": "results/simulation/child_bw_selection_review.csv",
+    "summary": "results/simulation/simulation_summary.csv",
+    "sampling": "results/simulation/sampling_validation.csv",
+    "p95": "results/tables/risk_probabilistic_p95.csv",
+    "exceedance": "results/tables/risk_exceedance.csv",
+    "deterministic": "results/tables/risk_deterministic_district.csv",
+    "det_vs_prob": "results/tables/risk_deterministic_vs_probabilistic.csv"
+  },
+  "figures": [
+    "results/figures/simulation_hi_distribution_Dhaka.png",
+    "results/figures/simulation_hi_distribution_Chittagong.png",
+    "results/figures/simulation_hi_distribution_Rajshahi.png",
+    "results/figures/simulation_hi_distribution_Khulna.png",
+    "results/figures/simulation_hi_distribution_Barisal.png",
+    "results/figures/simulation_hi_distribution_Sylhet.png",
+    "results/figures/simulation_hi_distribution_Rangpur.png",
+    "results/figures/simulation_hi_distribution_Mymensingh.png",
+    "results/figures/simulation_hi_distribution_Comilla.png",
+    "results/figures/simulation_hi_distribution_Bogra.png"
+  ]
+}

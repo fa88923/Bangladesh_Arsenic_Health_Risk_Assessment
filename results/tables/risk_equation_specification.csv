@@ -1,0 +1,8 @@
+output,paper_eq,equation,inputs,unit
+ADD_ing_mg_per_kg_day,(1),C * IR * EF * ED / (BW * AT_noncancer),"C [mg/L], IR [L/day], EF [days/year], ED [years], BW [kg], AT_noncancer = ED*365 [days]",mg/(kg*day)
+ADD_dermal_mg_per_kg_day,(2),C * Kp * EF * ED * ET * SA * CF / (BW * AT_noncancer),"C [mg/L], Kp [cm/h], EF [days/year], ED [years], ET [h/day], SA [m^2], CF [L/(cm*m^2)], BW [kg], AT_noncancer [days]",mg/(kg*day)
+HQ_ing,(3),ADD_ing / RfD_ing,"ADD_ing [mg/(kg*day)], RfD_ing = 0.0003 [mg/(kg*day)]",dimensionless
+HQ_dermal,(4),ADD_dermal / RfD_dermal,"ADD_dermal [mg/(kg*day)], RfD_dermal = 0.000285 [mg/(kg*day)]",dimensionless
+HI,(5),HQ_ing + HQ_dermal,"HQ_ing, HQ_dermal",dimensionless
+ADD_ing_cancer_mg_per_kg_day,(1) with AT_cancer,C * IR * EF * ED / (BW * AT_cancer),as ADD_ing; AT_cancer = 70*365 [days] (lifetime) or ED*365 (base paper),mg/(kg*day)
+ELCR,(6),ADD_ing_cancer * CSF,"ADD_ing_cancer [mg/(kg*day)], CSF = 1.5 [(mg/(kg*day))^-1]",dimensionless (excess lifetime probability)

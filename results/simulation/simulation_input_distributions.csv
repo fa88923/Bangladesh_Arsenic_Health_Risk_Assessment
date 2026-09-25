@@ -1,0 +1,13 @@
+input,key,distribution,params,decision
+C_mg_per_L,Dhaka,Gamma,"{""shape_k"": 0.14894453043602304, ""scale_theta"": 0.44248394631052373}",accepted as provisional
+C_mg_per_L,Chittagong,Lognormal,"{""mu_log"": -5.487617133292073, ""sigma_log"": 1.9829066316268502}",accepted as provisional
+C_mg_per_L,Rajshahi,Gamma,"{""shape_k"": 0.06816676147218764, ""scale_theta"": 0.15201692309107265}",accepted as provisional
+C_mg_per_L,Khulna,Gamma,"{""shape_k"": 0.14470812098133795, ""scale_theta"": 0.3278240082223571}",accepted as provisional
+C_mg_per_L,Barisal,Gamma,"{""shape_k"": 0.1724096341, ""scale_theta"": 0.5818482878}",override of provisional Lognormal (see simulation report D7)
+C_mg_per_L,Sylhet,Gamma,"{""shape_k"": 0.3498155017898945, ""scale_theta"": 0.06638604431174822}",accepted as provisional
+C_mg_per_L,Rangpur,Gamma,"{""shape_k"": 0.2055995405285498, ""scale_theta"": 0.02669073392958355}",accepted as provisional
+C_mg_per_L,Mymensingh,Gamma,"{""shape_k"": 0.11000525320679334, ""scale_theta"": 0.19131409060782453}",accepted as provisional
+C_mg_per_L,Comilla,Gamma,"{""shape_k"": 0.43637511624742714, ""scale_theta"": 0.4201443804730237}",accepted as provisional
+C_mg_per_L,Bogra,Lognormal,"{""mu_log"": -7.022820299142998, ""sigma_log"": 2.861944191138968}",accepted as provisional
+BW_kg,adult,Lognormal,"{""mu_log"": 4.002396271123946, ""sigma_log"": 0.20017355869795117}",accepted as provisional
+BW_kg,child,TruncatedNormal,"{""mu"": 10.857019241869164, ""sigma"": 3.2280932276008367, ""lower"": 1.6}",replaces provisional Gamma (see simulation report D8)
