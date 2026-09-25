@@ -1,0 +1,57 @@
+{
+  "generated_utc": "2026-09-23T18:03:59+00:00",
+  "script": "scripts/preprocess_arsenic.py",
+  "config_version": "1.0.0",
+  "raw_input": "data/raw/NationalSurveyData.csv",
+  "raw_sha256": "bafd48e2480e2368eac4c5334c5d37a4f58a4fcce3a75224d635309f3646cabf",
+  "raw_unchanged_during_run": true,
+  "source_units": {
+    "WELL_DEPTH": "m",
+    "As": "ug/l",
+    "Al": "mg/L",
+    "B_": "mg/L",
+    "Ba": "mg/L",
+    "Ca": "mg/L",
+    "Co": "mg/L",
+    "Cr": "mg/L",
+    "Cu": "mg/L",
+    "Fe": "mg/L",
+    "K_": "mg/L",
+    "Li": "mg/L",
+    "Mg": "mg/L",
+    "Mn": "mg/L",
+    "Na": "mg/L",
+    "P_": "mg/L",
+    "Si": "mg/L",
+    "SO4": "mg/L",
+    "Sr": "mg/L",
+    "V_": "mg/L",
+    "Zn": "mg/L"
+  },
+  "conversion": "mg/L = ug/L / 1000 (detected values and censoring limits)",
+  "selected_districts": [
+    "Dhaka",
+    "Chittagong",
+    "Rajshahi",
+    "Khulna",
+    "Barisal",
+    "Sylhet",
+    "Rangpur",
+    "Mymensingh",
+    "Comilla",
+    "Bogra"
+  ],
+  "rows": {
+    "raw_samples": 3534,
+    "selected": 810
+  },
+  "failed_checks": [],
+  "outputs": {
+    "all": "results/arsenic/arsenic_all_districts_classified.csv",
+    "selected": "results/arsenic/arsenic_selected_districts_preprocessed.csv",
+    "summary": "results/arsenic/arsenic_district_preprocessing_summary.csv",
+    "duplicates": "results/arsenic/arsenic_duplicate_review.csv",
+    "malformed": "results/arsenic/arsenic_malformed_value_review.csv",
+    "audit": "results/arsenic/arsenic_reconciliation_audit.csv"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-09-23T18:03:57+00:00",
+  "python": "3.12.1",
+  "implementation": "CPython",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "git_commit": "8ea307e0bd8a886a97e0e5140e303fc4e86452ce",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1",
+    "pyarrow": "25.0.0",
+    "pytest": "9.1.1",
+    "lifelines": null,
+    "pyreadstat": null,
+    "statsmodels": null
+  },
+  "missing_packages": [
+    "lifelines",
+    "pyreadstat",
+    "statsmodels"
+  ]
+}

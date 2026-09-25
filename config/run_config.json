@@ -1,0 +1,62 @@
+{
+  "config_version": "1.0.0",
+  "status": "draft - Phase 1 (Member 1); hold points listed in docs/parameter_decision_register.md",
+  "raw_inputs": {
+    "arsenic_bgs": "data/raw/NationalSurveyData.csv",
+    "adult_bw_steps": "data/raw/bgd2018.csv",
+    "child_bw_mics": "data/raw/BGD_2025_MICS7_v01_M/BGD_2025_MICS7_v01_M/BGD_2025_MICS7_Datasets/Bangladesh MICS7 Datasets/Bangladesh MICS7 Datasets/Bangladesh MICS7 SPSS Datasets/ch.sav"
+  },
+  "arsenic": {
+    "bgs_header_row": 4,
+    "bgs_units_row_present": true,
+    "source_unit": "ug/L",
+    "model_unit": "mg/L",
+    "ugL_to_mgL_divisor": 1000.0,
+    "censor_prefix": "<",
+    "selected_districts": [
+      "Dhaka",
+      "Chittagong",
+      "Rajshahi",
+      "Khulna",
+      "Barisal",
+      "Sylhet",
+      "Rangpur",
+      "Mymensingh",
+      "Comilla",
+      "Bogra"
+    ],
+    "high_censoring_warning_percent": 50.0,
+    "district_selection_rationale": "Purposive: balances geographic coverage, national importance, sample count and censoring burden. Rajshahi carries an explicit high-censoring warning.",
+    "candidate_distributions": ["normal", "lognormal", "gamma"],
+    "primary_fit": "left-censoring-aware (reverse Kaplan-Meier) empirical CDF + CDF least squares",
+    "robustness_fit": "censored maximum likelihood",
+    "censored_substitution": "none",
+    "lognormal_gamma_location": 0.0,
+    "bootstrap_replicates": 1000
+  },
+  "bodyweight": {
+    "adult_population": "STEPS 2018, age 18-69 years",
+    "child_population": "MICS7, age 0-59 months (under-5 only)",
+    "adult_weight_column": "m12",
+    "adult_survey_weight_column": "wstep2",
+    "child_weight_column": "AN8",
+    "child_survey_weight_column": "chweight",
+    "candidate_distributions": ["normal", "lognormal", "gamma", "triangular"]
+  },
+  "simulation": {
+    "master_seed": 20260923,
+    "seed_derivation": "numpy.random.SeedSequence(master_seed, spawn_key=(district_index, population_index, n_index, replicate))",
+    "sampling": "numpy Generator.uniform + scipy.stats <dist>.ppf (explicit inverse CDF)",
+    "input_dependence": "independent",
+    "primary_N": 10000,
+    "convergence_N": [1000, 5000, 10000, 20000],
+    "replicate_seeds_per_N": 5,
+    "populations": ["adult", "child"],
+    "iteration_storage": "parquet"
+  },
+  "fixed_policies": {
+    "raw_data_read_only": true,
+    "automatic_outlier_trimming": false,
+    "survey_weights_required_for_bw": true
+  }
+}
