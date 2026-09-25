@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from .fitting import FAMILIES, PARAM_NAMES, frozen, weighted_ecdf_midpoints
+from .paths import ensure_output_dir
+from .bodyweight_fitting import FAMILIES, PARAM_NAMES, frozen, weighted_ecdf_midpoints
 
 # Categorical slots 1-4 of the reference palette, in fixed order; empirical data in neutral ink.
 FAMILY_COLORS = {"Normal": "#2a78d6", "Lognormal": "#eb6834", "Gamma": "#1baf7a", "Triangular": "#eda100"}
@@ -63,8 +64,11 @@ def _style(family: str, admissible: bool, selected: str) -> dict:
 
 
 def plot_population(x, w, fit_table: pd.DataFrame, selected: str, population: str, out_dir: Path) -> list[Path]:
-    """Write histogram/PDF, ECDF/CDF, per-family Q-Q, and tail figures; return their paths."""
-    out_dir.mkdir(parents=True, exist_ok=True)
+    """Write histogram/PDF, ECDF/CDF, per-family Q-Q, and tail figures; return their paths.
+
+    Files follow the project convention results/figures/bodyweight_<subject>_<population>.png.
+    """
+    ensure_output_dir(out_dir)
     x = np.asarray(x, dtype=float)
     w = np.asarray(w, dtype=float)
     ecdf = weighted_ecdf_midpoints(x, w)
@@ -85,7 +89,7 @@ def plot_population(x, w, fit_table: pd.DataFrame, selected: str, population: st
     ax.set(xlabel="Body weight (kg)", ylabel="Density", title=f"{title_pop}: weighted histogram and LS-fitted PDFs")
     ax.set_xlim(np.quantile(x, 0.0005) * 0.9, np.quantile(x, 0.9995) * 1.1)
     ax.legend()
-    paths.append(out_dir / "weighted_histogram_pdf.png")
+    paths.append(out_dir / f"bodyweight_histogram_pdf_{population}.png")
     fig.savefig(paths[-1])
     plt.close(fig)
 
@@ -99,7 +103,7 @@ def plot_population(x, w, fit_table: pd.DataFrame, selected: str, population: st
            title=f"{title_pop}: weighted ECDF and LS-fitted CDFs")
     ax.set_xlim(np.quantile(x, 0.0005) * 0.9, np.quantile(x, 0.9995) * 1.1)
     ax.legend(loc="lower right")
-    paths.append(out_dir / "weighted_ecdf_cdf.png")
+    paths.append(out_dir / f"bodyweight_ecdf_cdf_{population}.png")
     fig.savefig(paths[-1])
     plt.close(fig)
 
@@ -115,7 +119,7 @@ def plot_population(x, w, fit_table: pd.DataFrame, selected: str, population: st
         ax.set(xlim=lim, ylim=lim, xlabel=f"{fam} theoretical quantile (kg)", ylabel="Weighted empirical quantile (kg)",
                title=f"{title_pop}\nWeighted Q-Q: {_label(fam, ok, selected)}")
         ax.legend(loc="upper left")
-        paths.append(out_dir / f"weighted_qq_{fam.lower()}.png")
+        paths.append(out_dir / f"bodyweight_qq_{fam.lower()}_{population}.png")
         fig.savefig(paths[-1])
         plt.close(fig)
 
@@ -136,7 +140,7 @@ def plot_population(x, w, fit_table: pd.DataFrame, selected: str, population: st
     hi_ax.set(yscale="log", ylim=(1e-5, 0.15), xlabel="Body weight (kg)", ylabel="1 - F(x)", title="Upper tail (F >= 0.90)")
     lo_ax.legend(loc="lower right")
     fig.suptitle(f"{title_pop}: tail agreement of LS-fitted candidates", fontsize=11)
-    paths.append(out_dir / "weighted_tails.png")
+    paths.append(out_dir / f"bodyweight_tails_{population}.png")
     fig.savefig(paths[-1])
     plt.close(fig)
     return paths

@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from numpy.testing import assert_allclose
 
-from bodyweight import fitting as ft
+from arsenic_hra import bodyweight_fitting as ft
 
 TRUE = {
     "Normal": {"mu": 55.0, "sigma": 10.0},

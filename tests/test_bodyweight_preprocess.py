@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from bodyweight import preprocess as pp
+from arsenic_hra import bodyweight_preprocessing as pp
 
 
 def assert_audit_reconciles(audit: pd.DataFrame, n_clean: int) -> None:

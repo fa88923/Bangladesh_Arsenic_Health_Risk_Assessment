@@ -14,7 +14,7 @@ from typing import Callable
 import numpy as np
 import pandas as pd
 
-from .paths import MICS_CH_PATH, STEPS_PATH
+from .paths import load_run_config, raw_path
 
 # ---------------------------------------------------------------------------
 # Source coding
@@ -112,8 +112,9 @@ class CleaningAudit:
 # Adult: STEPS 2018
 # ---------------------------------------------------------------------------
 
-def load_steps_bw(path: Path = STEPS_PATH) -> pd.DataFrame:
-    """Load the exact STEPS columns needed for adult BW."""
+def load_steps_bw(path: Path | None = None) -> pd.DataFrame:
+    """Load the exact STEPS columns needed for adult BW (default path from config/run_config.json)."""
+    path = path or raw_path(load_run_config()["raw_inputs"]["adult_bw_steps"])
     return pd.read_csv(path, usecols=STEPS_COLUMNS)
 
 
@@ -154,8 +155,9 @@ def clean_steps_bw(raw: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
 # Child: MICS7 ch.sav
 # ---------------------------------------------------------------------------
 
-def load_mics_bw(path: Path = MICS_CH_PATH) -> pd.DataFrame:
+def load_mics_bw(path: Path | None = None) -> pd.DataFrame:
     """Load ch.sav (not bh.sav) with raw numeric codes and keep child anthropometry/design columns."""
+    path = path or raw_path(load_run_config()["raw_inputs"]["child_bw_mics"])
     import pyreadstat
 
     df, _ = pyreadstat.read_sav(str(path), apply_value_formats=False, usecols=MICS_COLUMNS)
@@ -202,6 +204,31 @@ def clean_mics_bw(raw: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     })
     clean = df[CHILD_OUTPUT_COLUMNS].reset_index(drop=True)
     return clean, audit.table()
+
+
+# ---------------------------------------------------------------------------
+# Review files: rows listed for a human decision, never removed by these functions
+# ---------------------------------------------------------------------------
+
+def adult_bmi_review(clean: pd.DataFrame) -> pd.DataFrame:
+    """Retained adults whose diagnostic BMI falls outside the review bounds."""
+    lo, hi = BMI_REVIEW_BOUNDS
+    out = clean[(clean["bmi_check"] < lo) | (clean["bmi_check"] > hi)].copy()
+    out["review_reason"] = np.where(out["bmi_check"] < lo, f"BMI < {lo}", f"BMI > {hi}")
+    out["retained_in_fit"] = True
+    return out[["pid", "age", "sex", "BW_kg", "height_cm", "bmi_check", "review_reason", "retained_in_fit"]]
+
+
+def child_an8_codebook_review(raw: pd.DataFrame) -> pd.DataFrame:
+    """Raw AN8 values >= 90 that are not documented special codes (excluded pending codebook review)."""
+    an8 = raw["AN8"]
+    documented = pd.Series(False, index=raw.index)
+    for code in MICS_AN8_SPECIAL_CODES:
+        documented |= an8.sub(code).abs().lt(1e-6)
+    out = raw[(an8 >= MICS_UNEXPECTED_AN8_MIN) & ~documented].copy()
+    out["review_reason"] = "AN8 >= 90 and not a documented special code"
+    out["retained_in_fit"] = False
+    return out[["HH1", "HH2", "LN", "CAGE", "AN8", "AN11", "WAZFLAG", "review_reason", "retained_in_fit"]]
 
 
 # ---------------------------------------------------------------------------

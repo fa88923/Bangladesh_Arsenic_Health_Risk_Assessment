@@ -1,23 +1,30 @@
-"""Data-contract tests on the saved results/bodyweight outputs (run scripts/run_bodyweight.py first)."""
+"""Data-contract tests on the saved body-weight outputs (run scripts/run_bodyweight.py first)."""
 
-import hashlib
 import json
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from bodyweight import fitting as ft
-from bodyweight.paths import PROJECT_ROOT, RESULTS_DIR, STEPS_PATH
+from arsenic_hra import bodyweight_fitting as ft
+from arsenic_hra import bodyweight_preprocessing as bp
+from arsenic_hra.paths import PROJECT_ROOT, RESULTS_BODYWEIGHT, RESULTS_PROVENANCE, load_run_config, raw_path
+from arsenic_hra.provenance import read_hash_manifest, sha256_file
 
-pytestmark = pytest.mark.skipif(not (RESULTS_DIR / "bodyweight_run_manifest.json").exists(),
-                                reason="body-weight outputs not generated")
-
+MANIFEST = RESULTS_BODYWEIGHT / "bodyweight_manifest.json"
+CFG = load_run_config()
 POPULATIONS = ("adult", "child")
+
+pytestmark = pytest.mark.skipif(not MANIFEST.exists(), reason="run scripts/run_bodyweight.py first")
 
 
 def load(name):
-    return pd.read_csv(RESULTS_DIR / name)
+    return pd.read_csv(RESULTS_BODYWEIGHT / name)
+
+
+@pytest.fixture(scope="module")
+def manifest():
+    return json.loads(MANIFEST.read_text(encoding="utf-8"))
 
 
 @pytest.mark.parametrize("pop", POPULATIONS)
@@ -42,7 +49,7 @@ def test_clean_values_are_physical(pop):
 def test_adult_population_and_source_column():
     clean = load("adult_bw_clean.csv")
     assert clean["age"].between(18, 69).all()
-    raw = pd.read_csv(STEPS_PATH, usecols=["pid", "m12", "wstep2"]).set_index("pid")
+    raw = pd.read_csv(raw_path(CFG["raw_inputs"]["adult_bw_steps"]), usecols=["pid", "m12", "wstep2"]).set_index("pid")
     joined = clean.set_index("pid").join(raw)
     assert np.allclose(joined["BW_kg"], joined["m12"])
     assert np.allclose(joined["survey_weight"], joined["wstep2"])
@@ -53,10 +60,22 @@ def test_child_population_and_flags():
     assert clean["CAGE_months"].between(0, 59).all()
     assert (clean["WAZFLAG"] == 0).all()
     assert (clean["BW_kg"] < 90).all()
+    assert clean["height_cm"].dropna().lt(bp.MICS_AN11_SPECIAL_MIN).all()
+
+
+def test_review_files_match_audit_counts():
+    bmi = load("adult_bw_bmi_review.csv")
+    adult_audit = load("adult_bw_cleaning_audit.csv").set_index("rule")
+    assert len(bmi) == adult_audit.loc["bmi_outside_review_bounds", "raw_rows_matching"]
+    assert bmi["retained_in_fit"].all()
+    assert set(bmi["pid"]) <= set(load("adult_bw_clean.csv")["pid"])
+    an8 = load("child_bw_an8_codebook_review.csv")
+    child_audit = load("child_bw_cleaning_audit.csv").set_index("rule")
+    assert len(an8) == child_audit.loc["AN8_unexpected_ge_90", "removed"]
 
 
 def test_saved_selection_reproduces_saved_fit_metrics():
-    selected = json.loads((RESULTS_DIR / "bodyweight_selected_distributions.json").read_text())
+    selected = json.loads((RESULTS_BODYWEIGHT / "bodyweight_selected_distributions.json").read_text(encoding="utf-8"))
     fits = load("bodyweight_distribution_fit_results.csv")
     assert sorted(s["population"] for s in selected) == list(POPULATIONS)
     for s in selected:
@@ -79,8 +98,18 @@ def test_every_fit_reports_convergence_state():
     assert fits["ls_message"].notna().all() and fits["pml_message"].notna().all()
 
 
-def test_raw_inputs_unchanged_since_run():
-    manifest = json.loads((RESULTS_DIR / "bodyweight_run_manifest.json").read_text())
-    for rel_path, digest in manifest["inputs_sha256"].items():
-        h = hashlib.sha256((PROJECT_ROOT / rel_path).read_bytes()).hexdigest()
-        assert h == digest, rel_path
+def test_manifest_contract(manifest):
+    assert manifest["config_version"] == CFG["config_version"]
+    assert manifest["raw_unchanged_during_run"] and manifest["raw_matches_frozen_manifest"]
+    assert all(manifest["audits_reconcile"].values())
+    for path in list(manifest["outputs"].values()) + manifest["figures"]:
+        assert (PROJECT_ROOT / path).is_file(), path
+    assert len(manifest["figures"]) == 14
+    assert all(p.startswith("results/figures/bodyweight_") for p in manifest["figures"])
+
+
+def test_raw_inputs_match_frozen_hashes(manifest):
+    frozen = read_hash_manifest(RESULTS_PROVENANCE / "raw_data.sha256")
+    for rel_path, digest in manifest["raw_inputs"].items():
+        assert frozen[rel_path] == digest, rel_path
+        assert sha256_file(PROJECT_ROOT / rel_path) == digest, rel_path
