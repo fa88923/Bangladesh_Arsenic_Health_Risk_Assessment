@@ -1,0 +1,79 @@
+{
+  "generated_utc": "2026-09-25T08:35:46+00:00",
+  "script": "scripts/run_bodyweight.py",
+  "config_version": "1.0.0",
+  "raw_inputs": {
+    "data/raw/bgd2018.csv": "d37410f5959514e42943eb3399d72ca623f9596b97afbf2d132f369f88ed7baa",
+    "data/raw/BGD_2025_MICS7_v01_M/BGD_2025_MICS7_v01_M/BGD_2025_MICS7_Datasets/Bangladesh MICS7 Datasets/Bangladesh MICS7 Datasets/Bangladesh MICS7 SPSS Datasets/ch.sav": "903a2942e4b7f65813b473f89b258cf61813749c0cf5462faaad3f64ee0e0904"
+  },
+  "raw_matches_frozen_manifest": true,
+  "raw_unchanged_during_run": true,
+  "audits_reconcile": {
+    "adult": true,
+    "child": true
+  },
+  "software": {
+    "python": "3.10.8",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.8",
+    "pyreadstat": "1.3.6"
+  },
+  "populations": {
+    "adult": {
+      "source": "STEPS 2018 m12 (kg), survey weight wstep2",
+      "age": "18-69 years",
+      "rows_raw": 8185,
+      "rows_clean": 8013
+    },
+    "child": {
+      "source": "MICS7 2025 ch.sav AN8 (kg), survey weight chweight",
+      "age": "0-59 months (under-5 only)",
+      "rows_raw": 24680,
+      "rows_clean": 22576
+    }
+  },
+  "fitting": {
+    "candidates": [
+      "Normal",
+      "Lognormal",
+      "Gamma",
+      "Triangular"
+    ],
+    "primary": "survey-weighted CDF least squares on midpoint plotting positions (scipy.optimize.least_squares)",
+    "robustness": "survey-weighted pseudo-MLE (scipy.optimize.minimize)",
+    "normal_max_negative_prob": 0.0001,
+    "triangular_max_excluded_mass": 0.001,
+    "selection_rule": "lowest weighted CDF SSE among physically admissible candidates; provisional"
+  },
+  "random_seed": null,
+  "outputs": {
+    "adult_clean": "results/bodyweight/adult_bw_clean.csv",
+    "adult_audit": "results/bodyweight/adult_bw_cleaning_audit.csv",
+    "adult_bmi_review": "results/bodyweight/adult_bw_bmi_review.csv",
+    "child_clean": "results/bodyweight/child_bw_clean.csv",
+    "child_audit": "results/bodyweight/child_bw_cleaning_audit.csv",
+    "child_an8_review": "results/bodyweight/child_bw_an8_codebook_review.csv",
+    "summary": "results/bodyweight/bodyweight_weighted_summary.csv",
+    "fit_results": "results/bodyweight/bodyweight_distribution_fit_results.csv",
+    "selected_csv": "results/bodyweight/bodyweight_selected_distributions.csv",
+    "selected_json": "results/bodyweight/bodyweight_selected_distributions.json"
+  },
+  "figures": [
+    "results/figures/bodyweight_histogram_pdf_adult.png",
+    "results/figures/bodyweight_ecdf_cdf_adult.png",
+    "results/figures/bodyweight_qq_normal_adult.png",
+    "results/figures/bodyweight_qq_lognormal_adult.png",
+    "results/figures/bodyweight_qq_gamma_adult.png",
+    "results/figures/bodyweight_qq_triangular_adult.png",
+    "results/figures/bodyweight_tails_adult.png",
+    "results/figures/bodyweight_histogram_pdf_child.png",
+    "results/figures/bodyweight_ecdf_cdf_child.png",
+    "results/figures/bodyweight_qq_normal_child.png",
+    "results/figures/bodyweight_qq_lognormal_child.png",
+    "results/figures/bodyweight_qq_gamma_child.png",
+    "results/figures/bodyweight_qq_triangular_child.png",
+    "results/figures/bodyweight_tails_child.png"
+  ]
+}
