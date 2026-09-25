@@ -1,0 +1,12 @@
+population,step,rule,description,rows_before,removed,rows_after,raw_rows_matching
+adult,0,start,rows read from bgd2018.csv,8185,0,8185,8185
+adult,1,age_outside_18_69,age missing or outside 18-69,8185,0,8185,0
+adult,2,missing_m12,measured weight m12 missing,8185,167,8018,167
+adult,3,m12_code_888,m12 == 888 (refused weight measurement),8018,5,8013,5
+adult,4,m12_code_666,m12 == 666 (too large for scale),8013,0,8013,0
+adult,5,m12_nonpositive,m12 <= 0,8013,0,8013,0
+adult,6,missing_sex,sex missing,8013,0,8013,0
+adult,7,wstep2_missing_or_nonpositive,survey weight wstep2 missing or <= 0,8013,0,8013,0
+adult,8,duplicate_pid,rows sharing a pid (diagnostic only; not removed),8013,0,8013,0
+adult,9,bmi_outside_review_bounds,BMI outside 12.0-60.0 kg/m^2 (diagnostic only; not removed),8013,0,8013,12
+adult,10,height_unavailable,m11 missing or special code (BMI not computed) (diagnostic only; not removed),8013,0,8013,0

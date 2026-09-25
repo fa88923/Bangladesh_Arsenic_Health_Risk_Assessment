@@ -1,0 +1,69 @@
+{
+  "run_utc": "2026-09-25T08:23:46+00:00",
+  "script": "scripts/run_bodyweight.py",
+  "inputs_sha256": {
+    "data/raw/bgd2018.csv": "0f2efdb4698793c52f86699fb5391ffdd85d8745fb52fd028e9c42b80b5c379c",
+    "data/raw/BGD_2025_MICS7_v01_M/BGD_2025_MICS7_v01_M/BGD_2025_MICS7_Datasets/Bangladesh MICS7 Datasets/Bangladesh MICS7 Datasets/Bangladesh MICS7 SPSS Datasets/ch.sav": "903a2942e4b7f65813b473f89b258cf61813749c0cf5462faaad3f64ee0e0904"
+  },
+  "software": {
+    "python": "3.10.8",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "pyreadstat": "1.3.6",
+    "matplotlib": "3.10.8"
+  },
+  "populations": {
+    "adult": {
+      "source": "STEPS 2018 m12 (kg), weight wstep2",
+      "age": "18-69 years",
+      "rows_raw": 8185,
+      "rows_clean": 8013
+    },
+    "child": {
+      "source": "MICS7 ch.sav AN8 (kg), weight chweight",
+      "age": "0-59 months (under-5 only)",
+      "rows_raw": 24680,
+      "rows_clean": 22576
+    }
+  },
+  "fitting": {
+    "candidates": [
+      "Normal",
+      "Lognormal",
+      "Gamma",
+      "Triangular"
+    ],
+    "primary": "survey-weighted CDF least squares, midpoint plotting positions, scipy.optimize.least_squares",
+    "robustness": "survey-weighted pseudo-MLE, scipy.optimize.minimize",
+    "normal_max_negative_prob": 0.0001,
+    "triangular_max_excluded_mass": 0.001,
+    "selection_rule": "lowest weighted CDF SSE among physically admissible candidates; provisional"
+  },
+  "random_seed": null,
+  "outputs": [
+    "results/bodyweight/adult_bw_clean.csv",
+    "results/bodyweight/adult_bw_cleaning_audit.csv",
+    "results/bodyweight/bodyweight_distribution_fit_results.csv",
+    "results/bodyweight/bodyweight_run_manifest.json",
+    "results/bodyweight/bodyweight_selected_distributions.csv",
+    "results/bodyweight/bodyweight_selected_distributions.json",
+    "results/bodyweight/bodyweight_weighted_summary.csv",
+    "results/bodyweight/child_bw_clean.csv",
+    "results/bodyweight/child_bw_cleaning_audit.csv",
+    "results/bodyweight/figures/adult/weighted_ecdf_cdf.png",
+    "results/bodyweight/figures/adult/weighted_histogram_pdf.png",
+    "results/bodyweight/figures/adult/weighted_qq_gamma.png",
+    "results/bodyweight/figures/adult/weighted_qq_lognormal.png",
+    "results/bodyweight/figures/adult/weighted_qq_normal.png",
+    "results/bodyweight/figures/adult/weighted_qq_triangular.png",
+    "results/bodyweight/figures/adult/weighted_tails.png",
+    "results/bodyweight/figures/child/weighted_ecdf_cdf.png",
+    "results/bodyweight/figures/child/weighted_histogram_pdf.png",
+    "results/bodyweight/figures/child/weighted_qq_gamma.png",
+    "results/bodyweight/figures/child/weighted_qq_lognormal.png",
+    "results/bodyweight/figures/child/weighted_qq_normal.png",
+    "results/bodyweight/figures/child/weighted_qq_triangular.png",
+    "results/bodyweight/figures/child/weighted_tails.png"
+  ]
+}
