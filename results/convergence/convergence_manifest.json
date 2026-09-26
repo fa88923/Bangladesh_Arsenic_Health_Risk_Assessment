@@ -1,0 +1,58 @@
+{
+  "generated_utc": "2026-09-25T18:43:48+00:00",
+  "script": "scripts/run_convergence.py",
+  "config_version": "1.0.0",
+  "config_sha256": "61a31723b8b8bb3bde5859f1dbc3f5e41dc3339c59d75c2e4f9b9f6484095d5b",
+  "phase7_manifest_sha256": "b92b59f8070fcacf09384a6cf7e10a3e5360ab617038c0981491f33450e0a48c",
+  "software": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1"
+  },
+  "master_seed": 20260923,
+  "seed_derivation": "numpy.random.SeedSequence(master_seed, spawn_key=(district_index, population_index, n_index, replicate))",
+  "N_grid": [
+    1000,
+    5000,
+    10000,
+    20000
+  ],
+  "replicates_per_N": 5,
+  "runs": 400,
+  "iterations_total": 3600000,
+  "criterion": {
+    "continuous": "successive change <= 5.0% and between-seed CV <= 5.0%",
+    "probabilities": "absolute change <= 0.01 and between-seed SD <= 0.01"
+  },
+  "checks": {
+    "N10000_r0_reproduces_phase7_primary": true,
+    "between_seed_sd_over_binomial_se": {
+      "count": 160.0,
+      "mean": 0.8611510877381908,
+      "std": 0.3119140357084557,
+      "min": 0.10803038755486748,
+      "25%": 0.6603890215990647,
+      "50%": 0.8312268676763146,
+      "75%": 1.0659687185737985,
+      "max": 1.81051326055092
+    }
+  },
+  "adequate_at_primary_N": "97/120",
+  "outputs": {
+    "runs": "results/convergence/convergence_runs.csv",
+    "summary": "results/convergence/convergence_summary.csv",
+    "seeds": "results/convergence/repeated_seed_stability.csv",
+    "conclusions": "results/convergence/convergence_conclusions.csv"
+  },
+  "figures": [
+    "results/figures/convergence_mean_HI_vs_N.png",
+    "results/figures/convergence_P50_HI_vs_N.png",
+    "results/figures/convergence_P95_HI_vs_N.png",
+    "results/figures/convergence_P_HI_gt_1_vs_N.png",
+    "results/figures/convergence_P_HI_gt_2_vs_N.png",
+    "results/figures/convergence_P95_ELCR_vs_N.png",
+    "results/figures/convergence_mc_error_decay.png"
+  ]
+}

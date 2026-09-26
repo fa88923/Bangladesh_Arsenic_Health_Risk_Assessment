@@ -51,6 +51,46 @@
     "child_survey_weight_column": "chweight",
     "candidate_distributions": ["normal", "lognormal", "gamma", "triangular"]
   },
+  "risk_model": {
+    "status": "Phase 6 (Member 4); decisions of 2026-09-25 recorded in docs/phase6_risk_equation_design.md; team sign-off pending",
+    "base_paper": "Yadav & Kalkal (2024), J. Water Health 22(12):2304-2319, doi:10.2166/wh.2024.188, Table 2",
+    "plus_minus_interpretation": "arithmetic_mean_sd",
+    "plus_minus_interpretation_options": ["arithmetic_mean_sd", "log_space"],
+    "constants": {
+        "Kp_cm_per_h": 0.001,
+        "CF_L_per_cm_m2": 10.0,
+        "RfD_ing_mg_per_kg_day": 0.0003,
+        "RfD_dermal_mg_per_kg_day": 0.000285,
+        "CSF_per_mg_per_kg_day": 1.5,
+        "days_per_year": 365,
+        "lifetime_years": 70
+    },
+    "cancer_averaging_time": "lifetime",
+    "cancer_averaging_time_options": ["lifetime", "exposure_duration"],
+    "populations": {
+        "adult": {
+            "ED_years": 70,
+            "deterministic": {"IR_L_per_day": 2.0, "EF_days_per_year": 365.0, "ET_h_per_day": 0.58, "SA_m2": 1.8},
+            "stochastic": {
+                "IR_L_per_day": {"family": "Lognormal", "reported_mean": 1.26, "reported_sd": 0.66},
+                "EF_days_per_year": {"family": "Triangular", "min": 180.0, "mode": 345.0, "max": 365.0},
+                "ET_h_per_day": {"family": "Triangular", "min": 0.13, "mode": 0.20, "max": 0.33},
+                "SA_m2": {"family": "Lognormal", "reported_mean": 1.42, "reported_sd": 0.31}
+            }
+        },
+        "child": {
+            "ED_years": 6,
+            "deterministic": {"IR_L_per_day": 1.8, "EF_days_per_year": 365.0, "ET_h_per_day": 0.58, "SA_m2": 0.6},
+            "stochastic": {
+                "IR_L_per_day": {"family": "Lognormal", "reported_mean": 1.26, "reported_sd": 0.66},
+                "EF_days_per_year": {"family": "Triangular", "min": 180.0, "mode": 345.0, "max": 365.0},
+                "ET_h_per_day": {"family": "Triangular", "min": 0.13, "mode": 0.20, "max": 0.33},
+                "SA_m2": {"family": "Triangular", "min": 0.29, "mode": 0.60, "max": 0.95,
+                          "source": "min: US EPA EFH 2011 Table 7-1 mean total SA birth-<1 month; mode: base-paper deterministic child SA (EFH 2-<3 y mean 0.61); max: EFH Table 7-1 P95 3-<6 years"}
+            }
+        }
+    }
+  },
   "simulation": {
     "master_seed": 20260923,
     "seed_derivation": "numpy.random.SeedSequence(master_seed, spawn_key=(district_index, population_index, n_index, replicate))",
@@ -60,7 +100,19 @@
     "convergence_N": [1000, 5000, 10000, 20000],
     "replicate_seeds_per_N": 5,
     "populations": ["adult", "child"],
-    "iteration_storage": "parquet"
+    "iteration_storage": "parquet",
+    "master_seed_status": "frozen 2026-09-25 by Member 4 before the first recorded run",
+    "uniform_open_interval": "u = Generator.uniform(tiny, 1.0) so u > 0 and every ppf stays finite and positive",
+    "input_order": ["C_mg_per_L", "IR_L_per_day", "BW_kg", "EF_days_per_year", "ET_h_per_day", "SA_m2"],
+    "input_selection": {
+      "decided": "2026-09-25, Member 4; rationale in reports/simulation_report.md",
+      "arsenic_family_overrides": {"Barisal": "Gamma"},
+      "child_bw": {"family": "TruncatedNormal", "lower_kg": 1.6},
+      "deterministic_C": "reverse_km_mean"
+    },
+    "stored_columns": "sampled inputs + ADD, HQ, HI, ELCR outputs (float64)",
+    "elcr_threshold": 1e-4,
+    "hi_thresholds": [1.0, 2.0]
   },
   "fixed_policies": {
     "raw_data_read_only": true,

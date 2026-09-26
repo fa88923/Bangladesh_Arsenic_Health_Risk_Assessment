@@ -1,0 +1,91 @@
+{
+  "generated_utc": "2026-09-25T18:44:41+00:00",
+  "script": "scripts/run_sensitivity.py",
+  "config_version": "1.0.0",
+  "config_sha256": "61a31723b8b8bb3bde5859f1dbc3f5e41dc3339c59d75c2e4f9b9f6484095d5b",
+  "phase7_manifest_sha256": "b92b59f8070fcacf09384a6cf7e10a3e5360ab617038c0981491f33450e0a48c",
+  "software": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1",
+    "lifelines": "0.30.3"
+  },
+  "master_seed": 20260923,
+  "spearman": {
+    "iterations": "Phase 7 primary runs (N = 10,000, replicate 0)",
+    "method": "scipy.stats.spearmanr (tie-aware)",
+    "inputs": [
+      "C_mg_per_L",
+      "IR_L_per_day",
+      "BW_kg",
+      "EF_days_per_year",
+      "ET_h_per_day",
+      "SA_m2"
+    ],
+    "signs_consistent_with_equations": true
+  },
+  "parameter_uncertainty": {
+    "arsenic": "Phase 4 bootstrap regenerated with Member 2's code and seeds; final family refitted per replicate",
+    "arsenic_bootstrap_reproduces_phase4_summary": true,
+    "bw": "Rao-Wu (n_h - 1) PSU-within-stratum bootstrap of survey weights; final family refitted",
+    "bw_stream": "SeedSequence(master_seed, spawn_key=(9001, population_index, replicate))",
+    "bw_replicates": 1000,
+    "bw_all_converged": true,
+    "outer_replicates_per_cell": "{('Barisal', 'adult'): 1000, ('Barisal', 'child'): 1000, ('Bogra', 'adult'): 1000, ('Bogra', 'child'): 1000, ('Chittagong', 'adult'): 994, ('Chittagong', 'child'): 994, ('Comilla', 'adult'): 1000, ('Comilla', 'child'): 1000, ('Dhaka', 'adult'): 1000, ('Dhaka', 'child'): 1000, ('Khulna', 'adult'): 1000, ('Khulna', 'child'): 1000, ('Mymensingh', 'adult'): 1000, ('Mymensingh', 'child'): 1000, ('Rajshahi', 'adult'): 1000, ('Rajshahi', 'child'): 1000, ('Rangpur', 'adult'): 1000, ('Rangpur', 'child'): 1000, ('Sylhet', 'adult'): 1000, ('Sylhet', 'child'): 1000}",
+    "inner": "common random numbers: the primary run's uniforms reused for every outer replicate",
+    "held_fixed": [
+      "IR_L_per_day",
+      "EF_days_per_year",
+      "ET_h_per_day",
+      "SA_m2"
+    ]
+  },
+  "scenarios": [
+    "S1_barisal_lognormal",
+    "S2_bogra_gamma",
+    "S3_rangpur_lognormal",
+    "S4_child_bw_gamma",
+    "S5_child_bw_0_71_months",
+    "S6_ir_sa_log_space"
+  ],
+  "age_extension": {
+    "gain_kg_per_year": 1.6421765532718737,
+    "mean_48_59_kg": 14.5019361032212,
+    "mean_36_47_kg": 12.859759549949326,
+    "extrapolated_60_71_mean_kg": 15.94914288246059,
+    "mixture_mean_kg": 11.72332182195067
+  },
+  "checks": {
+    "spearman_signs": true,
+    "arsenic_bootstrap_reproduced": true,
+    "bw_bootstrap_converged": true,
+    "outer_replicates_sufficient": true
+  },
+  "outputs": {
+    "spearman": "results/sensitivity/sensitivity_spearman.csv",
+    "spearman_table": "results/sensitivity/sensitivity_spearman_HI_table.csv",
+    "arsenic_boot": "results/sensitivity/arsenic_bootstrap_replicates.csv",
+    "arsenic_boot_check": "results/sensitivity/arsenic_bootstrap_reproduction_check.csv",
+    "bw_boot": "results/sensitivity/bw_survey_bootstrap_replicates.csv",
+    "two_d": "results/sensitivity/parameter_uncertainty_replicates.csv",
+    "two_d_summary": "results/sensitivity/parameter_uncertainty_summary.csv",
+    "scenarios": "results/sensitivity/scenario_results.csv"
+  },
+  "figures": [
+    "results/figures/sensitivity_tornado_Dhaka.png",
+    "results/figures/sensitivity_tornado_Chittagong.png",
+    "results/figures/sensitivity_tornado_Rajshahi.png",
+    "results/figures/sensitivity_tornado_Khulna.png",
+    "results/figures/sensitivity_tornado_Barisal.png",
+    "results/figures/sensitivity_tornado_Sylhet.png",
+    "results/figures/sensitivity_tornado_Rangpur.png",
+    "results/figures/sensitivity_tornado_Mymensingh.png",
+    "results/figures/sensitivity_tornado_Comilla.png",
+    "results/figures/sensitivity_tornado_Bogra.png",
+    "results/figures/sensitivity_parameter_uncertainty_P95_HI.png",
+    "results/figures/sensitivity_parameter_uncertainty_P_HI_gt_1.png",
+    "results/figures/sensitivity_parameter_uncertainty_P95_ELCR.png"
+  ]
+}
