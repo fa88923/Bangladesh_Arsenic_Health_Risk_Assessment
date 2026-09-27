@@ -19,7 +19,22 @@ Fit and compare:
 - Gamma distribution;
 - Normal distribution.
 
-Select the best-supported fitted distribution for each district, estimate its parameters, and generate Monte Carlo arsenic samples from that selected fitted distribution.
+The final Phase 7 selections used for Monte Carlo simulation are:
+
+| District | Final distribution | CDF least-squares parameters | Final decision |
+|---|---|---|---|
+| Dhaka | Gamma | $k=0.148945$, $\theta=0.442484$ | Phase 4 provisional selection accepted (D6) |
+| Chittagong | Lognormal | $\mu_{\log}=-5.487617$, $\sigma_{\log}=1.982907$ | Phase 4 provisional selection accepted (D6) |
+| Rajshahi | Gamma | $k=0.068167$, $\theta=0.152017$ | Accepted with a high-censoring warning (D6, D10) |
+| Khulna | Gamma | $k=0.144708$, $\theta=0.327824$ | Phase 4 provisional selection accepted (D6) |
+| Barisal | Gamma | $k=0.172410$, $\theta=0.581848$ | Overrides the provisional Lognormal selection because its unsupported upper tail materially inflated risk (D7) |
+| Sylhet | Gamma | $k=0.349816$, $\theta=0.066386$ | Phase 4 provisional selection accepted (D6) |
+| Rangpur | Gamma | $k=0.205600$, $\theta=0.026691$ | Accepted; thin extreme tail retained as model uncertainty (D6) |
+| Mymensingh | Gamma | $k=0.110005$, $\theta=0.191314$ | Phase 4 provisional selection accepted (D6) |
+| Comilla | Gamma | $k=0.436375$, $\theta=0.420144$ | Phase 4 provisional selection accepted (D6) |
+| Bogra | Lognormal | $\mu_{\log}=-7.022820$, $\sigma_{\log}=2.861944$ | Accepted; heavy upper tail retained as model uncertainty (D6) |
+
+These are final simulation selections, not a rerun or refit of the Phase 4 candidates. Nine provisional choices were accepted; only Barisal changed family. Arsenic below each district's smallest detection limit remains extrapolated, so P50 and lower-tail results require the D10 caveat. The deterministic district benchmark uses the censoring-aware reverse-Kaplan-Meier mean rather than the fitted-distribution mean (D13).
 
 **Unit:** $C$ in mg/L.
 
@@ -46,7 +61,7 @@ $$
 IR_i=F_{IR}^{-1}(U_i).
 $$
 
-**Approved interpretation:** treat `1.26` and `0.66` directly as the Lognormal log-space parameters $\mu_{\log}$ and $\sigma_{\log}$, respectively, for adults and children. They are not arithmetic-scale mean and standard deviation and must not be converted as such. Under the SciPy parameterization, use `s=0.66`, `loc=0`, and `scale=exp(1.26)`.
+**Final interpretation used in simulation (Phase 6 D1):** treat `1.26` and `0.66` as the arithmetic mean and standard deviation and convert them to Lognormal parameters. This gives $\mu_{\log}=0.109883$ and $\sigma_{\log}=0.492399$ for adults and children. Under the SciPy parameterization, use `s=0.492399`, `loc=0`, and `scale=exp(0.109883)`. The resulting median is $1.116\ \text{L/day}$ and P95 is $2.509\ \text{L/day}$.
 
 ---
 
@@ -59,10 +74,16 @@ For the main non-carcinogenic model, keep $ED$ fixed unless a justified Banglade
 For non-carcinogenic risk:
 
 $$
-AT=ED\times365
+AT_{nc}=ED\times365.
 $$
 
-where $AT$ is averaging time in days. The ADD equations are retained in their full base-paper form without algebraic simplification.
+For the primary carcinogenic result (Phase 6 D2):
+
+$$
+AT_{cancer}=70\times365=25{,}550\ \text{days}
+$$
+
+for both adults and children. The paper-convention child result using $AT=ED\times365=2{,}190$ days is retained only as a comparison output. The ADD equations are retained in their full base-paper form without algebraic simplification.
 
 ---
 
@@ -83,6 +104,8 @@ Primary approach:
 4. select the best-supported fitted distribution;
 5. use the estimated parameters of that selected distribution for Monte Carlo sampling.
 
+**Final adult model (D9):** Lognormal with $\mu_{\log}=4.002396$ and $\sigma_{\log}=0.200174$. Under the SciPy parameterization, use `s=0.200174`, `loc=0`, and `scale=exp(4.002396)=54.729139` kg.
+
 ### Children
 
 **Preferred dataset:** Bangladesh MICS 2019.
@@ -92,6 +115,8 @@ Useful variables include child weight, height/length, age in months, sex, distri
 **Unit:** kg.
 
 The child BW population is approved as ages 0-59 months, matching the available MICS measurements. The planned child exposure duration remains 6 years. Because the BW source does not directly cover ages 60-71 months, this mismatch remains an explicit model factor and must be carried into the sensitivity discussion and final limitations rather than hidden or described as measured 0-6-year coverage.
+
+**Final child model (D8):** Normal truncated below at $L=1.6$ kg, with parent parameters $\mu=10.857019$ kg and $\sigma=3.228093$ kg. The lower bound is the lightest cleaned MICS observation. Under the SciPy parameterization, use `truncnorm` with `a=(1.6-mu)/sigma=-2.867643`, `b=inf`, `loc=mu`, and `scale=sigma`. This replaces the provisional Gamma model because it fits the weighted ECDF and low-weight tail substantially better while preserving physical support.
 
 ---
 
@@ -109,9 +134,9 @@ For consistency with the base paper, retain the paper's **exposed skin surface a
 - Adult: **Lognormal**, reported as $1.42\pm0.31\ \text{m}^2$
 - Child: **Triangular**, reported as $0.6800\pm0.600\ \text{m}^2$
 
-**Approved distribution family:** use a Triangular distribution for child exposed skin surface area. The paper does not provide an explicit minimum-mode-maximum triplet, so the family is fixed but its three required parameters remain a hold point. The reported notation must not be converted into a triplet by inventing a missing value. $SA$ refers to **exposed skin surface area**, not total body surface area.
+**Approved distribution family (Phase 6 D3):** use a Triangular distribution for child exposed skin surface area. The implemented triplet is minimum $0.29$, mode $0.60$, and maximum $0.95\ \text{m}^2$, as frozen in the Phase 6/7 run configuration. The minimum and maximum come from age-relevant US EPA Exposure Factors Handbook values and the mode is the base-paper deterministic child value; using US-child values makes the upper bound conservative for Bangladeshi children. $SA$ refers to **exposed skin surface area**, not total body surface area.
 
-For Monte Carlo simulation, adult $SA$ is sampled from the reported Lognormal distribution by treating `1.42` and `0.31` directly as $\mu_{\log}$ and $\sigma_{\log}$, respectively. Under the SciPy parameterization, use `s=0.31`, `loc=0`, and `scale=exp(1.42)`. Child $SA$ is sampled from the approved Triangular family after its minimum-mode-maximum triplet is established.
+For Monte Carlo simulation, the reported adult values `1.42` and `0.31` are treated as the arithmetic mean and standard deviation and converted to $\mu_{\log}=0.327378$ and $\sigma_{\log}=0.215774$. Under the SciPy parameterization, use `s=0.215774`, `loc=0`, and `scale=exp(0.327378)`; the resulting median is $1.387\ \text{m}^2$ and P95 is $1.978\ \text{m}^2$. Child $SA$ is sampled from $\operatorname{Triangular}(0.29,0.60,0.95)\ \text{m}^2$.
 
 ---
 
@@ -125,7 +150,7 @@ ADD_{\text{ing}}
 \frac{
 C\times IR\times EF\times ED
 }{
-BW\times AT
+BW\times AT_{nc}
 }
 $$
 
@@ -143,7 +168,7 @@ ADD_{\text{dermal}}
 \frac{
 C\times K_p\times EF\times ED\times ET\times SA\times CF
 }{
-BW\times AT
+BW\times AT_{nc}
 }
 $$
 
@@ -159,23 +184,32 @@ $$
 
 | Parameter | Meaning | Selected value/source | Unit |
 |---|---|---|---|
-| $C$ | Arsenic concentration | District-specific DPHE/BGS well data, have to find the distribution | mg/L |
-| $IR$ | Drinking-water ingestion rate | Base paper: Lognormal, reported as $1.26\pm0.66$ for adults and children | L/day |
+| $C$ | Arsenic concentration | District-specific final models: Gamma for Dhaka, Rajshahi, Khulna, Barisal, Sylhet, Rangpur, Mymensingh, and Comilla; Lognormal for Chittagong and Bogra | mg/L |
+| $IR$ | Drinking-water ingestion rate | Lognormal; reported arithmetic mean/SD $1.26\pm0.66$, converted to $(\mu_{\log},\sigma_{\log})=(0.109883,0.492399)$ | L/day |
 | $EF$ | Exposure frequency | Deterministic: 365; Probabilistic: Triangular with minimum 180, mode 345, maximum 365 | days/year |
-| $ED$ | Exposure Duration | 70 years for adults, 6 years for children | years
-| $BW$ | Body weight | Bangladesh STEPS/MICS, have to find the distribution | kg |
-| $AT$ | Averaging time | $ED\times365$ for non-cancer risk | days |
-| $ET$ | Dermal exposure time | Triangular, reported as $0.20\ (0.13-0.33)$ | h/day |
-| $SA$ | Exposed skin surface area | Adult: Lognormal $1.42\pm0.31$; Child: Triangular $0.6800\pm0.600$, as reported in base paper | m² |
-| $K_p$ | Derma7. Parameter definitions, values, and unitsl permeability coefficient | 0.001 | cm/h |
-| $CF$ | Unit conversion factor | 10, as used in base paper | L·m/(m³·cm) |
+| $ED$ | Exposure Duration | 70 years for adults, 6 years for children | years |
+| $BW$ | Body weight | Adult: Lognormal $(\mu_{\log}=4.002396,\sigma_{\log}=0.200174)$; Child: Normal $(\mu=10.857019,\sigma=3.228093)$ truncated below at 1.6 kg | kg |
+| $AT$ | Averaging time | Non-cancer: $AT_{nc}=ED\times365$; primary cancer: $AT_{cancer}=25{,}550$ for adults and children | days |
+| $ET$ | Dermal exposure time | Deterministic: 0.58; Probabilistic: Triangular with minimum 0.13, mode 0.20, maximum 0.33 | h/day |
+| $SA$ | Exposed skin surface area | Adult: Lognormal $(\mu_{\log}=0.327378,\sigma_{\log}=0.215774)$ after arithmetic-moment conversion; Child: Triangular $(0.29,0.60,0.95)$ | m² |
+| $K_p$ | Dermal permeability coefficient | 0.001 | cm/h |
+| $CF$ | Unit conversion factor | 10, as used in base paper | L/(cm·m²) |
 | $RfD_{\text{ing}}$ | Oral reference dose | 0.0003 | mg kg⁻¹ day⁻¹ |
 | $RfD_{\text{dermal}}$ | Dermal reference dose | 0.000285 | mg kg⁻¹ day⁻¹ |
 | $CSF$ | Cancer slope factor | 1.5 | (mg kg⁻¹ day⁻¹)⁻¹ |
 
 **Notes:**  
-- The base paper reports $CF=10$ using the conversion-factor notation $L\cdot m/(m^3\cdot cm)$. This notation is retained here to stay consistent with the reproduced model.  
+- The conversion factor is resolved dimensionally: $1\ \text{cm}\times1\ \text{m}^2=0.01\ \text{m}^3=10\ \text{L}$, so $CF=10\ \text{L}/(\text{cm}\cdot\text{m}^2)$. This is equivalent to the base paper's $L\cdot m/(m^3\cdot cm)$ notation and makes $C K_p ET SA CF$ a mass per day.
 - The CSF unit is written here as inverse dose so that $ELCR$ is dimensionless; the base paper prints the CSF unit as a dose unit, which is dimensionally inconsistent with its own ELCR equation.
+
+### Final deterministic benchmark inputs (Phase 6 D5)
+
+| Population | $IR$ (L/day) | $BW$ (kg) | $EF$ (days/year) | $ET$ (h/day) | $SA$ (m²) | $ED$ (years) | $AT_{nc}$ (days) | $AT_{cancer}$ (days) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Adult | 2.0 | 55.89 | 365 | 0.58 | 1.8 | 70 | 25,550 | 25,550 |
+| Child | 1.8 | 10.87 | 365 | 0.58 | 0.6 | 6 | 2,190 | 25,550 |
+
+The deterministic IR, EF, ET, and SA values reproduce the base-paper benchmark structure, while BW uses the Bangladesh survey-weighted means. The paper's deterministic $ET=0.58\ \text{h/day}$ lies outside its own probabilistic range of $0.13$-$0.33\ \text{h/day}$; both are retained as published (D4). Phase 6 equation checks use reference concentrations $C=0.01$ and $0.05\ \text{mg/L}$, while final district benchmarks use each district's censoring-aware reverse-Kaplan-Meier mean (Phase 7 D13).
 
 ---
 
@@ -208,10 +242,12 @@ $HQ$ and $HI$ are dimensionless.
 ### Excess lifetime carcinogenic risk
 
 $$
-ELCR=ADD_{\text{ing}}\times CSF
+ELCR=ADD_{\text{ing,cancer}}\times CSF
 $$
 
-$ELCR$ is dimensionless and interpreted as an excess lifetime risk probability.
+$ADD_{\text{ing,cancer}}$ is the full ingestion ADD equation evaluated with $AT_{cancer}$ rather than $AT_{nc}$. $ELCR$ is dimensionless and interpreted as an excess lifetime risk probability.
+
+For the primary ELCR result, use a 70-year lifetime cancer averaging time ($AT_{cancer}=25{,}550$ days). Also retain the paper-convention result based on $AT=ED\times365$ for comparison; the two conventions are identical for adults but differ for children (Phase 6 D2 and simulation-report D14).
 
 ---
 
@@ -226,6 +262,8 @@ For BW and district-level arsenic:
 - Triangular only as a comparison/fallback when justified by min-mode-max information.
 
 Use least-squares CDF fitting as the central numerical method required by the project specification, with MLE as a robustness benchmark. Select the best-supported parametric model using AIC/AICc, Anderson-Darling, KS, Q-Q plots, ECDF comparison, and tail-fit behavior. Monte Carlo sampling is then performed from the selected fitted distribution using its estimated parameters.
+
+**Final-selection status (Phase 7 D6-D9):** the final families and parameters are frozen in Sections 1 and 4. Selection considered central fit, tail behavior, physical admissibility, bootstrap stability, and robustness metrics together. Consequently, Barisal uses Gamma despite a small Lognormal CDF-RMSE advantage, and child BW uses a lower-truncated Normal despite the earlier provisional Gamma choice.
 
 ### Python functions for fitting and sampling
 
@@ -343,9 +381,9 @@ $$
 IR_i=F_{IR}^{-1}(U_i).
 $$
 
-Use the approved direct Lognormal parameterization: $\mu_{\log}=1.26$ and $\sigma_{\log}=0.66$, corresponding to `s=0.66`, `loc=0`, and `scale=exp(1.26)` in SciPy. Do not apply arithmetic-moment conversion.
+Treat the reported values as arithmetic moments and convert them before sampling. The final parameters are $\mu_{\log}=0.109883$ and $\sigma_{\log}=0.492399$, corresponding to `s=0.492399`, `loc=0`, and `scale=exp(0.109883)` in SciPy.
 
-### 10.4 Exposure frequency, $EF$
+### 10.4 Exposure frequency, $EF$, and dermal exposure time, $ET$
 
 **Tools:** `numpy.random.default_rng`, `Generator.uniform`, and `scipy.stats.triang.ppf`.
 
@@ -365,23 +403,31 @@ $$
 
 with `loc=180` and `scale=185`.
 
+Retain the base-paper probabilistic dermal exposure-time distribution:
+
+$$
+ET\sim\operatorname{Triangular}(0.13,0.20,0.33)\ \text{h/day},
+$$
+
+where 0.13 is the minimum, 0.20 is the mode, and 0.33 is the maximum. In SciPy use `loc=0.13`, `scale=0.20`, and `c=(0.20-0.13)/(0.33-0.13)=0.35`. The deterministic benchmark retains the paper's $ET=0.58\ \text{h/day}$ even though it lies outside this probabilistic range (D4).
+
 ### 10.5 Section 3: exposure duration, $ED$, and averaging time, $AT$
 
 **Tools:** ordinary NumPy scalar/vector arithmetic.
 
-In the agreed primary model, $ED$ is fixed and
+In the agreed primary model, $ED$ is fixed and the non-cancer averaging time is
 
 $$
-AT=365ED.
+AT_{nc}=365ED.
 $$
 
-Therefore no random-number generator is needed for $ED$ or $AT$ in the primary analysis.
+The primary cancer averaging time is fixed at $AT_{cancer}=25{,}550$ days for both populations. Thus adults use 25,550 days for both endpoints; children use 2,190 days for non-cancer risk and 25,550 days for primary ELCR. Also store the child paper-convention ELCR based on 2,190 days for comparison (D2). No random-number generator is needed for $ED$ or either averaging time.
 
 ### 10.6 Section 4: body weight, $BW$
 
 **Tools:** `pandas`, `numpy`, `scipy.optimize.least_squares`, `scipy.stats.norm`, `scipy.stats.lognorm`, `scipy.stats.gamma`, `matplotlib`.
 
-Use the survey weights when preparing/fitting the adult and child BW distributions. Fit the candidate distributions, select the best-supported model, and sample BW from that selected fitted distribution using its estimated parameters.
+Use the survey weights when preparing/fitting the adult and child BW distributions. The final simulation models are adult $BW\sim\operatorname{Lognormal}(\mu_{\log}=4.002396,\sigma_{\log}=0.200174)$ and child $BW\sim\operatorname{TruncatedNormal}(\mu=10.857019,\sigma=3.228093,L=1.6\ \text{kg})$.
 
 For least-squares CDF fitting, use `scipy.optimize.least_squares` with the relevant candidate CDF. For the MLE robustness benchmark, use `scipy.stats.norm.fit(data)`, `scipy.stats.lognorm.fit(data, floc=0)`, and `scipy.stats.gamma.fit(data, floc=0)`. For Monte Carlo sampling, generate `u = rng.uniform(...)` and transform it with the selected distribution's `.ppf()` function.
 
@@ -395,15 +441,15 @@ $$
 BW_i=F_{BW}^{-1}(U_i;\hat\theta_{BW}).
 $$
 
-**Child-model requirement:** the final child age range must be frozen before the final child BW distribution is fitted.
+**Final child population:** ages 0-59 months, based on 22,576 cleaned MICS observations. The 60-71-month gap relative to the 6-year exposure duration remains a documented limitation.
 
 ### 10.7 Section 5: exposed skin area, $SA$
 
 **Tools:** `numpy.random.default_rng`, `Generator.uniform`, `scipy.stats.lognorm.ppf` for adult $SA$, and `scipy.stats.triang.ppf` only when a defensible $(\text{left},\text{mode},\text{right})$ triplet is available.
 
-For adult SA, use the approved direct Lognormal parameterization $\mu_{\log}=1.42$ and $\sigma_{\log}=0.31$, corresponding to `s=0.31`, `loc=0`, and `scale=exp(1.42)` in SciPy. Do not apply arithmetic-moment conversion.
+For adult SA, convert the reported arithmetic mean $1.42$ and SD $0.31$ to $\mu_{\log}=0.327378$ and $\sigma_{\log}=0.215774$, corresponding to `s=0.215774`, `loc=0`, and `scale=exp(0.327378)` in SciPy.
 
-For child SA, the Triangular family is approved. **Do not invent triangular parameters** from the reported $0.6800\pm0.600$ notation. The final probabilistic child run requires a documented minimum, mode, and maximum from an authoritative interpretation or an explicit project decision.
+For child SA, use the approved $\operatorname{Triangular}(0.29,0.60,0.95)\ \text{m}^2$ model. In SciPy this is `triang(c=(0.60-0.29)/(0.95-0.29), loc=0.29, scale=0.66)`.
 
 ### 10.8 Sections 6–8: ADD, HQ, HI, and ELCR calculations
 
@@ -469,11 +515,11 @@ $$
 \mathbf X_{d,g,i}
 =
 \left(
-C_{d,i},IR_{g,i},BW_{g,i},ET_i,SA_{g,i}
+C_{d,i},IR_{g,i},BW_{g,i},EF_i,ET_i,SA_{g,i}
 \right).
 $$
 
-In the agreed probabilistic primary model, $EF$ is stochastic, while $ED$ and $AT$ remain fixed:
+In the agreed probabilistic primary model, $EF$ is stochastic, while $ED$, $AT_{nc}$, and $AT_{cancer}$ remain fixed:
 
 $$
 EF_i\sim \operatorname{Triangular}(180,345,365),
@@ -482,7 +528,9 @@ $$
 $$
 ED=\text{fixed},
 \qquad
-AT=365ED.
+AT_{nc}=365ED,
+\qquad
+AT_{cancer}=25{,}550\ \text{days}.
 $$
 
 The deterministic baseline reproduction uses $EF=365\ \text{days/year}$. The constants $K_p$, $CF$, $RfD_{ing}$, $RfD_{dermal}$, and $CSF$ remain fixed as specified in Section 7.
@@ -495,9 +543,9 @@ $$
 ADD_{\text{ing},i}
 =
 \frac{
-C_i\times IR_i\times EF\times ED
+C_i\times IR_i\times EF_i\times ED
 }{
-BW_i\times AT
+BW_i\times AT_{nc}
 },
 $$
 
@@ -505,13 +553,13 @@ $$
 ADD_{\text{dermal},i}
 =
 \frac{
-C_i\times K_p\times EF\times ED\times ET_i\times SA_i\times CF
+C_i\times K_p\times EF_i\times ED\times ET_i\times SA_i\times CF
 }{
-BW_i\times AT
+BW_i\times AT_{nc}
 }.
 $$
 
-Then calculate $HQ_{\text{ing}}$, $HQ_{\text{dermal}}$, $HI$, and $ELCR$ using the equations in Section 8. Do not algebraically simplify the ADD equations in the implementation plan.
+For ELCR, separately evaluate the ingestion equation with $AT_{cancer}$ to obtain $ADD_{\text{ing,cancer},i}$. Then calculate $HQ_{\text{ing}}$, $HQ_{\text{dermal}}$, $HI$, and $ELCR$ using Section 8. Do not algebraically simplify the ADD equations in the implementation plan.
 
 ---
 
@@ -526,6 +574,8 @@ N=10{,}000
 $$
 
 for the **principal reported Monte Carlo run**, so that the main analysis matches the base paper's stated simulation size. However, the implementation must not rely on a single 10,000-iteration run without a convergence check.
+
+The frozen master seed is `20260923`. Distinct streams are derived with `SeedSequence(master_seed, spawn_key=(district_index, population_index, n_index, replicate))`; inputs are sampled independently in the fixed order C, IR, BW, EF, ET, and SA (D11).
 
 For **every district × population group**, run the simulation at
 
@@ -619,7 +669,7 @@ $$
 
 and the agreed $SA_g$ model.
 
-$IR$ is sampled from the base-paper Lognormal distribution. $BW$ is sampled from the selected fitted BW distribution. $EF$ follows the base-paper probabilistic Triangular distribution with minimum 180, mode 345, and maximum 365 days/year. $ET$ and $SA$ are sampled from their specified parametric distributions, subject to the unresolved child-$SA$ triangular parameterization noted in Section 5.
+$IR$ is sampled from the base-paper Lognormal distribution after arithmetic-moment conversion. $BW$ is sampled from the final models in Section 4. $EF$ follows the base-paper probabilistic Triangular distribution with minimum 180, mode 345, and maximum 365 days/year. $ET$ and $SA$ are sampled from the final parametric distributions in Sections 5 and 7.
 
 For the stochastic parametric inputs, use inverse-transform sampling in the form
 
@@ -808,18 +858,18 @@ These additional summaries should not replace the base-paper-matched P95 table.
 
 ---
 
-## 15. Optional deterministic benchmark matching the base-paper comparison structure
+## 15. Deterministic benchmark matching the base-paper comparison structure
 
-The base paper also reports a deterministic table before the probabilistic results. A Bangladesh deterministic benchmark is recommended so that the effect of using full distributions can be demonstrated directly.
+The base paper reports a deterministic table before the probabilistic results. The Bangladesh analysis implements the same output structure so that the effect of using full distributions can be demonstrated directly.
 
-For each district, use the district mean arsenic concentration and clearly documented point values for the other inputs. Then report:
+For each district, use the censoring-aware reverse-Kaplan-Meier mean arsenic concentration and the frozen D5 point values from Section 7. Then report:
 
 | District | HI adult | HI child | ELCR adult | ELCR child |
 |---|---:|---:|---:|---:|
 
 This mirrors the structure of Table 4 in the base paper.
 
-The point values must come from the Bangladesh parameter design, not be copied from the Punjab study. For variables represented by Bangladesh distributions, use a pre-declared central value such as the weighted mean; do not choose the central value after seeing the risk results.
+IR, EF, ET, and SA retain the base paper's deterministic values; adult and child BW use the Bangladesh survey-weighted means of 55.89 and 10.87 kg. Primary ELCR uses the 70-year lifetime averaging time, with the paper-convention child result retained separately. These choices were frozen before reviewing the district risk results.
 
 **Tools:** pandas/NumPy arithmetic.
 
@@ -1131,7 +1181,7 @@ Reject a final model configuration if it produces impossible values such as nega
 The recommended order of work is:
 
 1. freeze the adult and child population definitions;
-2. resolve the minimum-mode-maximum triplet for the approved child SA Triangular distribution;
+2. freeze the approved child-SA Triangular triplet $(0.29,0.60,0.95)\ \text{m}^2$;
 3. preprocess district arsenic data;
 4. fit and select district arsenic distributions;
 5. prepare and fit adult and child BW distributions;
