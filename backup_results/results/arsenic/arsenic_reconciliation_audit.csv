@@ -1,0 +1,27 @@
+step,count,description
+raw_file_lines,3540,physical lines in the raw CSV
+preamble_lines,4,title/release lines above the header
+header_lines,1,column-name line
+units_rows,1,units row removed (not a sample)
+raw_sample_rows,3534,"rows after removing only preamble, header and units row"
+all_detected_n,2429,"all districts, As_status == detected"
+all_left_censored_n,1105,"all districts, As_status == left_censored"
+all_missing_n,0,"all districts, As_status == missing"
+all_malformed_n,0,"all districts, As_status == malformed"
+all_status_total,3534,must equal raw_sample_rows
+selected_districts_n,10,approved district list
+selected_rows_expected,810,raw DISTRICT counts summed over the approved list
+selected_rows_output,810,rows written to the preprocessed file
+selected_detected_n,524,"selected districts, As_status == detected"
+selected_left_censored_n,286,"selected districts, As_status == left_censored"
+selected_missing_n,0,"selected districts, As_status == missing"
+selected_malformed_n,0,"selected districts, As_status == malformed"
+excluded_other_district_rows,2724,rows outside the approved districts
+check_lines_reconcile,1,"1 = pass, 0 = FAIL"
+check_status_reconcile,1,"1 = pass, 0 = FAIL"
+check_selected_reconcile,1,"1 = pass, 0 = FAIL"
+check_selected_status_reconcile,1,"1 = pass, 0 = FAIL"
+check_exclusion_reconcile,1,"1 = pass, 0 = FAIL"
+check_as_raw_preserved,1,"1 = pass, 0 = FAIL"
+check_no_censored_in_detected,1,"1 = pass, 0 = FAIL"
+check_district_names_verbatim,1,"1 = pass, 0 = FAIL"

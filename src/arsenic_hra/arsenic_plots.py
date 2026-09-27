@@ -103,7 +103,7 @@ def plot_district(district: str, values_mgL, censored, fit_table: pd.DataFrame, 
     ax.step(curve.x, curve.F, where="post", color=INK_SECONDARY, linewidth=1.5,
             label="Reverse-KM ECDF (censoring-aware)", zorder=4)
     ax.scatter(curve.x[mask], curve.F[mask], s=16, color=INK_SECONDARY, zorder=5,
-               label="objective points (decision 9.1 V2)")
+               label="objective points")
     dropped = curve.x[~mask]
     if dropped.size:
         ax.scatter(dropped, curve.F[~mask], s=18, facecolor="white", edgecolor=INK_SECONDARY,

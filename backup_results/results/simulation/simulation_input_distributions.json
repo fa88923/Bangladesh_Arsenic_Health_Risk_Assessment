@@ -1,0 +1,241 @@
+{
+  "arsenic": {
+    "Dhaka": {
+      "district": "Dhaka",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.14894453043602304,
+        "scale_theta": 0.44248394631052373
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.14894453043602304,
+        "loc": 0.0,
+        "scale": 0.44248394631052373
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 45,
+      "censoring_percent": 48.89,
+      "reverse_km_mean_mgL": 0.04077642512077292,
+      "provisional_distribution": "Gamma"
+    },
+    "Chittagong": {
+      "district": "Chittagong",
+      "distribution": "Lognormal",
+      "params": {
+        "mu_log": -5.487617133292073,
+        "sigma_log": 1.9829066316268502
+      },
+      "scipy": {
+        "scipy_dist": "lognorm",
+        "s": 1.9829066316268502,
+        "loc": 0.0,
+        "scale": 0.004137692005088191
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 44,
+      "censoring_percent": 11.36,
+      "reverse_km_mean_mgL": 0.03142691387559804,
+      "provisional_distribution": "Lognormal"
+    },
+    "Rajshahi": {
+      "district": "Rajshahi",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.06816676147218764,
+        "scale_theta": 0.15201692309107265
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.06816676147218764,
+        "loc": 0.0,
+        "scale": 0.15201692309107265
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 78,
+      "censoring_percent": 71.79,
+      "reverse_km_mean_mgL": 0.007253333333333327,
+      "provisional_distribution": "Gamma"
+    },
+    "Khulna": {
+      "district": "Khulna",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.14470812098133795,
+        "scale_theta": 0.3278240082223571
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.14470812098133795,
+        "loc": 0.0,
+        "scale": 0.3278240082223571
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 76,
+      "censoring_percent": 42.11,
+      "reverse_km_mean_mgL": 0.034912612323491694,
+      "provisional_distribution": "Gamma"
+    },
+    "Barisal": {
+      "district": "Barisal",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.1724096341,
+        "scale_theta": 0.5818482878
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.1724096341,
+        "loc": 0.0,
+        "scale": 0.5818482878
+      },
+      "source": "Phase 4 fit table, CDF least-squares candidate",
+      "decision": "override of provisional Lognormal (see simulation report D7)",
+      "n": 92,
+      "censoring_percent": 17.39,
+      "reverse_km_mean_mgL": 0.09231951992753643,
+      "provisional_distribution": "Lognormal"
+    },
+    "Sylhet": {
+      "district": "Sylhet",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.3498155017898945,
+        "scale_theta": 0.06638604431174822
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.3498155017898945,
+        "loc": 0.0,
+        "scale": 0.06638604431174822
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 77,
+      "censoring_percent": 32.47,
+      "reverse_km_mean_mgL": 0.022214160033514885,
+      "provisional_distribution": "Gamma"
+    },
+    "Rangpur": {
+      "district": "Rangpur",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.2055995405285498,
+        "scale_theta": 0.02669073392958355
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.2055995405285498,
+        "loc": 0.0,
+        "scale": 0.02669073392958355
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 86,
+      "censoring_percent": 45.35,
+      "reverse_km_mean_mgL": 0.00807325581395331,
+      "provisional_distribution": "Gamma"
+    },
+    "Mymensingh": {
+      "district": "Mymensingh",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.11000525320679334,
+        "scale_theta": 0.19131409060782453
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.11000525320679334,
+        "loc": 0.0,
+        "scale": 0.19131409060782453
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 108,
+      "censoring_percent": 48.15,
+      "reverse_km_mean_mgL": 0.015804629629629693,
+      "provisional_distribution": "Gamma"
+    },
+    "Comilla": {
+      "district": "Comilla",
+      "distribution": "Gamma",
+      "params": {
+        "shape_k": 0.43637511624742714,
+        "scale_theta": 0.4201443804730237
+      },
+      "scipy": {
+        "scipy_dist": "gamma",
+        "a": 0.43637511624742714,
+        "loc": 0.0,
+        "scale": 0.4201443804730237
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 110,
+      "censoring_percent": 8.18,
+      "reverse_km_mean_mgL": 0.14159475524475545,
+      "provisional_distribution": "Gamma"
+    },
+    "Bogra": {
+      "district": "Bogra",
+      "distribution": "Lognormal",
+      "params": {
+        "mu_log": -7.022820299142998,
+        "sigma_log": 2.861944191138968
+      },
+      "scipy": {
+        "scipy_dist": "lognorm",
+        "s": 2.861944191138968,
+        "loc": 0.0,
+        "scale": 0.0008913081890209072
+      },
+      "source": "Phase 4 provisional selection (CDF least squares)",
+      "decision": "accepted as provisional",
+      "n": 94,
+      "censoring_percent": 31.91,
+      "reverse_km_mean_mgL": 0.01756276595744661,
+      "provisional_distribution": "Lognormal"
+    }
+  },
+  "bodyweight": {
+    "adult": {
+      "population": "adult",
+      "distribution": "Lognormal",
+      "params": {
+        "mu_log": 4.002396271123946,
+        "sigma_log": 0.20017355869795117
+      },
+      "scipy": {
+        "scipy_dist": "lognorm",
+        "s": 0.20017355869795117,
+        "loc": 0.0,
+        "scale": 54.72913888320958
+      },
+      "source": "Phase 5 provisional selection",
+      "decision": "accepted as provisional"
+    },
+    "child": {
+      "population": "child",
+      "distribution": "TruncatedNormal",
+      "params": {
+        "mu": 10.857019241869164,
+        "sigma": 3.2280932276008367,
+        "lower": 1.6
+      },
+      "scipy": {
+        "scipy_dist": "truncnorm",
+        "a": -2.867643091196938,
+        "b": Infinity,
+        "loc": 10.857019241869164,
+        "scale": 3.2280932276008367
+      },
+      "source": "Phase 7 refit: weighted CDF least squares on child_bw_clean.csv",
+      "decision": "replaces provisional Gamma (see simulation report D8)",
+      "ls_converged": true
+    }
+  }
+}

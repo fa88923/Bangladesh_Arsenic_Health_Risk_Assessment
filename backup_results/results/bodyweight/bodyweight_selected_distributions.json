@@ -1,0 +1,42 @@
+[
+  {
+    "population": "adult",
+    "distribution": "Lognormal",
+    "parameterization": "natural parameters from weighted CDF least squares; Lognormal/Gamma loc=0",
+    "params": {
+      "mu_log": 4.002396271123946,
+      "sigma_log": 0.20017355869795117
+    },
+    "scipy": {
+      "scipy_dist": "lognorm",
+      "s": 0.20017355869795117,
+      "loc": 0.0,
+      "scale": 54.72913888320958
+    },
+    "weighted_cdf_sse": 1.9580572368000613e-05,
+    "weighted_cdf_max_discrepancy": 0.018560715741560374,
+    "n": 8013,
+    "status": "provisional - requires team review before freezing",
+    "rationale": "lowest weighted CDF SSE among admissible candidates (1.958e-05); Triangular inadmissible: support excludes 2.6541% of survey mass; also lowest max CDF discrepancy; also best tail quantile agreement; runner-up Gamma SSE ratio 2.21; LS vs PML max relative parameter difference 1.41%"
+  },
+  {
+    "population": "child",
+    "distribution": "Gamma",
+    "parameterization": "natural parameters from weighted CDF least squares; Lognormal/Gamma loc=0",
+    "params": {
+      "shape_k": 11.391854506302195,
+      "scale_theta": 0.9725257182622645
+    },
+    "scipy": {
+      "scipy_dist": "gamma",
+      "a": 11.391854506302195,
+      "loc": 0.0,
+      "scale": 0.9725257182622645
+    },
+    "weighted_cdf_sse": 0.00031513060315105417,
+    "weighted_cdf_max_discrepancy": 0.031955579486737995,
+    "n": 22576,
+    "status": "provisional - requires team review before freezing",
+    "rationale": "lowest weighted CDF SSE among admissible candidates (3.151e-04); Normal had lower SSE but was rejected: P(BW<=0)=3.67e-04 >= 1e-04; Triangular inadmissible: support excludes 1.9095% of survey mass; also lowest max CDF discrepancy; also best tail quantile agreement; runner-up Lognormal SSE ratio 1.89; LS vs PML max relative parameter difference 11.65%"
+  }
+]

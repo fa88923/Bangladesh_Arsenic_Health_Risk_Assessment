@@ -1,0 +1,129 @@
+{
+  "run_id": "chittagong_adult_N10000_r0",
+  "district": "Chittagong",
+  "population": "adult",
+  "N": 10000,
+  "replicate": 0,
+  "master_seed": 20260923,
+  "spawn_key": [
+    1,
+    0,
+    2,
+    0
+  ],
+  "seed_derivation": "numpy.random.SeedSequence(master_seed, spawn_key=(district_index, population_index, n_index, replicate))",
+  "input_order": [
+    "C_mg_per_L",
+    "IR_L_per_day",
+    "BW_kg",
+    "EF_days_per_year",
+    "ET_h_per_day",
+    "SA_m2"
+  ],
+  "arsenic_distribution": {
+    "district": "Chittagong",
+    "distribution": "Lognormal",
+    "params": {
+      "mu_log": -5.487617133292073,
+      "sigma_log": 1.9829066316268502
+    },
+    "scipy": {
+      "scipy_dist": "lognorm",
+      "s": 1.9829066316268502,
+      "loc": 0.0,
+      "scale": 0.004137692005088191
+    },
+    "source": "Phase 4 provisional selection (CDF least squares)",
+    "decision": "accepted as provisional",
+    "n": 44,
+    "censoring_percent": 11.36,
+    "reverse_km_mean_mgL": 0.03142691387559804,
+    "provisional_distribution": "Lognormal"
+  },
+  "bw_distribution": {
+    "population": "adult",
+    "distribution": "Lognormal",
+    "params": {
+      "mu_log": 4.002396271123946,
+      "sigma_log": 0.20017355869795117
+    },
+    "scipy": {
+      "scipy_dist": "lognorm",
+      "s": 0.20017355869795117,
+      "loc": 0.0,
+      "scale": 54.72913888320958
+    },
+    "source": "Phase 5 provisional selection",
+    "decision": "accepted as provisional"
+  },
+  "base_paper_inputs": {
+    "IR_L_per_day": {
+      "family": "Lognormal",
+      "params": {
+        "mu_log": 0.1098832337399641,
+        "sigma_log": 0.49239920232149553
+      },
+      "scipy": {
+        "scipy_dist": "lognorm",
+        "s": 0.49239920232149553,
+        "loc": 0.0,
+        "scale": 1.1161477344529958
+      }
+    },
+    "EF_days_per_year": {
+      "family": "Triangular",
+      "params": {
+        "min": 180.0,
+        "mode": 345.0,
+        "max": 365.0
+      },
+      "scipy": {
+        "scipy_dist": "triang",
+        "c": 0.8918918918918919,
+        "loc": 180.0,
+        "scale": 185.0
+      }
+    },
+    "ET_h_per_day": {
+      "family": "Triangular",
+      "params": {
+        "min": 0.13,
+        "mode": 0.2,
+        "max": 0.33
+      },
+      "scipy": {
+        "scipy_dist": "triang",
+        "c": 0.35000000000000003,
+        "loc": 0.13,
+        "scale": 0.2
+      }
+    },
+    "SA_m2": {
+      "family": "Lognormal",
+      "params": {
+        "mu_log": 0.32737770310174275,
+        "sigma_log": 0.21577380986313688
+      },
+      "scipy": {
+        "scipy_dist": "lognorm",
+        "s": 0.21577380986313688,
+        "loc": 0.0,
+        "scale": 1.3873253753324848
+      }
+    }
+  },
+  "fixed": {
+    "ED_years": 70.0,
+    "AT_noncancer_days": 25550.0,
+    "AT_cancer_days": 25550.0,
+    "Kp_cm_per_h": 0.001,
+    "CF_L_per_cm_m2": 10.0,
+    "RfD_ing_mg_per_kg_day": 0.0003,
+    "RfD_dermal_mg_per_kg_day": 0.000285,
+    "CSF_per_mg_per_kg_day": 1.5
+  },
+  "output": "results/simulation/iterations/chittagong_adult_N10000_r0.parquet",
+  "output_sha256": "6c70c0a1c7765a25687e4fcc0005b204ca7e8aa6b0e645061f9b588cbfba6d63",
+  "config_version": "1.0.0",
+  "config_sha256": "61a31723b8b8bb3bde5859f1dbc3f5e41dc3339c59d75c2e4f9b9f6484095d5b"
+}

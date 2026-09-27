@@ -1,0 +1,811 @@
+source_line,SAMPLE_ID,SAMPLE_FIELD_ID,SAMPLE_DATE,LAT_DEG,LONG_DEG,YEAR_CONSTRUCTION,WELL_TYPE,WELL_DEPTH,DIVISION,DISTRICT,THANA,UNION,MOUZA,GEOCODE,SAMPLE_DATE_iso,As_raw,As_status,As_censored,As_bound_ugL,As_detected_ugL,As_model_value_ugL,As_bound_mgL,As_detected_mgL,As_model_value_mgL
+51,S98_02465,RIP0084,21/04/1998,23.919,90.214,1995,Tara,65,Dhaka,Dhaka,Dhamrai,Dhamrai,Dhamrai,3261435354,1998-04-21,< 6,left_censored,True,6,,6,0.006,,0.006
+52,S98_02466,RIP0092,22/04/1998,23.835,90.261,1984,DTW,115,Dhaka,Dhaka,Savar,Savar,Dakshin dariapur,3267278296,1998-04-22,< 6,left_censored,True,6,,6,0.006,,0.006
+53,S98_02467,RIP0102,22/04/1998,23.696,90.347,1992,STW,43,Dhaka,Dhaka,Keraniganj,Basta,Konakhola,3263808641,1998-04-22,< 6,left_censored,True,6,,6,0.006,,0.006
+54,S98_02468,RIP0110,23/04/1998,23.616,90.125,1997,STW,60,Dhaka,Dhaka,Dohar,Joypara,Joypara,3261810410,1998-04-23,184,detected,False,,184,184,,0.184,0.184
+55,S98_02469,RIP0118,23/04/1998,23.651,90.132,1994,STW,20,Dhaka,Dhaka,Nawabganj (Dh),Bandura,Magirkanda,3266220637,1998-04-23,133,detected,False,,133,133,,0.133,0.133
+56,S98_02470,RIP1001,23/03/1998,22.966,89.479,1985,DTW,262,Khulna,Khulna,Phultala,Damodarpur,Damodal,4476938331,1998-03-23,< 6,left_censored,True,6,,6,0.006,,0.006
+57,S98_02471,RIP1009,24/03/1998,22.737,89.519,1979,DTW,187,Khulna,Khulna,Batiaghata,Batiaghata,Hetalburia,4471235059,1998-03-24,< 6,left_censored,True,6,,6,0.006,,0.006
+58,S98_02472,RIP1016,25/03/1998,22.576,89.325,1991,STW,49,Khulna,Khulna,Paikgachha,Soladana,Paikgachha,4476489772,1998-03-25,130,detected,False,,130,130,,0.13,0.13
+60,S98_02474,RIP1031,23/03/1998,22.932,89.668,1994,STW,26,Khulna,Khulna,Terokhada,Terokhada,Terokhada,4479481994,1998-03-23,114,detected,False,,114,114,,0.114,0.114
+61,S98_02475,RIP1037,24/03/1998,22.576,89.499,,STW,41,Khulna,Khulna,Dacope,Chalna,Baraikhal,4471731119,1998-03-24,12,detected,False,,12,12,,0.012,0.012
+62,S98_02476,RIP1040,25/03/1998,22.8,89.645,1987,DTW,131,Khulna,Khulna,Rupsa,T.S Bahirdia,Taltala,4477581949,1998-03-25,89,detected,False,,89,89,,0.089,0.089
+63,S98_02477,RIP1050,26/03/1998,22.837,89.55,1986,DTW,312,Khulna,Khulna,Khulna Metro,Ward-10,Khalispur,4476310250,1998-03-26,< 6,left_censored,True,6,,6,0.006,,0.006
+64,S98_02478,RIP1061,23/03/1998,22.887,89.535,1997,DTW,282,Khulna,Khulna,Dighalia,Dighalia,Dighalia,4474057379,1998-03-23,< 6,left_censored,True,6,,6,0.006,,0.006
+65,S98_02479,RIP1066,23/03/1998,22.871,89.508,1979,STW,60,Khulna,Khulna,Dighalia,Deana,Arunghat,4474047047,1998-03-23,73,detected,False,,73,73,,0.073,0.073
+66,S98_02480,RIP1068,23/03/1998,22.819,89.421,1997,STW,59,Khulna,Khulna,Dumuria,Dumuria,Arzi Dumuria,4473039834,1998-03-23,< 6,left_censored,True,6,,6,0.006,,0.006
+114,S98_02528,RIP1531,27/04/1998,22.97,90.159,1995,DTW,237,Barisal,Barisal,Agailjhara,Bakal,Manasi phulasri,1060215588,1998-04-27,< 6,left_censored,True,6,,6,0.006,,0.006
+153,S98_02567,RIP1949,29/04/1998,22.808,90.306,1965,DTW,253,Barisal,Barisal,Babuganj,Rahmatpur,Khapura,1060381548,1998-04-29,< 6,left_censored,True,6,,6,0.006,,0.006
+158,S98_02572,RIP2036,02/04/1998,24.468,88.322,1996,Tara,32,Rajshahi,Rajshahi,Godagari,Paurashava,Bhagabantapur,5813438150,1998-04-02,< 6,left_censored,True,6,,6,0.006,,0.006
+159,S98_02573,RIP2046,02/04/1998,24.553,88.583,1982,STW,30,Rajshahi,Rajshahi,Tanore,Saranjai,Burag,5819467211,1998-04-02,< 6,left_censored,True,6,,6,0.006,,0.006
+160,S98_02574,RIP2056,02/04/1998,24.361,88.706,1993,STW,32,Rajshahi,Rajshahi,Puthia,Belpukuna,Bhangra,5818227155,1998-04-02,21,detected,False,,21,21,,0.021,0.021
+161,S98_02575,RIP2066,03/04/1998,24.511,88.625,1992,Tara,38,Rajshahi,Rajshahi,Mohanpur,Maugachhi,Maugachhi,5815367679,1998-04-03,< 6,left_censored,True,6,,6,0.006,,0.006
+162,S98_02576,RIP2098,05/04/1998,24.367,88.687,1996,STW,33,Rajshahi,Rajshahi,Paba,Harian,Emadpur,5817239309,1998-04-05,< 6,left_censored,True,6,,6,0.006,,0.006
+175,S98_02589,RIP3001,25/04/1998,23.614,91.102,1984,DTW,125,Chittagong,Comilla,Brahmanpara,Brahmanpara,Prahmanpara,2191518159,1998-04-25,< 6,left_censored,True,6,,6,0.006,,0.006
+176,S98_02590,RIP3008,26/04/1998,23.536,90.716,1989,STW,25,Chittagong,Comilla,Daudkandi,D. Daudkandi,D. Daudkandi,2193625338,1998-04-26,411,detected,False,,411,411,,0.411,0.411
+177,S98_02591,RIP3017,27/04/1998,23.489,91.007,1984,DTW,125,Chittagong,Comilla,Chandina,Pasc. Chandina,Casc. Chandina,2192747213,1998-04-27,118,detected,False,,118,118,,0.118,0.118
+178,S98_02592,RIP3026,27/04/1998,23.713,90.878,1987,STW,24,Chittagong,Comilla,Muradnagar,U. Ramchandrapur,B. Ramchandrapur,2198185058,1998-04-27,278,detected,False,,278,278,,0.278,0.278
+179,S98_02593,RIP3041,30/04/1998,23.18,91.244,1993,STW,23,Chittagong,Comilla,Nangalkot,Roykot,Joykot,2198786461,1998-04-30,64,detected,False,,64,64,,0.064,0.064
+181,S98_02595,RIP3051,25/04/1998,23.553,91.128,1982,STW,35,Chittagong,Comilla,Burichang,Purba Burichang,Burba Burichang,2191831072,1998-04-25,9,detected,False,,9,9,,0.009,0.009
+182,S98_02596,RIP3059,26/04/1998,23.702,91.047,1998,STW,30,Chittagong,Comilla,Debidwar,U. Barashalghar,I. Barashalghar,2194005486,1998-04-26,127,detected,False,,127,127,,0.127,0.127
+183,S98_02597,RIP3070,27/04/1998,23.225,91.317,1995,STW,30,Chittagong,Comilla,Chauddagram,Chauddagram,Bhauddagram,2193123066,1998-04-27,< 6,left_censored,True,6,,6,0.006,,0.006
+184,S98_02598,RIP3087,29/04/1998,23.682,90.784,1985,STW,25,Chittagong,Comilla,Homna,Uttar Homna,Httar homna,2195466412,1998-04-29,73,detected,False,,73,73,,0.073,0.073
+185,S98_02599,RIP3094,30/04/1998,23.235,91.117,1994,DTW,98,Chittagong,Comilla,Laksam,Paurashava W02,Paurashava W02,2197210725,1998-04-30,98,detected,False,,98,98,,0.098,0.098
+186,S98_02600,RIP3106,02/05/1998,23.425,91.134,1996,Tara,49,Chittagong,Comilla,Comilla Sadar,Bijoypur,Sijoypur,2196721819,1998-05-02,< 6,left_censored,True,6,,6,0.006,,0.006
+191,S98_02605,RIP3159,02/05/1998,23.391,91.101,1990,STW,34,Chittagong,Comilla,Barura,Daks. Bhabanipur,Paks. Bhabanipur,2190925814,1998-05-02,< 6,left_censored,True,6,,6,0.006,,0.006
+208,S98_02622,RIP3338,21/05/1998,21.971,91.955,1996,DTW,203,Chittagong,Chittagong,Banshkhali,Chambal,Pas.chambal,2150818815,1998-05-21,< 6,left_censored,True,6,,6,0.006,,0.006
+209,S98_02623,RIP3347,22/05/1998,22.343,91.804,1970,DTW,184,Chittagong,Chittagong,Double Mooring,SMA W24,Mansurabad,2152815080,1998-05-22,< 6,left_censored,True,6,,6,0.006,,0.006
+210,S98_02624,RIP3349,22/05/1998,22.349,91.837,1997,STW,52,Chittagong,Chittagong,Kotwali (C),SMA W25,Dewan bazar,2154115497,1998-05-22,< 6,left_censored,True,6,,6,0.006,,0.006
+213,S98_02627,RIP3374,21/05/1998,22.228,91.902,1988,STW,44,Chittagong,Chittagong,Anowara,Anowara,Anowara,2150409026,1998-05-21,8,detected,False,,8,8,,0.008,0.008
+214,S98_02628,RIP3384,22/05/1998,22.361,91.804,1980,STW,52,Chittagong,Chittagong,Pahartali,SMA W23,Wireless colony,2155515976,1998-05-22,< 6,left_censored,True,6,,6,0.006,,0.006
+215,S98_02629,RIP3386,22/05/1998,22.29,91.783,1992,STW,21,Chittagong,Chittagong,Chittagong Port,SMA W39,Dahshin halishar,2152015161,1998-05-22,16,detected,False,,16,16,,0.016,0.016
+219,S98_02633,RIP3451,22/05/1998,22.368,91.843,1998,STW,64,Chittagong,Chittagong,Panchlaish,SMA W11,Sulok bazar,2155715995,1998-05-22,< 6,left_censored,True,6,,6,0.006,,0.006
+220,S98_02634,RIP3452,22/05/1998,22.347,91.852,1990,STW,30,Chittagong,Chittagong,Chandgaon,SMA W30,Purba bakulia,2151915110,1998-05-22,80,detected,False,,80,80,,0.08,0.08
+225,S98_02639,RIP0320,26/05/1998,24.814,91.759,1963,STW,56,Sylhet,Sylhet,Bishwanath,Bishwanath,Musalia,6912021700,1998-05-26,53,detected,False,,53,53,,0.053,0.053
+226,S98_02640,RIP0327,27/05/1998,24.88,92.369,1984,STW,27,Sylhet,Sylhet,Zakiganj,Zakiganj,Alamnagar,6919485024,1998-05-27,80,detected,False,,80,80,,0.08,0.08
+229,S98_02643,RIP0349,26/05/1998,24.652,91.823,1994,STW,91,Sylhet,Sylhet,Balaganj,Balaganj,Digarberkuri,6910806209,1998-05-26,139,detected,False,,139,139,,0.139,0.139
+230,S98_02644,RIP0358,27/05/1998,24.822,92.122,1991,STW,51,Sylhet,Sylhet,Beanibazar,Mathura,Mathura,6911760631,1998-05-27,< 6,left_censored,True,6,,6,0.006,,0.006
+233,S98_02647,RIP0377,26/05/1998,24.697,91.937,1989,STW,34,Sylhet,Sylhet,Fenchuganj,Fenchuganj,Bonshal colony,6913523132,1998-05-26,< 6,left_censored,True,6,,6,0.006,,0.006
+234,S98_02648,RIP0383,27/05/1998,24.831,92.044,1995,STW,38,Sylhet,Sylhet,Golapganj,Paschim amura,Shilghat,6913895945,1998-05-27,< 6,left_censored,True,6,,6,0.006,,0.006
+235,S98_02649,RIP0391,28/05/1998,25.01,92.258,1984,STW,47,Sylhet,Sylhet,Kanaighat,Kanaighat,Bishnapur,6915947155,1998-05-28,151,detected,False,,151,151,,0.151,0.151
+236,S98_02650,RIP0397,30/05/1998,25.089,91.76,1994,STW,79,Sylhet,Sylhet,Companiganj (S),Islampur,Shamshernagar,6912711852,1998-05-30,73,detected,False,,73,73,,0.073,0.073
+239,S98_02653,RIP0425,28/05/1998,25.135,92.132,1986,STW,10,Sylhet,Sylhet,Jaintiapur,Nizpat,Jaintiapur nizpa,6915363474,1998-05-28,< 6,left_censored,True,6,,6,0.006,,0.006
+240,S98_02654,RIP0431,28/05/1998,24.99,92.046,1980,STW,38,Sylhet,Sylhet,Gowainghat,Fatepur,Paschim balipara,6914121760,1998-05-28,< 6,left_censored,True,6,,6,0.006,,0.006
+241,S98_02655,RIP0432,30/05/1998,24.89,91.873,1997,Tara,64,Sylhet,Sylhet,Sylhet Sadar,Pourashava w3,Municipal Market,6916203689,1998-05-30,< 6,left_censored,True,6,,6,0.006,,0.006
+262,S98_02676,RIP3475,14/06/1998,22.613,91.645,1990,STW,19,Chittagong,Chittagong,Sitakunda,Sitakund,Mahadebpur,2158676727,1998-06-14,151,detected,False,,151,151,,0.151,0.151
+263,S98_02677,RIP3483,15/06/1998,22.777,91.57,1984,STW,15,Chittagong,Chittagong,Mirsharai,Mirsarai,Purba maghadia,2155359790,1998-06-15,229,detected,False,,229,229,,0.229,0.229
+266,S98_02680,RIP0405,28/05/1998,25.091,91.984,1985,STW,63,Sylhet,Sylhet,Gowainghat,West jaflong,Gowain,6914142356,1998-05-28,21.3,detected,False,,21.3,21.3,,0.0213,0.0213
+267,S98_02681,RIP1022,26/03/1998,22.803,89.579,1996,DTW,213,Khulna,Khulna,Khulna Metro,Ward 01,Rupsa,4476301707,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+273,S98_02687,RIP1321,26/04/1998,22.715,90.352,,STW,22,Barisal,Barisal,Barisal Sadar,Kashipur,Ichhakati,1065169470,1998-04-26,279,detected,False,,279,279,,0.279,0.279
+274,S98_02688,RIP1328,27/04/1998,22.893,90.506,1996,DTW,30,Barisal,Barisal,Hizla,Barajalia,Khunna,1063613,1998-04-27,1.5,detected,False,,1.5,1.5,,0.0015,0.0015
+277,S98_02691,RIP1499,27/04/1998,23.051,90.201,1990,STW,46,Barisal,Barisal,Gournadi,Khanjapur,Purba dumuria,1063255769,1998-04-27,26.4,detected,False,,26.4,26.4,,0.0264,0.0264
+278,S98_02692,RIP1509,28/04/1998,22.536,90.35,1998,DTW,345,Barisal,Barisal,Bakerganj,Bharpasha,Bharpasha,1060706147,1998-04-28,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+279,S98_02693,RIP1518,29/04/1998,22.773,90.142,1994,STW,21,Barisal,Barisal,Banaripara,Banaripara,Brahmankati,1061010245,1998-04-29,11.5,detected,False,,11.5,11.5,,0.0115,0.0115
+280,S98_02694,RIP1541,28/04/1998,22.821,90.252,1998,DTW,292,Barisal,Barisal,Wazirpur,Shikarpur,Wazirpur,1069484994,1998-04-28,2,detected,False,,2,2,,0.002,0.002
+283,S98_02697,RIP1581,28/04/1998,22.819,90.473,1992,DTW,302,Barisal,Barisal,Mehendiganj,Darichar Khajuri,Darichar khajura,1066263331,1998-04-28,2.6,detected,False,,2.6,2.6,,0.0026,0.0026
+284,S98_02698,RIP1583,29/04/1998,22.814,90.363,1994,STW,16,Barisal,Barisal,Muladi,Kazirchar,Char commissiona,1066947328,1998-04-29,35.4,detected,False,,35.4,35.4,,0.0354,0.0354
+297,S98_02711,RIP2074,03/04/1998,24.532,88.759,,STW,32,Rajshahi,Rajshahi,Bagmara,Gamipur,Hashnipur,5811250386,1998-04-03,1.3,detected,False,,1.3,1.3,,0.0013,0.0013
+298,S98_02712,RIP2080,03/04/1998,24.294,88.74,1997,STW,53,Rajshahi,Rajshahi,Charghat,Sardha,Sardha,5812594921,1998-04-03,15.7,detected,False,,15.7,15.7,,0.0157,0.0157
+299,S98_02713,RIP2090,04/04/1998,24.227,88.758,1982,STW,39,Rajshahi,Rajshahi,Bagha,Manigram,Helalpur,5811063502,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+300,S98_02714,RIP2108,05/04/1998,24.427,88.771,1994,STW,32,Rajshahi,Rajshahi,Durgapur (R),Maria,Raipara,5813171837,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+304,S98_02718,RIP3096,30/04/1998,23.169,91.129,1990,STW,20,Chittagong,Comilla,Laksam,Uttar Hawla,Kttar Hawla,2197291510,1998-04-30,350,detected,False,,350,350,,0.35,0.35
+369,S98_02784,RIP0085,21/04/1998,23.906,90.194,1995,STW,26,Dhaka,Dhaka,Dhamrai,Kulla,Kulla,3261453598,1998-04-21,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+370,S98_02785,RIP0086,21/04/1998,23.926,90.179,1996,STW,71,Dhaka,Dhaka,Dhamrai,Sombhag,Dautia,3261483325,1998-04-21,3.6,detected,False,,3.6,3.6,,0.0036,0.0036
+371,S98_02786,RIP0087,21/04/1998,23.995,90.081,1995,STW,62,Dhaka,Dhaka,Dhamrai,Balia,Mandarpur,3261417656,1998-04-21,21.2,detected,False,,21.2,21.2,,0.0212,0.0212
+372,S98_02787,RIP0088,21/04/1998,23.961,90.082,1997,STW,53,Dhaka,Dhaka,Dhamrai,Gangutia,Kadlipara,3261441533,1998-04-21,5.9,detected,False,,5.9,5.9,,0.0059,0.0059
+373,S98_02788,RIP0089,21/04/1998,23.946,90.115,1990,STW,55,Dhaka,Dhaka,Dhamrai,Sanora,Uttar nadhatta,3261477978,1998-04-21,29.9,detected,False,,29.9,29.9,,0.0299,0.0299
+374,S98_02789,RIP0090,21/04/1998,23.92,90.139,1996,Tara,57,Dhaka,Dhaka,Dhamrai,Sutipara,Sutipara,3261494939,1998-04-21,3.6,detected,False,,3.6,3.6,,0.0036,0.0036
+375,S98_02790,RIP0091,21/10/1998,23.893,90.13,1995,STW,38,Dhaka,Dhaka,Dhamrai,Nannar,Chaona,3261465,1998-10-21,107,detected,False,,107,107,,0.107,0.107
+376,S98_02791,RIP0093,22/04/1998,23.834,90.26,1984,STW,41,Dhaka,Dhaka,Savar,Savar,Dakshin dariapur,3267278296,1998-04-22,1,detected,False,,1,1,,0.001,0.001
+377,S98_02792,RIP0094,22/04/1998,23.88,90.268,1984,DTW,115,Dhaka,Dhaka,Savar,Pathalia,Boraoalia,3267272103,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+378,S98_02793,RIP0095,22/04/1998,23.91,90.301,1997,STW,59,Dhaka,Dhaka,Savar,Ashulia,Dhananjoypur,3267211386,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+379,S98_02794,RIP0096,22/04/1998,23.933,90.308,1996,STW,34,Dhaka,Dhaka,Savar,Yearpur,Diakhbli,3267294402,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+380,S98_02795,RIP0097,22/04/1998,23.991,90.248,1995,STW,56,Dhaka,Dhaka,Savar,Shimulia,Tenguria,3267283946,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+381,S98_02796,RIP0098,22/04/1998,23.911,90.234,1996,STW,43,Dhaka,Dhaka,Savar,Pathalia,Dhania,3267272389,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+382,S98_02797,RIP0099,22/04/1998,23.79,90.269,1989,STW,43,Dhaka,Dhaka,Savar,Tetulghora,Dahshin shympur,3267289341,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+383,S98_02798,RIP0100,22/04/1998,23.794,90.293,1997,STW,43,Dhaka,Dhaka,Savar,Banagram,Kandi baliarpur,3267222560,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+384,S98_02799,RIP0103,22/04/1998,23.73,90.339,1996,STW,44,Dhaka,Dhaka,Keraniganj,Sakta,Ati,3263860057,1998-04-22,13.3,detected,False,,13.3,13.3,,0.0133,0.0133
+385,S98_02800,RIP0104,22/04/1998,23.73,90.317,1997,STW,76,Dhaka,Dhaka,Keraniganj,Taranagar,Baramandharia,3263877131,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+386,S98_02801,RIP0105,22/04/1998,23.732,90.276,1996,STW,25,Dhaka,Dhaka,Keraniganj,Hazrapur,Maniknagar,3263817698,1998-04-22,43.3,detected,False,,43.3,43.3,,0.0433,0.0433
+387,S98_02802,RIP0106,22/04/1998,23.687,90.287,1996,STW,85,Dhaka,Dhaka,Keraniganj,Kalatia,Kharakandi,3263825633,1998-04-22,98.4,detected,False,,98.4,98.4,,0.0984,0.0984
+388,S98_02803,RIP0107,22/04/1998,23.686,90.308,1995,STW,85,Dhaka,Dhaka,Keraniganj,Ruhitpur,Ruhilpur,3263851863,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+389,S98_02804,RIP0108,22/04/1998,23.701,90.384,1998,Tara,73,Dhaka,Dhaka,Keraniganj,Zinjira,Mandail,3263894690,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+390,S98_02805,RIP0109,22/04/1998,23.667,90.434,1995,STW,74,Dhaka,Dhaka,Keraniganj,Teguria,Teguria,3263886945,1998-04-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+391,S98_02806,RIP0111,23/04/1998,23.632,90.081,1982,STW,51,Dhaka,Dhaka,Dohar,Kushumhati,Kartikpur,3261821461,1998-04-23,262,detected,False,,262,262,,0.262,0.262
+392,S98_02807,RIP0112,23/04/1998,23.642,90.047,1997,STW,65,Dhaka,Dhaka,Dohar,Nayabari,Dakshin bahra,3261863256,1998-04-23,11.7,detected,False,,11.7,11.7,,0.0117,0.0117
+393,S98_02808,RIP0113,23/04/1998,23.595,90.139,1992,STW,63,Dhaka,Dhaka,Dohar,Sutarpara,Ghata,3261884317,1998-04-23,107,detected,False,,107,107,,0.107,0.107
+394,S98_02809,RIP0114,23/04/1998,23.577,90.148,1981,STW,57,Dhaka,Dhaka,Dohar,Narisha,Meghula,3261852687,1998-04-23,65,detected,False,,65,65,,0.065,0.065
+395,S98_02810,RIP0115,23/04/1998,23.538,90.176,1995,STW,61,Dhaka,Dhaka,Dohar,Muksudpur,Bethua,3261842082,1998-04-23,81.1,detected,False,,81.1,81.1,,0.0811,0.0811
+396,S98_02811,RIP0119,23/04/1998,23.659,90.166,1983,STW,56,Dhaka,Dhaka,Nawabganj (Dh),Kalakupa,Kasimpur,3266274528,1998-04-23,94.2,detected,False,,94.2,94.2,,0.0942,0.0942
+397,S98_02812,RIP0120,23/04/1998,23.644,90.179,1997,STW,59,Dhaka,Dhaka,Nawabganj (Dh),Bakshnagar,Chhota baksh n.,3266213264,1998-04-23,95.6,detected,False,,95.6,95.6,,0.0956,0.0956
+398,S98_02813,RIP0121,23/04/1998,23.631,90.21,1995,STW,49,Dhaka,Dhaka,Nawabganj (Dh),Galimpur,Galimpur,3266247373,1998-04-23,58.7,detected,False,,58.7,58.7,,0.0587,0.0587
+399,S98_02814,RIP0122,23/04/1998,23.622,90.226,1979,STW,54,Dhaka,Dhaka,Nawabganj (Dh),Charain,Charain,3266240321,1998-04-23,70.4,detected,False,,70.4,70.4,,0.0704,0.0704
+400,S98_02815,RIP0123,23/04/1998,23.649,90.204,1978,STW,56,Dhaka,Dhaka,Nawabganj (Dh),Barrah,Dakshin chaukihh,3266227331,1998-04-23,262,detected,False,,262,262,,0.262,0.262
+401,S98_02816,RIP0124,23/04/1998,23.641,90.215,1998,STW,61,Dhaka,Dhaka,Nawabganj (Dh),Agla,Tikorpur,3266206943,1998-04-23,81.2,detected,False,,81.2,81.2,,0.0812,0.0812
+419,S98_02834,RIP0321,25/05/1998,24.84,91.768,1993,STW,30,Sylhet,Sylhet,Bishwanath,Alankari,Kamalpur,6912010510,1998-05-25,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+420,S98_02835,RIP0322,26/05/1998,24.814,91.759,1983,STW,90,Sylhet,Sylhet,Bishwanath,Bishwanath,Junai musalia,6912021700,1998-05-26,2.7,detected,False,,2.7,2.7,,0.0027,0.0027
+421,S98_02836,RIP0323,26/05/1998,24.859,91.731,1997,STW,92,Sylhet,Sylhet,Bishwanath,Rampasha,Rampasha,6912084847,1998-05-26,2.1,detected,False,,2.1,2.1,,0.0021,0.0021
+422,S98_02837,RIP0324,26/05/1998,24.79,91.661,1997,STW,99,Sylhet,Sylhet,Bishwanath,Dasghar,Baisghar,6912052181,1998-05-26,29.9,detected,False,,29.9,29.9,,0.0299,0.0299
+423,S98_02838,RIP0325,26/05/1998,24.784,91.713,1997,DTW,108,Sylhet,Sylhet,Bishwanath,Deokalash,Kalijuri,6912042501,1998-05-26,23,detected,False,,23,23,,0.023,0.023
+424,S98_02839,RIP0326,26/05/1998,24.916,91.722,1997,DTW,105,Sylhet,Sylhet,Bishwanath,Lamakazi,Nurpur,6912073709,1998-05-26,10,detected,False,,10,10,,0.01,0.01
+425,S98_02840,RIP0328,27/05/1998,24.878,92.37,1984,STW,47,Sylhet,Sylhet,Zakiganj,Zakiganj,Alamnagar,6919485024,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+426,S98_02841,RIP0329,27/05/1998,24.891,92.373,1985,STW,39,Sylhet,Sylhet,Zakiganj,Kholachara,Gangadatta,6919457305,1998-05-27,29.3,detected,False,,29.3,29.3,,0.0293,0.0293
+427,S98_02842,RIP0330,27/05/1998,24.944,92.385,1996,STW,46,Sylhet,Sylhet,Zakiganj,Kazalshar,Kazalshar,6919447453,1998-05-27,50.8,detected,False,,50.8,50.8,,0.0508,0.0508
+444,S98_02859,RIP0350,26/05/1998,24.705,91.802,1986,STW,62,Sylhet,Sylhet,Balaganj,Osmanpur,Kabulpur,6910894392,1998-05-26,10.1,detected,False,,10.1,10.1,,0.0101,0.0101
+445,S98_02860,RIP0351,26/05/1998,24.712,91.799,1996,DTW,148,Sylhet,Sylhet,Balaganj,Osmanpur,Alipur,6910894037,1998-05-26,17.1,detected,False,,17.1,17.1,,0.0171,0.0171
+446,S98_02861,RIP0352,26/05/1998,24.632,91.688,1996,DTW,137,Sylhet,Sylhet,Balaganj,Sadipur,Khasrupur,6910881501,1998-05-26,157,detected,False,,157,157,,0.157,0.157
+447,S98_02862,RIP0353,26/05/1998,24.67,91.749,1973,STW,59,Sylhet,Sylhet,Balaganj,Burunza,Nijburunza,6910820685,1998-05-26,71.9,detected,False,,71.9,71.9,,0.0719,0.0719
+448,S98_02863,RIP0354,26/05/1998,24.719,91.695,1997,DTW,251,Sylhet,Sylhet,Balaganj,Umarpur,Umarpur,6910861994,1998-05-26,29.8,detected,False,,29.8,29.8,,0.0298,0.0298
+449,S98_02864,RIP0355,26/05/1998,24.718,91.695,1978,STW,60,Sylhet,Sylhet,Balaganj,Umarpur,Umarpur,6910861994,1998-05-26,19.4,detected,False,,19.4,19.4,,0.0194,0.0194
+450,S98_02865,RIP0356,26/05/1998,24.75,91.829,1993,STW,65,Sylhet,Sylhet,Balaganj,Dewanbazar,Sirajpur,6910833903,1998-05-26,26.8,detected,False,,26.8,26.8,,0.0268,0.0268
+451,S98_02866,RIP0357,26/05/1998,24.754,91.786,1994,STW,72,Sylhet,Sylhet,Balaganj,Dayamir,Dayamir,6910827196,1998-05-26,24.1,detected,False,,24.1,24.1,,0.0241,0.0241
+452,S98_02867,RIP0359,27/05/1998,24.797,92.12,1997,STW,54,Sylhet,Sylhet,Beanibazar,Tilpara,Dasura,6911794260,1998-05-27,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+453,S98_02868,RIP0360,27/05/1998,24.812,92.181,1997,STW,30,Sylhet,Sylhet,Beanibazar,Muria,Chotodesh,6911777240,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+468,S98_02883,RIP0378,26/05/1998,24.697,91.943,1996,STW,72,Sylhet,Sylhet,Fenchuganj,Fenchuganj,Fenchuganj,6913523132,1998-05-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+469,S98_02884,RIP0379,26/05/1998,24.684,91.983,1997,STW,31,Sylhet,Sylhet,Fenchuganj,Gilachara,Gazipur,6913547364,1998-05-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+470,S98_02885,RIP0380,26/05/1998,24.656,91.987,1988,STW,64,Sylhet,Sylhet,Fenchuganj,Gillachara,Mominchara,6913547729,1998-05-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+471,S98_02886,RIP0381,26/05/1998,24.665,91.944,1997,Tara,40,Sylhet,Sylhet,Fenchuganj,Maizgaon,Mollahpara,6913571298,1998-05-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+472,S98_02887,RIP0382,26/05/1998,24.741,91.926,1978,STW,49,Sylhet,Sylhet,Fenchuganj,Fenchuganj,Kotapur,6913523066,1998-05-26,12.4,detected,False,,12.4,12.4,,0.0124,0.0124
+473,S98_02888,RIP0384,27/05/1998,24.792,92.034,1991,STW,46,Sylhet,Sylhet,Golapganj,Dhaka daskhin,Kanishail,6913825577,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+474,S98_02889,RIP0385,27/05/1998,24.754,92.022,1994,STW,33,Sylhet,Sylhet,Golapganj,Badeshwar,Khumia,6913817666,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+475,S98_02890,RIP0386,27/05/1998,24.8,91.985,1988,STW,49,Sylhet,Sylhet,Golapganj,Lakhanabond,Lakhanabonad,6913869706,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+476,S98_02891,RIP0387,27/05/1998,24.815,91.971,1994,STW,82,Sylhet,Sylhet,Golapganj,Lakshmipasha,Lakshmipasha,6913860716,1998-05-27,2.7,detected,False,,2.7,2.7,,0.0027,0.0027
+477,S98_02892,RIP0388,27/05/1998,24.848,91.936,1992,STW,87,Sylhet,Sylhet,Golapganj,Fulbari,Hilalpur,6913843497,1998-05-27,5.9,detected,False,,5.9,5.9,,0.0059,0.0059
+478,S98_02893,RIP0389,27/05/1998,24.848,92.023,1985,PTW,180,Sylhet,Sylhet,Golapganj,Golapganj,Rankheli,6913851875,1998-05-27,4.6,detected,False,,4.6,4.6,,0.0046,0.0046
+479,S98_02894,RIP0390,27/05/1998,24.848,92.023,1995,STW,29,Sylhet,Sylhet,Golapganj,Golapganj,Rankheli,6913851875,1998-05-27,4.8,detected,False,,4.8,4.8,,0.0048,0.0048
+480,S98_02895,RIP0392,28/05/1998,25.044,92.2,1997,STW,71,Sylhet,Sylhet,Kanaighat,Bara chatul,Dungra,6915909140,1998-05-28,50.1,detected,False,,50.1,50.1,,0.0501,0.0501
+481,S98_02896,RIP0393,28/05/1998,24.908,92.129,1993,STW,45,Sylhet,Sylhet,Kanaighat,Rajaganj,Faljur,6915985334,1998-05-28,5.5,detected,False,,5.5,5.5,,0.0055,0.0055
+482,S98_02897,RIP0394,28/05/1998,24.912,92.139,1997,STW,45,Sylhet,Sylhet,Kanaighat,Jhingabari,Harishing mati,6915928975,1998-05-28,5,detected,False,,5,5,,0.005,0.005
+483,S98_02898,RIP0395,28/05/1998,24.99,92.348,1988,STW,62,Sylhet,Sylhet,Kanaighat,Dighirpar purba,Saraker bazar,6915976242,1998-05-28,11,detected,False,,11,11,,0.011,0.011
+484,S98_02899,RIP0396,28/05/1998,24.995,92.271,1979,STW,52,Sylhet,Sylhet,Kanaighat,Dhigirpar paschi,Bayanpur,6915928099,1998-05-28,35.8,detected,False,,35.8,35.8,,0.0358,0.0358
+485,S98_02900,RIP0398,30/05/1998,25.108,91.762,1982,STW,11,Sylhet,Sylhet,Companiganj (S),Islampur,Taimur nagar,6912711923,1998-05-30,8.6,detected,False,,8.6,8.6,,0.0086,0.0086
+486,S98_02901,RIP0399,30/05/1998,25.108,91.761,1998,STW,71,Sylhet,Sylhet,Companiganj (S),Islampur,Taimur nagar,6912711923,1998-05-30,24.7,detected,False,,24.7,24.7,,0.0247,0.0247
+487,S98_02902,RIP0400,30/05/1998,25.044,91.804,1993,STW,50,Sylhet,Sylhet,Companiganj (S),Ranikheli,Borni,6912747071,1998-05-30,24.8,detected,False,,24.8,24.8,,0.0248,0.0248
+488,S98_02903,RIP0401,27/05/1998,24.944,92.442,1986,STW,46,Sylhet,Sylhet,Zakiganj,Manikpur,Sharangadeb,6919466907,1998-05-27,83.3,detected,False,,83.3,83.3,,0.0833,0.0833
+489,S98_02904,RIP0402,27/05/1998,24.892,92.485,1990,STW,46,Sylhet,Sylhet,Zakiganj,Barathakuri,Uttarbhag,6919419986,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+490,S98_02905,RIP0403,27/05/1998,24.874,92.436,1975,STW,53,Sylhet,Sylhet,Zakiganj,Sultanpur,Gangajal,6919476314,1998-05-27,35.7,detected,False,,35.7,35.7,,0.0357,0.0357
+491,S98_02906,RIP0404,27/05/1998,24.94,92.23,1975,STW,48,Sylhet,Sylhet,Zakiganj,Barahal,Khilgram,6919409558,1998-05-27,3.3,detected,False,,3.3,3.3,,0.0033,0.0033
+492,S98_02907,RIP0406,28/05/1998,25.134,91.95,1996,STW,65,Sylhet,Sylhet,Gowainghat,West jaflong,Thakurbari,6914142925,1998-05-28,58,detected,False,,58,58,,0.058,0.058
+493,S98_02908,RIP0407,28/05/1998,25.043,91.988,1990,STW,66,Sylhet,Sylhet,Gowainghat,Lengura,Daubari,6914152243,1998-05-28,20.2,detected,False,,20.2,20.2,,0.0202,0.0202
+494,S98_02909,RIP0408,28/05/1998,24.996,91.992,1995,STW,20,Sylhet,Sylhet,Gowainghat,Fatepur,Fatehpur pancham,6914121295,1998-05-28,6.2,detected,False,,6.2,6.2,,0.0062,0.0062
+505,S98_02920,RIP0421,27/05/1998,24.796,92.166,1986,STW,14,Sylhet,Sylhet,Beanibazar,Mollapur,Mollapur,6911769658,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+506,S98_02921,RIP0422,27/05/1998,24.855,92.185,1991,STW,19,Sylhet,Sylhet,Beanibazar,Sheola,Kakardia,6911786473,1998-05-27,5.2,detected,False,,5.2,5.2,,0.0052,0.0052
+507,S98_02922,RIP0423,27/05/1998,24.88,92.214,1982,STW,51,Sylhet,Sylhet,Beanibazar,Dobhag,Uttarbhag,6911734994,1998-05-27,51.9,detected,False,,51.9,51.9,,0.0519,0.0519
+508,S98_02923,RIP0424,27/05/1998,24.898,92.14,1980,STW,63,Sylhet,Sylhet,Beanibazar,Charkhai,Adinabad,6911725020,1998-05-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+509,S98_02924,RIP0426,28/05/1998,25.155,92.021,1991,STW,15,Sylhet,Sylhet,Gowainghat,Purba Jaflong,Challakhal Tritl,6914131168,1998-05-28,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+510,S98_02925,RIP0427,28/05/1998,25.156,92.108,1997,STW,13,Sylhet,Sylhet,Jaintiapur,Jaintiapur,Lakshmipur prath,6915300567,1998-05-28,14.3,detected,False,,14.3,14.3,,0.0143,0.0143
+511,S98_02926,RIP0428,28/05/1998,25.092,92.107,1997,STW,18,Sylhet,Sylhet,Gowainghat,Alirgaon,Nayakhal,6914110687,1998-05-28,19,detected,False,,19,19,,0.019,0.019
+512,S98_02927,RIP0429,28/05/1998,25.064,92.116,1988,STW,39,Sylhet,Sylhet,Jaintiapur,Darbosta,Pakri,6915331769,1998-05-28,6.7,detected,False,,6.7,6.7,,0.0067,0.0067
+513,S98_02928,RIP0430,28/05/1998,25.065,92.151,1994,STW,44,Sylhet,Sylhet,Jaintiapur,Charikhata,Ramprasad paschi,6915300831,1998-05-28,1.5,detected,False,,1.5,1.5,,0.0015,0.0015
+514,S98_02929,RIP0433,30/05/1998,24.91,91.77,1993,STW,54,Sylhet,Sylhet,Sylhet Sadar,Mogalgaon,Ausa,6916255037,1998-05-30,9.2,detected,False,,9.2,9.2,,0.0092,0.0092
+515,S98_02930,RIP0434,30/05/1998,24.923,91.876,1996,Tara,60,Sylhet,Sylhet,Sylhet Sadar,Tuker bazar,Laktura tea gard,6916290559,1998-05-30,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+516,S98_02931,RIP0435,30/05/1998,24.919,91.961,1994,STW,79,Sylhet,Sylhet,Sylhet Sadar,Khadimpara,Atgaon,6916240034,1998-05-30,7.1,detected,False,,7.1,7.1,,0.0071,0.0071
+517,S98_02932,RIP0436,30/05/1998,24.89,91.892,1984,Tara,64,Sylhet,Sylhet,Sylhet Sadar,Pourasava,Sonarpara (upsah,6916205988,1998-05-30,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+518,S98_02933,RIP0437,30/05/1998,24.87,91.914,1989,STW,62,Sylhet,Sylhet,Sylhet Sadar,Kuchai,Kuchai,6916245549,1998-05-30,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+519,S98_02934,RIP0438,30/05/1998,24.802,91.915,1996,STW,94,Sylhet,Sylhet,Sylhet Sadar,Moglabazar,Haragouri,6916260366,1998-05-30,29.7,detected,False,,29.7,29.7,,0.0297,0.0297
+520,S98_02935,RIP0439,30/05/1998,24.814,91.864,1994,STW,52,Sylhet,Sylhet,Sylhet Sadar,Silam,Char mohammadpur,6916275217,1998-05-30,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+531,S98_02946,RIP0451,30/05/1998,25.077,91.779,1997,STW,72,Sylhet,Sylhet,Companiganj (S),Telikheli,Telikheli,6912771925,1998-05-30,70.3,detected,False,,70.3,70.3,,0.0703,0.0703
+532,S98_02947,RIP0452,30/05/1998,24.992,91.853,1970,STW,29,Sylhet,Sylhet,Gowainghat,Nandirgaon,Salutikar,6914163876,1998-05-30,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+533,S98_02948,RIP0453,30/05/1998,25.064,91.87,1994,STW,69,Sylhet,Sylhet,Gowainghat,Towakul,Paikraj,6914184719,1998-05-30,61.4,detected,False,,61.4,61.4,,0.0614,0.0614
+647,S98_03062,RIP1002,23/03/1998,22.969,89.477,1989,STW,77,Khulna,Khulna,Phultala,Damodarpur,Bhuyapara,4476938331,1998-03-23,259,detected,False,,259,259,,0.259,0.259
+648,S98_03063,RIP1003,23/03/1998,22.984,89.446,1990,STW,49,Khulna,Khulna,Phultala,Phultala,Raripura,4476976580,1998-03-23,97.3,detected,False,,97.3,97.3,,0.0973,0.0973
+649,S98_03064,RIP1004,23/03/1998,22.989,89.462,1996,STW,54,Khulna,Khulna,Phultala,Phultala,Dakshindihi,4476976290,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+650,S98_03065,RIP1005,23/03/1998,22.953,89.434,1997,DTW,340,Khulna,Khulna,Phultala,Jumira,Dopakhola,4476957414,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+651,S98_03066,RIP1006,23/03/1998,22.981,89.456,1982,STW,55,Khulna,Khulna,Phultala,Damodarpur,Garakhola,4476938456,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+652,S98_03067,RIP1007,23/03/1998,22.944,89.478,1996,STW,54,Khulna,Khulna,Phultala,Atragilatala,Pariardanga,4476919621,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+653,S98_03068,RIP1008,23/03/1998,22.912,89.499,1985,STW,54,Khulna,Khulna,Phultala,Atragilatala,Siromoni (s),4476919829,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+654,S98_03069,RIP1010,24/03/1998,22.633,89.52,1988,STW,21,Khulna,Khulna,Batiaghata,Gangarampur,Baranpara,4471254127,1998-03-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+655,S98_03070,RIP1011,24/03/1998,22.672,89.53,1997,DTW,331,Khulna,Khulna,Batiaghata,Gangarampur,Katiangla,4471259546,1998-03-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+656,S98_03071,RIP1012,24/03/1998,22.756,89.527,1991,DTW,143,Khulna,Khulna,Batiaghata,Jalma,Chakrakhali,4471271246,1998-03-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+657,S98_03072,RIP1013,24/03/1998,22.716,89.581,1972,STW,26,Khulna,Khulna,Batiaghata,Amirpur,Joypur,4471211463,1998-03-24,538,detected,False,,538,538,,0.538,0.538
+658,S98_03073,RIP1014,24/03/1998,22.689,89.571,1982,STW,54,Khulna,Khulna,Batiaghata,Bhandarkota,Lakhaikhola,4471247912,1998-03-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+659,S98_03074,RIP1015,24/03/1998,22.717,89.581,1998,DTW,305,Khulna,Khulna,Batiaghata,Amirpur,Joypur,4471211463,1998-03-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+660,S98_03075,RIP1017,24/03/1998,22.567,89.322,1975,STW,51,Khulna,Khulna,Paikgachha,Laskar,Laskar,4476461664,1998-03-24,68,detected,False,,68,68,,0.068,0.068
+661,S98_03076,RIP1018,24/03/1998,22.617,89.317,1997,STW,22,Khulna,Khulna,Paikgachha,Raruli,Raruli,4476483842,1998-03-24,8.7,detected,False,,8.7,8.7,,0.0087,0.0087
+662,S98_03077,RIP1019,25/03/1998,22.624,89.304,1985,STW,50,Khulna,Khulna,Paikgachha,Gadaipur,Gadaipur,4476433359,1998-03-25,97,detected,False,,97,97,,0.097,0.097
+663,S98_03078,RIP1020,25/03/1998,22.659,89.334,1975,STW,45,Khulna,Khulna,Paikgachha,Kapilmuni,Bairaghata,4476450127,1998-03-25,3.9,detected,False,,3.9,3.9,,0.0039,0.0039
+664,S98_03079,RIP1021,25/03/1998,22.71,89.306,1980,STW,41,Khulna,Khulna,Paikgachha,Kapilmuni,Kashimnagar,4476450586,1998-03-25,88.3,detected,False,,88.3,88.3,,0.0883,0.0883
+665,S98_03080,RIP1023,26/03/1998,22.809,89.398,1996,DTW,295,Khulna,Khulna,Khulna Metro,Ward 07,Kda avenue,4476307746,1998-03-26,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+666,S98_03081,RIP1024,26/03/1998,22.788,89.578,1995,DTW,180,Khulna,Khulna,Khulna Metro,Ward 04,Momata Monjil,4476304430,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+667,S98_03082,RIP1025,26/03/1998,22.816,89.568,1994,DTW,323,Khulna,Khulna,Khulna Metro,Ward 03,KD Ghosh Road,4476303382,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+668,S98_03083,RIP1026,26/03/1998,22.816,89.567,1997,STW,74,Khulna,Khulna,Khulna Metro,Ward 03,7PC Roy Road,4476303382,1998-03-26,46.8,detected,False,,46.8,46.8,,0.0468,0.0468
+669,S98_03084,RIP1027,26/03/1998,22.799,89.538,1989,DTW,323,Khulna,Khulna,Khulna Metro,Ward 05,Gollamari,4476305386,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+670,S98_03085,RIP1028,26/03/1998,22.743,89.552,1997,DTW,312,Khulna,Khulna,Khulna Metro,Ward 03,Jora gate,4476303373,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+672,S98_03087,RIP1032,23/03/1998,22.918,89.601,1998,DTW,271,Khulna,Khulna,Terokhada,Barasat,Katinga,4479427513,1998-03-23,2.9,detected,False,,2.9,2.9,,0.0029,0.0029
+673,S98_03088,RIP1033,23/03/1998,22.915,89.625,1998,STW,22,Khulna,Khulna,Terokhada,Barasat,Nikari katinga,4479427802,1998-03-23,18.6,detected,False,,18.6,18.6,,0.0186,0.0186
+674,S98_03089,RIP1034,23/03/1998,22.9,89.656,1997,STW,21,Khulna,Khulna,Terokhada,Sagladah,Nebadia,4479467770,1998-03-23,36.8,detected,False,,36.8,36.8,,0.0368,0.0368
+675,S98_03090,RIP1035,23/03/1998,22.87,89.634,1991,STW,24,Khulna,Khulna,Terokhada,Ajugara,Khairbaria,4479413545,1998-03-23,109,detected,False,,109,109,,0.109,0.109
+676,S98_03091,RIP1036,23/03/1998,22.887,89.6,1995,STW,71,Khulna,Khulna,Terokhada,Madhupur,Kola,4479440609,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+677,S98_03092,RIP1038,24/03/1998,22.587,89.518,1997,STW,33,Khulna,Khulna,Dacope,Chalna,Pankhali,4471731835,1998-03-24,15.8,detected,False,,15.8,15.8,,0.0158,0.0158
+678,S98_03093,RIP1039,24/03/1998,22.63,89.515,1990,STW,40,Khulna,Khulna,Dacope,Chalna,Pankhali,4471731835,1998-03-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+679,S98_03094,RIP1041,25/03/1998,22.8,89.643,1979,STW,30,Khulna,Khulna,Rupsa,T.S. Bahirdia,Taltala,4477581949,1998-03-25,39.5,detected,False,,39.5,39.5,,0.0395,0.0395
+680,S98_03095,RIP1042,25/03/1998,22.812,89.645,1995,STW,69,Khulna,Khulna,Rupsa,Ghatbhogh,Pithabhog,4477527811,1998-03-25,55.9,detected,False,,55.9,55.9,,0.0559,0.0559
+681,S98_03096,RIP1043,25/03/1998,22.813,89.644,1998,DTW,295,Khulna,Khulna,Rupsa,Ghatbhogh,Pithabogh,4477527811,1998-03-25,1,detected,False,,1,1,,0.001,0.001
+682,S98_03097,RIP1044,25/03/1998,22.797,89.589,1995,DTW,308,Khulna,Khulna,Rupsa,Naihati,Baghmara,4477554091,1998-03-25,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+683,S98_03098,RIP1045,25/03/1998,22.797,89.589,1979,STW,75,Khulna,Khulna,Rupsa,Naihati,Baghmara,4477554091,1998-03-25,87.4,detected,False,,87.4,87.4,,0.0874,0.0874
+684,S98_03099,RIP1046,25/03/1998,22.84,89.559,1988,STW,54,Khulna,Khulna,Rupsa,Aijganti,Jugihati,4477513535,1998-03-25,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+685,S98_03100,RIP1047,25/03/1998,22.826,89.575,1992,STW,62,Khulna,Khulna,Rupsa,Aijganti,Aijghanti,4477513015,1998-03-25,137,detected,False,,137,137,,0.137,0.137
+686,S98_03101,RIP1048,25/03/1998,22.84,89.584,1998,DTW,322,Khulna,Khulna,Rupsa,Sreefaltala,Joar,4477567505,1998-03-25,3.8,detected,False,,3.8,3.8,,0.0038,0.0038
+687,S98_03102,RIP1049,25/03/1998,22.83,89.606,1997,STW,67,Khulna,Khulna,Rupsa,Sreefaltala,Hossainpur,4477567474,1998-03-25,18.7,detected,False,,18.7,18.7,,0.0187,0.0187
+688,S98_03103,RIP1051,26/03/1998,22.865,89.545,1990,STW,92,Khulna,Khulna,Khulna Metro,Ward-12,Khalispur,4476312493,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+689,S98_03104,RIP1052,26/03/1998,22.862,89.525,1995,DTW,344,Khulna,Khulna,Khulna Metro,Ward-13,Pabla,4476313829,1998-03-26,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+690,S98_03105,RIP1053,26/03/1998,22.862,89.525,1993,STW,65,Khulna,Khulna,Khulna Metro,Ward-13,Pabla,4476313829,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+691,S98_03106,RIP1054,26/03/1998,22.864,89.532,1986,STW,91,Khulna,Khulna,Khulna Metro,Ward-07,Kashipur,4476307000,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+692,S98_03107,RIP1055,26/03/1998,22.831,89.543,1986,DTW,308,Khulna,Khulna,Khulna Metro,Ward-09,Bara boyra,4476309943,1998-03-26,1.7,detected,False,,1.7,1.7,,0.0017,0.0017
+693,S98_03108,RIP1056,26/03/1998,22.811,89.555,1997,DTW,310,Khulna,Khulna,Khulna Metro,Ward 06,Bakshipara,4476306047,1998-03-26,0.5,detected,False,,0.5,0.5,,0.0005,0.0005
+694,S98_03109,RIP1057,26/03/1998,22.837,89.531,1995,STW,74,Khulna,Khulna,Khulna Metro,Ward 09,Bara boyra,4476309943,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+698,S98_03113,RIP1062,23/03/1998,22.887,89.535,1984,STW,55,Khulna,Khulna,Dighalia,Dighalia,Dighalia,4474040379,1998-03-23,168,detected,False,,168,168,,0.168,0.168
+699,S98_03114,RIP1063,23/03/1998,22.862,89.556,1995,STW,56,Khulna,Khulna,Dighalia,Senhati,Chandani mohal,4474085236,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+700,S98_03115,RIP1064,23/03/1998,22.918,89.569,1996,STW,53,Khulna,Khulna,Dighalia,Barakpur,Kamargati,4474017544,1998-03-23,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+701,S98_03116,RIP1065,23/03/1998,22.959,89.556,1982,STW,59,Khulna,Khulna,Dighalia,Barakpur,Arua,4474017094,1998-03-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+702,S98_03117,RIP1067,23/03/1998,22.896,89.508,1979,STW,61,Khulna,Khulna,Dighalia,Deana,Jugipole,4474047437,1998-03-23,39.4,detected,False,,39.4,39.4,,0.0394,0.0394
+703,S98_03118,RIP1069,23/03/1998,22.819,89.421,1990,DTW,279,Khulna,Khulna,Dumuria,Dumuria,Arzu Dumuria,4473039834,1998-03-23,2.8,detected,False,,2.8,2.8,,0.0028,0.0028
+704,S98_03119,RIP1070,23/03/1998,22.753,89.419,1995,STW,44,Khulna,Khulna,Dumuria,Sahas,Sahas,4473081881,1998-03-23,33.8,detected,False,,33.8,33.8,,0.0338,0.0338
+705,S98_03120,RIP1071,24/03/1998,22.698,89.434,1980,STW,43,Khulna,Khulna,Dumuria,Sarappur,Bhuttbaria,4473088206,1998-03-24,36.2,detected,False,,36.2,36.2,,0.0362,0.0362
+706,S98_03121,RIP1072,24/03/1998,22.825,89.274,1995,STW,53,Khulna,Khulna,Dumuria,Maguraghona,Batagram,4473054162,1998-03-24,65.7,detected,False,,65.7,65.7,,0.0657,0.0657
+707,S98_03122,RIP1073,24/03/1998,22.823,89.331,1990,STW,20,Khulna,Khulna,Dumuria,Atlia,Kulbaria,4473006635,1998-03-24,39.6,detected,False,,39.6,39.6,,0.0396,0.0396
+708,S98_03123,RIP1074,24/03/1998,22.856,89.359,1997,DTW,184,Khulna,Khulna,Dumuria,Rudaghara,Chaira,4473074216,1998-03-24,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+709,S98_03124,RIP1075,24/03/1998,22.861,89.422,1997,STW,54,Khulna,Khulna,Dumuria,Raghunathpur,Thakura,4473061965,1998-03-24,1.1,detected,False,,1.1,1.1,,0.0011,0.0011
+716,S98_03131,RIP1083,26/03/1998,22.883,89.518,1990,STW,39,Khulna,Khulna,Khulna Metro,Ward 14,Rail gate,4476314666,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+717,S98_03132,RIP1084,26/03/1998,22.889,89.506,1996,STW,69,Khulna,Khulna,Khulna Metro,Ward 14,Banikpara,4476314055,1998-03-26,3,detected,False,,3,3,,0.003,0.003
+718,S98_03133,RIP1085,26/03/1998,22.862,89.542,1997,STW,54,Khulna,Khulna,Khulna Metro,Ward-12,People Jute Mill,4476312605,1998-03-26,1.7,detected,False,,1.7,1.7,,0.0017,0.0017
+719,S98_03134,RIP1086,26/03/1998,22.866,89.541,1952,DTW,246,Khulna,Khulna,Khulna Metro,Ward 12,People Jute Mill,4476312605,1998-03-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+720,S98_03135,RIP1087,26/03/1998,22.855,89.542,1996,STW,39,Khulna,Khulna,Khulna Metro,Ward 11,Khalispur H.S.,4476311250,1998-03-26,39,detected,False,,39,39,,0.039,0.039
+721,S98_03136,RIP1088,26/03/1998,22.865,89.525,1996,STW,49,Khulna,Khulna,Khulna Metro,Ward 13,Uttar Pabla,4476313829,1998-03-26,62.8,detected,False,,62.8,62.8,,0.0628,0.0628
+912,S98_03327,RIP1322,26/04/1998,22.715,90.352,1987,DTW,292,Barisal,Barisal,Barisal Sadar,Kashipur,Kashipur,1065169555,1998-04-26,42.8,detected,False,,42.8,42.8,,0.0428,0.0428
+913,S98_03328,RIP1323,26/04/1998,22.736,90.381,1987,STW,22,Barisal,Barisal,Barisal Sadar,Char baria,Char baria,1065134285,1998-04-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+914,S98_03329,RIP1324,26/04/1998,22.739,90.379,1991,DTW,322,Barisal,Barisal,Barisal Sadar,Char baria,Char baria,1065134285,1998-04-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+915,S98_03330,RIP1325,26/04/1998,22.696,90.377,1995,STW,27,Barisal,Barisal,Barisal Sadar,Paurashava,Mazidbari,1065148537,1998-04-26,385,detected,False,,385,385,,0.385,0.385
+916,S98_03331,RIP1326,26/04/1998,22.696,90.373,1996,DTW,315,Barisal,Barisal,Barisal Sadar,Mazidbari,Mazidbari,10651,1998-04-26,2.8,detected,False,,2.8,2.8,,0.0028,0.0028
+917,S98_03332,RIP1327,26/04/1998,22.702,90.357,1996,DTW,331,Barisal,Barisal,Barisal Sadar,Paurashava W06,Bagura,1065148134,1998-04-26,54,detected,False,,54,54,,0.054,0.054
+918,S98_03333,RIP1329,27/04/1998,22.893,90.506,1974,STW,14,Barisal,Barisal,Hizla,Barjalia,Khunna,1063613,1998-04-27,41.5,detected,False,,41.5,41.5,,0.0415,0.0415
+919,S98_03334,RIP1330,27/04/1998,22.884,90.568,1965,STW,15,Barisal,Barisal,Hizla,Dhulkhola,Palpara,1063627779,1998-04-27,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+1064,S98_03479,RIP1495,26/04/1998,22.694,90.369,1998,DTW,308,Barisal,Barisal,Barisal Sadar,Paurashava W04,Mazidbari,1065148537,1998-04-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1065,S98_03480,RIP1496,26/04/1998,22.72,90.349,1995,DTW,301,Barisal,Barisal,Barisal Sadar,Kashipur,Ichhakati,1065169470,1998-04-26,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1066,S98_03481,RIP1497,26/04/1998,22.713,90.297,1983,STW,28,Barisal,Barisal,Barisal Sadar,Raipahsa Karapur,Uttar karapur,1065177994,1998-04-26,248,detected,False,,248,248,,0.248,0.248
+1067,S98_03482,RIP1498,26/05/1998,22.67,90.325,1984,STW,32,Barisal,Barisal,Barisal Sadar,Jagua,Jagua uttar,1065160493,1998-05-26,227,detected,False,,227,227,,0.227,0.227
+1068,S98_03483,RIP1500,27/04/1998,22.997,90.228,1994,STW,20,Barisal,Barisal,Gournadi,Barthi,Kasimabad,1063223887,1998-04-27,359,detected,False,,359,359,,0.359,0.359
+1069,S98_03484,RIP1501,27/04/1998,22.996,90.213,1985,STW,22,Barisal,Barisal,Gournadi,Barthi,Bangila,1063223078,1998-04-27,163,detected,False,,163,163,,0.163,0.163
+1070,S98_03485,RIP1502,27/04/1998,22.965,90.199,1988,STW,23,Barisal,Barisal,Gournadi,Chandshi,Nathai,1063238642,1998-04-27,44.7,detected,False,,44.7,44.7,,0.0447,0.0447
+1071,S98_03486,RIP1503,27/04/1998,22.972,90.225,1988,DTW,273,Barisal,Barisal,Gournadi,Chandshi,Uttar bijoypur,1063238950,1998-04-27,3.3,detected,False,,3.3,3.3,,0.0033,0.0033
+1072,S98_03487,RIP1504,27/04/1998,22.964,90.262,1991,DTW,276,Barisal,Barisal,Gournadi,Nalchira,Pinglakati,1063271740,1998-04-27,2.4,detected,False,,2.4,2.4,,0.0024,0.0024
+1073,S98_03488,RIP1505,27/04/1998,22.939,90.24,1988,STW,22,Barisal,Barisal,Gournadi,Mahilara,Kasemabad,1063263421,1998-04-27,290,detected,False,,290,290,,0.29,0.29
+1074,S98_03489,RIP1506,27/04/1998,22.929,90.242,1991,STW,22,Barisal,Barisal,Gournadi,Mahilara,Purba saripb.,1063263789,1998-04-27,69.4,detected,False,,69.4,69.4,,0.0694,0.0694
+1075,S98_03490,RIP1507,27/04/1998,22.899,90.3,1987,DTW,273,Barisal,Barisal,Gournadi,Sarikal,Sankakati,1063294843,1998-04-27,8.6,detected,False,,8.6,8.6,,0.0086,0.0086
+1076,S98_03491,RIP1508,27/04/1998,22.908,90.251,1983,DTW,273,Barisal,Barisal,Gournadi,Batazore,Batazore,1063231137,1998-04-27,1,detected,False,,1,1,,0.001,0.001
+1077,S98_03492,RIP1510,28/04/1998,22.532,90.342,1988,STW,17,Barisal,Barisal,Bakerganj,Bharpasha,Bharpasha,1060706147,1998-04-28,26,detected,False,,26,26,,0.026,0.026
+1078,S98_03493,RIP1511,28/04/1998,22.507,90.346,1993,DTW,338,Barisal,Barisal,Bakerganj,Bharpasha,Pas.Lakshmipasha,1060706744,1998-04-28,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1079,S98_03494,RIP1512,28/04/1998,22.566,90.338,1974,STW,17,Barisal,Barisal,Bakerganj,Rangasree,Nandapara,1060794686,1998-04-28,137,detected,False,,137,137,,0.137,0.137
+1080,S98_03495,RIP1513,28/04/1998,22.589,90.35,1994,DTW,339,Barisal,Barisal,Bakerganj,Rangasree,Tabirkati,1060794,1998-04-28,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1081,S98_03496,RIP1514,28/04/1998,22.518,90.309,1989,DTW,330,Barisal,Barisal,Bakerganj,Padrisibpur,Ariaibeki,1060788025,1998-04-28,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+1082,S98_03497,RIP1515,28/04/1998,22.511,90.283,1989,DTW,318,Barisal,Barisal,Bakerganj,Padrishibpur,Bara Puiautha,1060788109,1998-04-28,2,detected,False,,2,2,,0.002,0.002
+1083,S98_03498,RIP1516,28/04/1998,22.505,90.268,1995,DTW,331,Barisal,Barisal,Bakerganj,Niamati,Purba mahespur,1060781815,1998-04-28,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+1084,S98_03499,RIP1517,28/04/1998,22.496,90.246,1983,DTW,351,Barisal,Barisal,Bakerganj,Niamati,Paschim mahespur,1060781751,1998-04-28,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+1085,S98_03500,RIP1519,29/04/1998,22.774,90.159,1993,STW,22,Barisal,Barisal,Banaripara,Banaripara,Machhrang,1061010659,1998-04-29,389,detected,False,,389,389,,0.389,0.389
+1086,S98_03501,RIP1520,29/04/1998,22.786,90.183,1994,DTW,275,Barisal,Barisal,Banaripara,Saliabakpur,Saliabagpur,1061063891,1998-04-29,2.7,detected,False,,2.7,2.7,,0.0027,0.0027
+1087,S98_03502,RIP1521,29/04/1998,22.798,90.187,1994,STW,23,Barisal,Barisal,Banaripara,Saliabakpur,Sakharia,1061063865,1998-04-29,149,detected,False,,149,149,,0.149,0.149
+1088,S98_03503,RIP1522,29/04/1998,22.808,90.187,1991,DTW,272,Barisal,Barisal,Banaripara,Chakhar,Chakhar,1061042258,1998-04-29,10.8,detected,False,,10.8,10.8,,0.0108,0.0108
+1089,S98_03504,RIP1523,29/04/1998,22.789,90.152,1994,STW,18,Barisal,Barisal,Banaripara,Baisari,Sialkati,1061021917,1998-04-29,23.4,detected,False,,23.4,23.4,,0.0234,0.0234
+1090,S98_03505,RIP1524,29/04/1998,22.806,90.127,1995,DTW,266,Barisal,Barisal,Banaripara,Udaykati,Labansara,1061084646,1998-04-29,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1096,S98_03511,RIP1532,27/04/1998,22.971,90.153,1992,STW,15,Barisal,Barisal,Agailjhara,Bakal,Manasi phulasri,1060215588,1998-04-27,107,detected,False,,107,107,,0.107,0.107
+1097,S98_03512,RIP1533,27/04/1998,23.015,90.166,1980,STW,29,Barisal,Barisal,Agailjhara,Rajihar,Bara basail,1060279098,1998-04-27,6,detected,False,,6,6,,0.006,0.006
+1098,S98_03513,RIP1534,27/04/1998,23.014,90.182,1997,STW,96,Barisal,Barisal,Agailjhara,Rajihar,Bara basail,1060279098,1998-04-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1099,S98_03514,RIP1535,27/04/1998,22.989,90.135,1990,STW,34,Barisal,Barisal,Agailjhara,Bakal,Dumuria,1060215362,1998-04-27,319,detected,False,,319,319,,0.319,0.319
+1100,S98_03515,RIP1536,27/04/1998,22.986,90.136,1990,DTW,238,Barisal,Barisal,Agailjhara,Bakal,Bakal,1060215073,1998-04-27,2,detected,False,,2,2,,0.002,0.002
+1101,S98_03516,RIP1537,27/04/1998,22.966,90.084,1994,DTW,244,Barisal,Barisal,Agailjhara,Bagdha,Chand trishira,1060207196,1998-04-27,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+1102,S98_03517,RIP1538,27/04/1998,22.965,90.086,1973,STW,38,Barisal,Barisal,Agailjhara,Badgha,Chand trishira,1060207196,1998-04-27,207,detected,False,,207,207,,0.207,0.207
+1103,S98_03518,RIP1539,27/04/1998,22.931,90.199,1983,STW,23,Barisal,Barisal,Agailjhara,Ratnapur,Beluhar,1060287151,1998-04-27,80.6,detected,False,,80.6,80.6,,0.0806,0.0806
+1104,S98_03519,RIP1540,27/04/1998,22.961,90.191,1990,STW,22,Barisal,Barisal,Agailjhara,Gaila,Dakshin sihipasa,1060247328,1998-04-27,248,detected,False,,248,248,,0.248,0.248
+1105,S98_03520,RIP1542,28/04/1998,22.821,90.252,1990,STW,17,Barisal,Barisal,Wazirpur,Shikarpur,Wazirpur,1069484994,1998-04-28,59.2,detected,False,,59.2,59.2,,0.0592,0.0592
+1106,S98_03521,RIP1543,28/04/1998,22.875,90.267,1997,DTW,291,Barisal,Barisal,Wazirpur,Bamrail,Sanuhar,1069410893,1998-04-28,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1107,S98_03522,RIP1544,28/04/1998,22.881,90.246,1992,STW,16,Barisal,Barisal,Wazirpur,Bamrail,Hastishiwnda,1069410413,1998-04-28,257,detected,False,,257,257,,0.257,0.257
+1108,S98_03523,RIP1545,28/04/1998,22.892,90.199,1972,DTW,318,Barisal,Barisal,Wazirpur,Sholack,Dhamura,1069494311,1998-04-28,8.4,detected,False,,8.4,8.4,,0.0084,0.0084
+1109,S98_03524,RIP1546,28/04/1998,22.892,90.2,1965,STW,23,Barisal,Barisal,Wazirpur,Sholack,Dhamura,1069494311,1998-04-28,23.4,detected,False,,23.4,23.4,,0.0234,0.0234
+1110,S98_03525,RIP1547,28/04/1998,22.835,90.213,1995,STW,23,Barisal,Barisal,Wazirpur,Barakotha,Narikeli,1069421683,1998-04-28,21.4,detected,False,,21.4,21.4,,0.0214,0.0214
+1111,S98_03526,RIP1548,28/04/1998,22.836,90.212,1996,DTW,275,Barisal,Barisal,Wazirpur,Barakotha,Narikeli,1069421683,1998-04-28,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+1137,S98_03553,RIP1582,28/04/1998,22.822,90.433,1992,DTW,289,Barisal,Barisal,Mehendiganj,Biddah Nandanpur,Bidya Nandapur,1066231110,1998-04-28,1.9,detected,False,,1.9,1.9,,0.0019,0.0019
+1138,S98_03554,RIP1584,29/04/1998,22.907,90.379,1995,DTW,312,Barisal,Barisal,Muladi,Muladi,Char laxmipura,1066959288,1998-04-29,1,detected,False,,1,1,,0.001,0.001
+1139,S98_03555,RIP1585,29/04/1998,22.911,90.411,1997,DTW,315,Barisal,Barisal,Muladi,Muladi,Terochargram,1066959895,1998-04-29,1.7,detected,False,,1.7,1.7,,0.0017,0.0017
+1140,S98_03556,RIP1586,29/04/1998,22.918,90.415,1988,DTW,312,Barisal,Barisal,Muladi,Gachhua,Dashin char  di.,1066959159,1998-04-29,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+1141,S98_03557,RIP1587,29/04/1998,22.953,90.415,1992,DTW,311,Barisal,Barisal,Muladi,Char kalekhan,Dakshin gachhua,1066923358,1998-04-29,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+1142,S98_03558,RIP1588,29/04/1998,22.966,90.342,1994,DTW,282,Barisal,Barisal,Muladi,Nazirpur,Hosnabad,1066971437,1998-04-29,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+1143,S98_03559,RIP1589,29/04/1998,22.992,90.339,1990,DTW,243,Barisal,Barisal,Muladi,Batamara,Alimabad,1066911029,1998-04-29,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1144,S98_03560,RIP1590,29/04/1998,22.993,90.34,1990,STW,15,Barisal,Barisal,Muladi,Batamara,Alimabad,1066911029,1998-04-29,667,detected,False,,667,667,,0.667,0.667
+1145,S98_03561,RIP1591,29/04/1998,22.733,90.442,1965,DTW,322,Barisal,Barisal,Barisal Sadar,Char Monai,Char monai,1065151300,1998-04-29,3.4,detected,False,,3.4,3.4,,0.0034,0.0034
+1146,S98_03562,RIP1592,29/04/1998,22.706,90.395,1990,STW,16,Barisal,Barisal,Barisal Sadar,Char Kowa,Char kauar,1065143578,1998-04-29,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+1181,S98_03597,RIP1633,29/04/1998,22.806,90.193,1986,DTW,302,Barisal,Barisal,Banaripara,Chakhar,Chakhar,1061042258,1998-04-29,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+1435,S98_03851,RIP1931,27/04/1998,22.923,90.554,1996,DTW,153,Barisal,Barisal,Hizla,Hizla Gourabdi,Char Kushuria,1063681275,1998-04-27,2.2,detected,False,,2.2,2.2,,0.0022,0.0022
+1436,S98_03852,RIP1932,27/04/1998,22.957,90.521,1997,DTW,309,Barisal,Barisal,Hizla,Memania,Durgapur,1063694,1998-04-27,1.1,detected,False,,1.1,1.1,,0.0011,0.0011
+1437,S98_03853,RIP1933,27/04/1998,22.974,90.468,1992,DTW,270,Barisal,Barisal,Hizla,Harinathpur,Mohishkhola,1063667658,1998-04-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1438,S98_03854,RIP1934,27/04/1998,22.929,90.442,1991,DTW,273,Barisal,Barisal,Hizla,Guabaria,Char Pathaoni,1063654826,1998-04-27,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1439,S98_03855,RIP1935,28/04/1998,22.814,90.531,1985,DTW,295,Barisal,Barisal,Mehendiganj,Mehendiganj,Chunarchar,1066287315,1998-04-28,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+1440,S98_03856,RIP1936,28/04/1998,22.763,90.526,1994,DTW,289,Barisal,Barisal,Mehendiganj,Chargopalpur,Kazirchar,1066255530,1998-04-28,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1441,S98_03857,RIP1937,28/04/1998,22.764,90.526,1988,STW,20,Barisal,Barisal,Mehendiganj,Char gopalpur,Gazir char,1066255406,1998-04-28,120,detected,False,,120,120,,0.12,0.12
+1442,S98_03858,RIP1938,28/04/1998,22.818,90.596,1998,DTW,308,Barisal,Barisal,Mehendiganj,Chandpur,Shuknakati,1066239,1998-04-28,2.2,detected,False,,2.2,2.2,,0.0022,0.0022
+1443,S98_03859,RIP1939,28/04/1998,22.821,90.599,1988,STW,20,Barisal,Barisal,Mehendiganj,Chundpur,Shuknakati,1066239,1998-04-28,862,detected,False,,862,862,,0.862,0.862
+1444,S98_03860,RIP1940,28/04/1998,22.815,90.53,1995,STW,16,Barisal,Barisal,Mehendiganj,Mehendiganj,Chunar char,1066287315,1998-04-28,345,detected,False,,345,345,,0.345,0.345
+1445,S98_03861,RIP1950,29/04/1998,22.808,90.306,1980,STW,19,Barisal,Barisal,Babuganj,Rahmatpur,Khapura,1060381548,1998-04-29,550,detected,False,,550,550,,0.55,0.55
+1446,S98_03862,RIP1951,29/04/1998,22.803,90.332,1996,STW,96,Barisal,Barisal,Babuganj,Chandpasha,Kalikapur,1060327523,1998-04-29,4.6,detected,False,,4.6,4.6,,0.0046,0.0046
+1447,S98_03863,RIP1952,29/04/1998,22.801,90.328,1994,STW,22,Barisal,Barisal,Babuganj,Chandpasha,Kalikapur,1060327523,1998-04-29,140,detected,False,,140,140,,0.14,0.14
+1448,S98_03864,RIP1953,29/04/1998,22.83,90.324,1995,DTW,276,Barisal,Barisal,Babuganj,Kendarpur,Paschim bhutardi,1060354778,1998-04-29,3.2,detected,False,,3.2,3.2,,0.0032,0.0032
+1449,S98_03865,RIP1954,29/08/1998,22.831,90.323,1995,STW,21,Barisal,Barisal,Babuganj,Kendarpur,Pasch. bhutardia,1060354778,1998-08-29,106,detected,False,,106,106,,0.106,0.106
+1450,S98_03866,RIP1955,29/04/1998,22.776,90.309,1983,STW,23,Barisal,Barisal,Babuganj,Madhabpasha,Pangsha,1060367765,1998-04-29,546,detected,False,,546,546,,0.546,0.546
+1451,S98_03867,RIP1956,29/04/1998,22.776,90.308,1995,DTW,273,Barisal,Barisal,Babuganj,Madhabpasha,Pangsha,1060367765,1998-04-29,2.9,detected,False,,2.9,2.9,,0.0029,0.0029
+1452,S98_03868,RIP1957,29/04/1998,22.783,90.266,1995,DTW,304,Barisal,Barisal,Babuganj,Dehergati,Dehergati,1060340395,1998-04-29,4.1,detected,False,,4.1,4.1,,0.0041,0.0041
+1453,S98_03869,RIP1958,29/04/1998,22.782,90.267,1996,STW,14,Barisal,Barisal,Babuganj,Dehergati,Dehergati,1060340395,1998-04-29,735,detected,False,,735,735,,0.735,0.735
+1454,S98_03870,RIP1959,28/04/1998,22.781,90.253,1997,DTW,316,Barisal,Barisal,Wazirpur,Guthia,Guthia,1069431387,1998-04-28,1,detected,False,,1,1,,0.001,0.001
+1485,S98_03902,RIP2037,02/04/1998,24.548,88.313,1975,STW,36,Rajshahi,Rajshahi,Godagari,Bardebpur,Kashimpur,5813409556,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1486,S98_03903,RIP2038,02/04/1998,24.498,88.376,1995,Tara,33,Rajshahi,Rajshahi,Godagari,Godagari,Nabogram,5813438724,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1487,S98_03904,RIP2039,02/04/1998,24.583,88.396,1988,Tara,43,Rajshahi,Rajshahi,Godagari,Mohanpur,Kasimala,5813466553,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1488,S98_03905,RIP2040,02/04/1998,24.504,88.425,1993,Tara,50,Rajshahi,Rajshahi,Godagari,Pakri,Sialvasha,5813476020,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1489,S98_03906,RIP2041,02/04/1998,24.519,88.479,1996,Tara,37,Rajshahi,Rajshahi,Godagari,Rishikul,Rasulpur,5813485859,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1490,S98_03907,RIP2042,02/04/1998,24.444,88.507,1979,Tara,34,Rajshahi,Rajshahi,Godagari,Deopara,Deopara,5813428293,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1491,S98_03908,RIP2043,02/04/1998,24.434,88.434,1996,Tara,41,Rajshahi,Rajshahi,Godagari,Gogram,Gogram,5813447380,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1492,S98_03909,RIP2047,02/04/1998,24.592,88.575,1984,Tara,34,Rajshahi,Rajshahi,Tanore,Paurashava,Tanore,5819481976,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1493,S98_03910,RIP2048,02/04/1998,24.626,88.592,,Tara,34,Rajshahi,Rajshahi,Tanore,Talanda,Talanda,5819481971,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1494,S98_03911,RIP2049,02/04/1998,24.641,88.566,1997,Tara,39,Rajshahi,Rajshahi,Tanore,Talanda,Deul,5819481347,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1495,S98_03912,RIP2050,02/04/1998,24.677,88.547,1996,Tara,39,Rajshahi,Rajshahi,Tanore,Kalma,Sankarpur,5819427910,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1496,S98_03913,RIP2051,02/04/1998,24.687,88.528,1990,Tara,38,Rajshahi,Rajshahi,Tanore,Kalma,Kalma,5819427610,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1497,S98_03914,RIP2052,02/04/1998,24.657,88.6,1995,Tara,38,Rajshahi,Rajshahi,Tanore,Kamargaon,Baraghoria,5819440098,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1498,S98_03915,RIP2053,02/04/1998,24.626,88.504,1994,STW,38,Rajshahi,Rajshahi,Tanore,Pachandar,Prokash nagar,5819454835,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1499,S98_03916,RIP2054,02/04/1998,24.578,88.493,,Tara,38,Rajshahi,Rajshahi,Tanore,Pachandar,Dangapara,5819454328,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1500,S98_03917,RIP2055,02/04/1998,24.611,88.462,1994,STW,45,Rajshahi,Rajshahi,Tanore,Badhair,Ayda,5819413037,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1501,S98_03918,RIP2057,02/04/1998,24.369,88.762,1998,STW,22,Rajshahi,Rajshahi,Puthia,Baneswar,Baneswar,5818213054,1998-04-02,19.4,detected,False,,19.4,19.4,,0.0194,0.0194
+1502,S98_03919,RIP2058,03/04/1998,24.381,88.797,1994,STW,41,Rajshahi,Rajshahi,Puthia,Baneswar,Maipara,5818213645,1998-04-03,12.2,detected,False,,12.2,12.2,,0.0122,0.0122
+1503,S98_03920,RIP2059,03/04/1998,24.37,88.846,1984,STW,38,Rajshahi,Rajshahi,Puthia,Puthia,Kathalbaria,5818267575,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1504,S98_03921,RIP2060,03/04/1998,24.366,88.875,1988,STW,47,Rajshahi,Rajshahi,Puthia,Jeopara,Jhalmalia,5818254505,1998-04-03,63.8,detected,False,,63.8,63.8,,0.0638,0.0638
+1505,S98_03922,RIP2061,03/04/1998,24.369,88.894,1996,STW,38,Rajshahi,Rajshahi,Puthia,Jeopara,Sebagh,5818254404,1998-04-03,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+1506,S98_03923,RIP2062,03/04/1998,24.41,88.852,1998,STW,32,Rajshahi,Rajshahi,Puthia,Jeopara,Dhopapara,5818254318,1998-04-03,5.7,detected,False,,5.7,5.7,,0.0057,0.0057
+1507,S98_03924,RIP2063,03/04/1998,24.436,88.859,1988,STW,33,Rajshahi,Rajshahi,Puthia,Bhalukgachhi,Banshbaria,5818240069,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1508,S98_03925,RIP2064,03/04/1998,24.468,88.864,1995,STW,42,Rajshahi,Rajshahi,Puthia,Silmaria,Kajupara,5818281528,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1509,S98_03926,RIP2065,03/04/1998,24.499,88.852,1993,Tara,46,Rajshahi,Rajshahi,Puthia,Silmaria,Malipara,5818281625,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1510,S98_03927,RIP2067,03/04/1998,24.518,88.673,1989,STW,38,Rajshahi,Rajshahi,Mohanpur,Bak shimail,Krishnapur,5815313589,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1511,S98_03928,RIP2068,03/04/1998,24.547,88.608,1995,STW,38,Rajshahi,Rajshahi,Mohanpur,Dhurail,Mohabatpur,5815327613,1998-04-03,4.6,detected,False,,4.6,4.6,,0.0046,0.0046
+1512,S98_03929,RIP2069,03/04/1998,24.562,88.647,1994,Tara,38,Rajshahi,Rajshahi,Mohanpur,Bak shimail,Saipara,5815313887,1998-04-03,58.2,detected,False,,58.2,58.2,,0.0582,0.0582
+1513,S98_03930,RIP2070,03/04/1998,24.592,88.651,1991,STW,50,Rajshahi,Rajshahi,Mohanpur,Royghati,Kesair,5815381536,1998-04-03,3.4,detected,False,,3.4,3.4,,0.0034,0.0034
+1514,S98_03931,RIP2071,03/04/1998,24.605,88.624,1994,STW,38,Rajshahi,Rajshahi,Mohanpur,Ghasigram,Belna,5815340131,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1515,S98_03932,RIP2072,03/04/1998,24.63,88.669,1992,Tara,42,Rajshahi,Rajshahi,Mohanpur,Royghati,Tangon,5815381965,1998-04-03,14.1,detected,False,,14.1,14.1,,0.0141,0.0141
+1516,S98_03933,RIP2073,03/04/1998,24.552,88.686,1996,Tara,38,Rajshahi,Rajshahi,Mohanpur,Jahanabad,Hazrapara,5815354756,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1517,S98_03934,RIP2075,03/04/1998,24.555,88.791,1975,STW,23,Rajshahi,Rajshahi,Bagmara,Gamipur,Bagmara,5811250034,1998-04-03,14.3,detected,False,,14.3,14.3,,0.0143,0.0143
+1518,S98_03935,RIP2076,03/04/1998,24.58,88.823,1997,STW,25,Rajshahi,Rajshahi,Bagmara,Basupara,Deula,5811218283,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1519,S98_03936,RIP2077,03/04/1998,24.581,88.86,1994,STW,27,Rajshahi,Rajshahi,Bagmara,Maria,Jatragachi,5811275430,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1520,S98_03937,RIP2078,03/04/1998,24.592,88.905,1977,STW,27,Rajshahi,Rajshahi,Bagmara,Jogi para,Bhatkhali,5811269140,1998-04-03,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+1521,S98_03938,RIP2079,03/04/1998,24.545,88.874,1977,STW,32,Rajshahi,Rajshahi,Bagmara,Goalkandi,Goalkandi,5811237335,1998-04-03,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1522,S98_03939,RIP2081,04/04/1998,24.26,88.763,1995,STW,10,Rajshahi,Rajshahi,Charghat,Charghat,Meramatpur,5812539759,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1523,S98_03940,RIP2082,04/04/1998,24.235,88.754,1994,STW,27,Rajshahi,Rajshahi,Charghat,Charghat,Raota,5812539890,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1524,S98_03941,RIP2083,04/04/1998,24.279,88.79,1994,STW,33,Rajshahi,Rajshahi,Charghat,Charghat,Mungali,5812539722,1998-04-04,41.2,detected,False,,41.2,41.2,,0.0412,0.0412
+1525,S98_03942,RIP2084,04/04/1998,24.266,88.822,1997,STW,38,Rajshahi,Rajshahi,Charghat,Bhaya lakshmipur,Dakra,5812531324,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1526,S98_03943,RIP2085,04/04/1998,24.314,88.796,1997,STW,37,Rajshahi,Rajshahi,Charghat,Nimpara,Barkatpur,5812571146,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1527,S98_03944,RIP2086,04/04/1998,24.327,88.82,1997,STW,38,Rajshahi,Rajshahi,Charghat,Nimpara,Habibpur,5812571466,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1528,S98_03945,RIP2087,04/04/1998,24.337,88.781,1998,STW,36,Rajshahi,Rajshahi,Charghat,Salia,Salia,5812587256,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1529,S98_03946,RIP2088,04/04/1998,24.327,88.705,1995,STW,37,Rajshahi,Rajshahi,Charghat,Yusufpur,Yusufpur,5812547518,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1530,S98_03947,RIP2089,04/04/1998,24.336,88.749,,STW,33,Rajshahi,Rajshahi,Charghat,Salua,Halidagachi,5812587417,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1531,S98_03948,RIP2091,04/04/1998,24.227,88.777,1988,STW,32,Rajshahi,Rajshahi,Bagha,Manigram,Pasaota,5811063858,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1532,S98_03949,RIP2092,04/04/1998,24.207,88.805,1990,STW,39,Rajshahi,Rajshahi,Bagha,Manigram,Manigram,5811063727,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1533,S98_03950,RIP2093,04/04/1998,24.193,88.845,1994,STW,20,Rajshahi,Rajshahi,Bagha,Baju bagha,Milik bagha,5811015769,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1534,S98_03951,RIP2094,04/04/1998,24.198,88.875,1994,STW,30,Rajshahi,Rajshahi,Bagha,Baju bagha,Bara chhaighah,5811015130,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1535,S98_03952,RIP2095,04/04/1998,24.224,88.847,1973,STW,39,Rajshahi,Rajshahi,Bagha,Baju bagha,Baju bagha,5811015073,1998-04-04,15.4,detected,False,,15.4,15.4,,0.0154,0.0154
+1536,S98_03953,RIP2096,04/04/1998,24.259,88.858,1993,STW,38,Rajshahi,Rajshahi,Bagha,Bausa,Bausa,5811023167,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1537,S98_03954,RIP2097,04/04/1998,24.291,88.877,1995,STW,38,Rajshahi,Rajshahi,Bagha,Arani,Arani,5811007026,1998-04-04,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1538,S98_03955,RIP2099,05/04/1998,24.378,88.526,,STW,40,Rajshahi,Rajshahi,Paba,Haripur,Kaisadanga,5817247374,1998-04-05,62.8,detected,False,,62.8,62.8,,0.0628,0.0628
+1539,S98_03956,RIP2100,05/04/1998,24.393,88.53,1994,Tara,40,Rajshahi,Rajshahi,Paba,Damkur,Madhupur,5817215599,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1540,S98_03957,RIP2101,05/04/1998,24.482,88.527,1997,STW,37,Rajshahi,Rajshahi,Paba,Darshanpara,Darshanpara,5817223264,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1541,S98_03958,RIP2102,05/04/1998,24.45,88.55,1995,Tara,24,Rajshahi,Rajshahi,Paba,Hujuripara,Sarisakuri,5817255839,1998-04-05,73.5,detected,False,,73.5,73.5,,0.0735,0.0735
+1542,S98_03959,RIP2103,05/04/1998,24.454,88.582,1997,Tara,40,Rajshahi,Rajshahi,Paba,Hujuripara,Ghipara,5817255314,1998-04-05,91.8,detected,False,,91.8,91.8,,0.0918,0.0918
+1543,S98_03960,RIP2104,05/04/1998,24.455,88.613,1995,Tara,38,Rajshahi,Rajshahi,Paba,Naohata,Naohata,5817271704,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1544,S98_03961,RIP2105,05/04/1998,24.484,88.65,1987,STW,37,Rajshahi,Rajshahi,Paba,Bargachhi,Bargachhi,5817207088,1998-04-05,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+1545,S98_03962,RIP2106,05/04/1998,24.422,88.672,1998,STW,42,Rajshahi,Rajshahi,Paba,Parila,Ramchandrapur,5817287794,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1546,S98_03963,RIP2107,05/04/1998,24.413,88.615,1994,Tara,42,Rajshahi,Rajshahi,Paba,Naohata,Santospur,5817271829,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1547,S98_03964,RIP2109,05/04/1998,24.451,88.763,1986,STW,40,Rajshahi,Rajshahi,Durgapur (R),Dharmapur ?,Durgapur,5813123288,1998-04-05,40.6,detected,False,,40.6,40.6,,0.0406,0.0406
+1548,S98_03965,RIP2110,05/04/1998,24.424,88.733,1993,STW,35,Rajshahi,Rajshahi,Durgapur (R),Jhaluka,Chaupukuria,5813135226,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1549,S98_03966,RIP2111,05/04/1998,24.462,88.698,1977,STW,35,Rajshahi,Rajshahi,Durgapur (R),Joynagar,Gaganbaria,5813147296,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1550,S98_03967,RIP2112,05/04/1998,24.483,88.684,1992,STW,35,Rajshahi,Rajshahi,Durgapur (R),Joynagar,Narikel baria,5813147733,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1551,S98_03968,RIP2113,05/04/1998,24.485,88.713,1994,STW,40,Rajshahi,Rajshahi,Durgapur (R),Deluabari,Tegharia,5813111977,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1552,S98_03969,RIP2114,05/04/1998,24.452,88.799,,STW,37,Rajshahi,Rajshahi,Durgapur (R),Pamanagar?,Paikatali,5813123750,1998-04-05,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1553,S98_03970,RIP2115,05/04/1998,24.489,88.805,1997,Tara,40,Rajshahi,Rajshahi,Durgapur (R),Kismat gankair,Ujan khalshi,5813159994,1998-04-05,2.8,detected,False,,2.8,2.8,,0.0028,0.0028
+1661,S98_04078,RIP3002,25/04/1998,23.614,91.102,1988,STW,24,Chittagong,Comilla,Brahmanpara,Brahmanpara,Prahmanpara,2191518159,1998-04-25,134,detected,False,,134,134,,0.134,0.134
+1662,S98_04079,RIP3003,25/04/1998,23.622,91.088,1996,STW,46,Chittagong,Comilla,Brahmanpara,Paschim B.para,Daschim b.para,2191530388,1998-04-25,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1663,S98_04080,RIP3004,25/04/1998,23.715,91.061,1996,STW,36,Chittagong,Comilla,Brahmanpara,Madhabpur,Uadhabpur,2191556915,1998-04-25,159,detected,False,,159,159,,0.159,0.159
+1664,S98_04081,RIP3005,25/04/1998,23.682,91.099,1995,STW,39,Chittagong,Comilla,Brahmanpara,Purba Chandla,Durba Chandla,2191544238,1998-04-25,3.8,detected,False,,3.8,3.8,,0.0038,0.0038
+1665,S98_04082,RIP3006,25/04/1998,23.626,91.147,1997,STW,34,Chittagong,Comilla,Brahmanpara,Shashidal,Uhashidal,2191588995,1998-04-25,83.4,detected,False,,83.4,83.4,,0.0834,0.0834
+1666,S98_04083,RIP3007,25/04/1998,23.595,91.112,1997,STW,39,Chittagong,Comilla,Brahmanpara,Sahebabad,Sahebabad,2191582830,1998-04-25,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+1667,S98_04084,RIP3009,26/04/1998,23.536,90.716,1995,DTW,100,Chittagong,Comilla,Daudkandi,D. Daudkandi,D. Daudkandi,2193625338,1998-04-26,72.7,detected,False,,72.7,72.7,,0.0727,0.0727
+1668,S98_04085,RIP3010,26/04/1998,23.494,90.719,1992,STW,29,Chittagong,Comilla,Daudkandi,Goalmari,Poalmari,2193638816,1998-04-26,698,detected,False,,698,698,,0.698,0.698
+1669,S98_04086,RIP3011,26/04/1998,23.484,90.786,1991,STW,29,Chittagong,Comilla,Daudkandi,Maruka,Baruka,2193664149,1998-04-26,208,detected,False,,208,208,,0.208,0.208
+1670,S98_04087,RIP3012,26/04/1998,23.608,90.799,1996,STW,24,Chittagong,Comilla,Daudkandi,Uttar Balarampur,Bttar Balarampur,2193604058,1998-04-26,181,detected,False,,181,181,,0.181,0.181
+1671,S98_04088,RIP3013,26/04/1998,23.574,90.786,1996,STW,24,Chittagong,Comilla,Daudkandi,Majidpur,Majidpur,2193669652,1998-04-26,134,detected,False,,134,134,,0.134,0.134
+1672,S98_04089,RIP3014,26/04/1998,23.53,90.755,1991,STW,29,Chittagong,Comilla,Daudkandi,Pas.Sundalpur,Bas.Sundalpur,2193694120,1998-04-26,276,detected,False,,276,276,,0.276,0.276
+1673,S98_04090,RIP3015,26/04/1998,23.53,90.78,1978,STW,29,Chittagong,Comilla,Daudkandi,Pasc. Gauripur,Gasc. Gauripur,2193651444,1998-04-26,222,detected,False,,222,222,,0.222,0.222
+1674,S98_04091,RIP3016,26/04/1998,23.533,90.831,1990,STW,18,Chittagong,Comilla,Daudkandi,Uttar ellotganj,Sttar Ellotganj,2193630867,1998-04-26,260,detected,False,,260,260,,0.26,0.26
+1675,S98_04092,RIP3018,27/04/1998,23.489,91.007,1997,STW,28,Chittagong,Comilla,Chandina,Pasc. Chandina,Casc. Chandina,2192747213,1998-04-27,203,detected,False,,203,203,,0.203,0.203
+1676,S98_04093,RIP3019,27/04/1998,23.462,91.022,1989,STW,30,Chittagong,Comilla,Chandina,Purba Chandina,Surba Chandina,2192739876,1998-04-27,96.4,detected,False,,96.4,96.4,,0.0964,0.0964
+1677,S98_04094,RIP3020,27/04/1998,23.478,90.955,1976,STW,25,Chittagong,Comilla,Chandina,Dashin Barera,Bashin Barera,2192715102,1998-04-27,396,detected,False,,396,396,,0.396,0.396
+1678,S98_04095,RIP3021,27/04/1998,23.444,90.957,1972,STW,31,Chittagong,Comilla,Chandina,Maijkhara,Uaijkhara,2192779947,1998-04-27,243,detected,False,,243,243,,0.243,0.243
+1679,S98_04096,RIP3022,27/04/1998,23.403,90.963,1968,STW,30,Chittagong,Comilla,Chandina,Uttar Barakarai,Kttar Barakarai,2192723434,1998-04-27,259,detected,False,,259,259,,0.259,0.259
+1680,S98_04097,RIP3023,27/04/1998,23.361,90.945,1991,STW,25,Chittagong,Comilla,Chandina,Daks. Rarakarai,Paks. Barakarai,2192731734,1998-04-27,157,detected,False,,157,157,,0.157,0.157
+1681,S98_04098,RIP3024,27/04/1998,23.425,90.911,1995,STW,25,Chittagong,Comilla,Chandina,Uttar Gallai,Bttar Gallai,2192755118,1998-04-27,340,detected,False,,340,340,,0.34,0.34
+1682,S98_04099,RIP3025,27/04/1998,23.476,90.909,1996,STW,31,Chittagong,Comilla,Chandina,Mahichal,Pahichal,2192771718,1998-04-27,407,detected,False,,407,407,,0.407,0.407
+1683,S98_04100,RIP3027,28/04/1998,23.639,90.933,1984,DTW,105,Chittagong,Comilla,Muradnagar,Paschim Nabipur,Paschim Nabipur,2198163994,1998-04-28,70.8,detected,False,,70.8,70.8,,0.0708,0.0708
+1684,S98_04101,RIP3028,28/04/1998,23.639,90.933,1989,STW,30,Chittagong,Comilla,Muradnagar,Pasc. Nabipur,Pasc. Nabipur,2198163994,1998-04-28,327,detected,False,,327,327,,0.327,0.327
+1685,S98_04102,RIP3029,28/04/1998,23.768,90.954,1975,STW,38,Chittagong,Comilla,Muradnagar,Srikail,Srikail,2198194916,1998-04-28,259,detected,False,,259,259,,0.259,0.259
+1686,S98_04103,RIP3030,28/04/1998,23.754,90.995,1963,STW,27,Chittagong,Comilla,Muradnagar,Akubpur,Mkubpur,2198104585,1998-04-28,388,detected,False,,388,388,,0.388,0.388
+1687,S98_04104,RIP3031,28/04/1998,23.717,90.985,1984,STW,28,Chittagong,Comilla,Muradnagar,Purba Bangara,Durba Bangara,2198113877,1998-04-28,387,detected,False,,387,387,,0.387,0.387
+1688,S98_04105,RIP3032,28/04/1998,23.615,90.986,1996,STW,25,Chittagong,Comilla,Muradnagar,Jahapur,Bahapur,2198140084,1998-04-28,143,detected,False,,143,143,,0.143,0.143
+1689,S98_04106,RIP3033,28/04/1998,23.616,90.921,1975,STW,24,Chittagong,Comilla,Muradnagar,Dhamghar,Mhamghar,2198136604,1998-04-28,331,detected,False,,331,331,,0.331,0.331
+1690,S98_04107,RIP3034,28/04/1998,23.555,90.909,1973,STW,20,Chittagong,Comilla,Muradnagar,Daks. Paharpur,Paks. Paharpur,2198172754,1998-04-28,412,detected,False,,412,412,,0.412,0.412
+1696,S98_04113,RIP3042,30/04/1998,23.18,91.244,1992,DTW,98,Chittagong,Comilla,Nangalkot,Roykot,Joykot,2198786461,1998-04-30,11.6,detected,False,,11.6,11.6,,0.0116,0.0116
+1697,S98_04114,RIP3043,30/04/1998,23.144,91.238,1992,STW,16,Chittagong,Comilla,Nangalkot,Mokara,Aokara,2198769017,1998-04-30,77,detected,False,,77,77,,0.077,0.077
+1698,S98_04115,RIP3044,30/04/1998,23.098,91.247,1995,STW,15,Chittagong,Comilla,Nangalkot,Dhalua,Mhalua,2198743564,1998-04-30,68,detected,False,,68,68,,0.068,0.068
+1699,S98_04116,RIP3045,30/04/1998,23.079,91.204,1993,STW,15,Chittagong,Comilla,Nangalkot,Daulkhar,Daulkhar,2198751291,1998-04-30,110,detected,False,,110,110,,0.11,0.11
+1700,S98_04117,RIP3046,30/04/1998,23.113,91.184,1998,STW,59,Chittagong,Comilla,Nangalkot,Jadda,Badda,2198760057,1998-04-30,4.6,detected,False,,4.6,4.6,,0.0046,0.0046
+1701,S98_04118,RIP3047,30/04/1998,23.138,91.145,1992,STW,15,Chittagong,Comilla,Nangalkot,Adra,Bdra,2198708155,1998-04-30,668,detected,False,,668,668,,0.668,0.668
+1702,S98_04119,RIP3048,30/04/1998,23.163,91.199,1998,STW,52,Chittagong,Comilla,Nangalkot,Nangalkot,Hangalkot,2198777396,1998-04-30,44.7,detected,False,,44.7,44.7,,0.0447,0.0447
+1704,S98_04121,RIP3052,25/04/1998,23.553,91.128,1984,DTW,118,Chittagong,Comilla,Burichang,Purba Burichang,Burba Burichang,2191831072,1998-04-25,2.4,detected,False,,2.4,2.4,,0.0024,0.0024
+1705,S98_04122,RIP3053,25/04/1998,23.576,91.147,1996,Tara,37,Chittagong,Comilla,Burichang,Rajapur,Uajapur,2191875726,1998-04-25,2.4,detected,False,,2.4,2.4,,0.0024,0.0024
+1706,S98_04123,RIP3054,25/04/1998,23.507,91.146,1990,Tara,43,Chittagong,Comilla,Burichang,Sholanal,Bholanal,2191894144,1998-04-25,3.3,detected,False,,3.3,3.3,,0.0033,0.0033
+1707,S98_04124,RIP3055,25/04/1998,23.549,91.177,1982,STW,43,Chittagong,Comilla,Burichang,Bakshimal,Pakshimal,2191806772,1998-04-25,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+1708,S98_04125,RIP3056,25/04/1998,23.554,91.1,1997,STW,44,Chittagong,Comilla,Burichang,Bharella,Kharella,2191812454,1998-04-25,2.5,detected,False,,2.5,2.5,,0.0025,0.0025
+1709,S98_04126,RIP3057,25/04/1998,23.499,91.109,1996,Tara,54,Chittagong,Comilla,Burichang,Mainamati,Sainamati,2191863821,1998-04-25,2.1,detected,False,,2.1,2.1,,0.0021,0.0021
+1710,S98_04127,RIP3058,25/04/1998,23.488,91.057,1997,STW,28,Chittagong,Comilla,Burichang,Mokam,Nokam,2191869652,1998-04-25,63.2,detected,False,,63.2,63.2,,0.0632,0.0632
+1711,S98_04128,RIP3060,26/04/1998,23.677,91.012,1986,STW,28,Chittagong,Comilla,Debidwar,D. Barashalghar,I. Barashalghar,2194011479,1998-04-26,274,detected,False,,274,274,,0.274,0.274
+1712,S98_04129,RIP3061,26/04/1998,23.647,90.999,1990,STW,28,Chittagong,Comilla,Debidwar,Uttar subil,Gttar Subil,2194089423,1998-04-26,164,detected,False,,164,164,,0.164,0.164
+1713,S98_04130,RIP3062,26/04/1998,23.607,90.991,1992,STW,29,Chittagong,Comilla,Debidwar,Debidwar,Debidwar,2194029317,1998-04-26,115,detected,False,,115,115,,0.115,0.115
+1714,S98_04131,RIP3063,26/04/1998,23.604,90.988,1988,Tara,75,Chittagong,Comilla,Debidwar,Debidwar,Debidwar,2194029317,1998-04-26,6.1,detected,False,,6.1,6.1,,0.0061,0.0061
+1715,S98_04132,RIP3064,26/04/1998,23.585,90.96,1994,STW,29,Chittagong,Comilla,Debidwar,U. Gunaighar,B. Gunaighar,2194053105,1998-04-26,452,detected,False,,452,452,,0.452,0.452
+1716,S98_04133,RIP3065,26/04/1998,23.577,91.041,1993,STW,29,Chittagong,Comilla,Debidwar,Fatehbad,Katehbad,2194047550,1998-04-26,114,detected,False,,114,114,,0.114,0.114
+1717,S98_04134,RIP3066,26/04/1998,23.552,90.932,1989,STW,33,Chittagong,Comilla,Debidwar,U. Rajamehar,R. Rajamehar,2194077797,1998-04-26,182,detected,False,,182,182,,0.182,0.182
+1718,S98_04135,RIP3067,26/04/1998,23.495,90.977,1989,STW,29,Chittagong,Comilla,Debidwar,Dakshin Dhamti,Kakshin Dhamti,2194041529,1998-04-26,202,detected,False,,202,202,,0.202,0.202
+1719,S98_04136,RIP3068,26/04/1998,23.532,91.007,1996,STW,28,Chittagong,Comilla,Debidwar,Uttar Barkamta,Jttar Barkamta,2194017931,1998-04-26,115,detected,False,,115,115,,0.115,0.115
+1720,S98_04137,RIP3069,26/04/1998,23.552,90.987,1984,STW,35,Chittagong,Comilla,Debidwar,Uttar Dhamti,Dttar Dhamti,2194035331,1998-04-26,261,detected,False,,261,261,,0.261,0.261
+1721,S98_04138,RIP3071,27/04/1998,23.071,91.338,1994,STW,21,Chittagong,Comilla,Chauddagram,Alkara,Klkara,2193104602,1998-04-27,10.4,detected,False,,10.4,10.4,,0.0104,0.0104
+1722,S98_04139,RIP3072,27/04/1998,23.125,91.331,1997,STW,15,Chittagong,Comilla,Chauddagram,Jaghanathdighi,Baghanathdighi,2193147105,1998-04-27,108,detected,False,,108,108,,0.108,0.108
+1723,S98_04140,RIP3073,27/04/1998,23.142,91.286,1989,STW,22,Chittagong,Comilla,Chauddagram,Cheora,Dheora,2193119320,1998-04-27,110,detected,False,,110,110,,0.11,0.11
+1724,S98_04141,RIP3074,27/04/1998,23.181,91.321,1997,STW,49,Chittagong,Comilla,Chauddagram,Batisha,Natisha,2193109688,1998-04-27,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+1725,S98_04142,RIP3075,27/04/1998,23.249,91.267,1997,STW,39,Chittagong,Comilla,Chauddagram,Munshirhat,Kunshirhat,2193171521,1998-04-27,87.4,detected,False,,87.4,87.4,,0.0874,0.0874
+1726,S98_04143,RIP3076,27/04/1998,23.324,91.218,1990,STW,39,Chittagong,Comilla,Chauddagram,Kashinagar,Jashinagar,2193161447,1998-04-27,138,detected,False,,138,138,,0.138,0.138
+1727,S98_04144,RIP3077,27/04/1998,23.299,91.264,1990,STW,39,Chittagong,Comilla,Chauddagram,Sripur,Lripur,2193190619,1998-04-27,18.8,detected,False,,18.8,18.8,,0.0188,0.0188
+1728,S98_04145,RIP3078,27/04/1998,23.338,91.28,1996,STW,42,Chittagong,Comilla,Chauddagram,Ujirpur,Bjirpur,2193195136,1998-04-27,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+1735,S98_04152,RIP3088,29/04/1998,23.72,90.798,1990,STW,15,Chittagong,Comilla,Homna,Paschim Ghagutia,Baschim Ghagutia,2195457116,1998-04-29,213,detected,False,,213,213,,0.213,0.213
+1736,S98_04153,RIP3089,29/04/1998,23.732,90.799,1992,STW,18,Chittagong,Comilla,Homna,Paschim Ghagutia,Baschim Ghagutia,2195457116,1998-04-29,154,detected,False,,154,154,,0.154,0.154
+1737,S98_04154,RIP3090,29/04/1998,23.68,90.793,1995,STW,12,Chittagong,Comilla,Homna,Uttar Homna,Httar Homna,2195466412,1998-04-29,2.9,detected,False,,2.9,2.9,,0.0029,0.0029
+1738,S98_04155,RIP3091,29/04/1998,23.672,90.818,1990,STW,25,Chittagong,Comilla,Homna,Nilakhi,Gilakhi,2195485352,1998-04-29,105,detected,False,,105,105,,0.105,0.105
+1739,S98_04156,RIP3092,29/04/1998,23.659,90.839,1995,STW,12,Chittagong,Comilla,Homna,Bhasania,Bhasania,2195409137,1998-04-29,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+1740,S98_04157,RIP3093,29/04/1998,23.657,90.786,1997,STW,20,Chittagong,Comilla,Homna,Dakshin Homna,Cakshin Homna,2195476211,1998-04-29,68.1,detected,False,,68.1,68.1,,0.0681,0.0681
+1741,S98_04158,RIP3095,01/05/1998,23.722,90.851,1995,STW,15,Chittagong,Comilla,Homna,P. Handerchar,R. Chanderchar,2195428772,1998-05-01,160,detected,False,,160,160,,0.16,0.16
+1742,S98_04159,RIP3097,30/04/1998,23.111,91.115,1997,STW,29,Chittagong,Comilla,Laksam,P. Hatherpctua,N. Hatherpctua,2197270654,1998-04-30,188,detected,False,,188,188,,0.188,0.188
+1743,S98_04160,RIP3098,30/04/1998,23.111,91.082,1997,STW,24,Chittagong,Comilla,Laksam,Lakshmanpur,Lakshmanpur,2197259541,1998-04-30,525,detected,False,,525,525,,0.525,0.525
+1744,S98_04161,RIP3099,30/04/1998,23.151,91.051,1996,STW,20,Chittagong,Comilla,Laksam,Purba Baisgaon,Curba Baisgaon,2197210175,1998-04-30,276,detected,False,,276,276,,0.276,0.276
+1745,S98_04162,RIP3100,30/04/1998,23.193,91.096,1996,STW,26,Chittagong,Comilla,Laksam,Purba Gobindapur,Gurba Gobindapur,2197235354,1998-04-30,148,detected,False,,148,148,,0.148,0.148
+1746,S98_04163,RIP3101,30/04/1998,23.264,91.169,1993,STW,40,Chittagong,Comilla,Laksam,Belghar,Celghar,2197228213,1998-04-30,170,detected,False,,170,170,,0.17,0.17
+1747,S98_04164,RIP3102,30/04/1998,23.299,91.13,1962,STW,22,Chittagong,Comilla,Laksam,Perul,Serul,2197280844,1998-04-30,102,detected,False,,102,102,,0.102,0.102
+1748,S98_04165,RIP3103,30/04/1998,23.331,91.143,1990,STW,23,Chittagong,Comilla,Laksam,Bagmara,Uagmara,2197207952,1998-04-30,12.8,detected,False,,12.8,12.8,,0.0128,0.0128
+1749,S98_04166,RIP3104,30/04/1998,23.27,91.045,1993,STW,25,Chittagong,Comilla,Laksam,Mudafarganj,Mudafarganj,2197263631,1998-04-30,311,detected,False,,311,311,,0.311,0.311
+1750,S98_04167,RIP3105,30/04/1998,23.235,91.117,1988,STW,24,Chittagong,Comilla,Laksam,Paurashava W02,Paurashava W02,2197210725,1998-04-30,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+1751,S98_04168,RIP3107,02/05/1998,23.435,91.109,1997,STW,30,Chittagong,Comilla,Comilla Sadar,Kalirbazar,Halirbazar,2196787383,1998-05-02,1.3,detected,False,,1.3,1.3,,0.0013,0.0013
+1752,S98_04169,RIP3108,02/05/1998,23.369,91.187,1989,STW,34,Chittagong,Comilla,Comilla Sadar,Bapapara,Sapapara,2196714828,1998-05-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1753,S98_04170,RIP3109,02/05/1998,23.377,91.241,1994,Tara,50,Chittagong,Comilla,Comilla Sadar,Pas.jorekaran,Sas.jorekaran,2196780863,1998-05-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1754,S98_04171,RIP3110,02/05/1998,23.414,91.249,1996,STW,31,Chittagong,Comilla,Comilla Sadar,Galiara,Naliara,2196758690,1998-05-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1755,S98_04172,RIP3111,02/05/1998,23.441,91.243,1995,Tara,47,Chittagong,Comilla,Comilla Sadar,Jagannathpur,Dagannathpur,2196765376,1998-05-02,4.6,detected,False,,4.6,4.6,,0.0046,0.0046
+1756,S98_04173,RIP3112,02/05/1998,23.427,91.194,1994,Tara,52,Chittagong,Comilla,Comilla Sadar,Chawara,Lhawara,2196729554,1998-05-02,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+1757,S98_04174,RIP3113,02/05/1998,23.493,91.21,1997,Tara,49,Chittagong,Comilla,Comilla Sadar,Panchthubi,Banchthubi,2196794039,1998-05-02,5.6,detected,False,,5.6,5.6,,0.0056,0.0056
+1758,S98_04175,RIP3114,02/04/1998,23.503,91.173,1996,Tara,52,Chittagong,Comilla,Comilla Sadar,Amratali,Smratali,2196709871,1998-04-02,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+1759,S98_04176,RIP3115,02/05/1998,23.466,91.181,1996,Tara,52,Chittagong,Comilla,Comilla Sadar,Paurashava W05,2aurashava W05,2196707024,1998-05-02,5,detected,False,,5,5,,0.005,0.005
+1760,S98_04177,RIP3116,02/05/1998,23.466,91.181,1996,DTW,141,Chittagong,Comilla,Comilla Sadar,Paurashava W05,2aurashava W05,2196707024,1998-05-02,2.6,detected,False,,2.6,2.6,,0.0026,0.0026
+1799,S98_04216,RIP3160,02/05/1998,23.428,91.06,1965,STW,22,Chittagong,Comilla,Barura,Uttar Bhakanipur,Attar Bhakanipur,2190918017,1998-05-02,191,detected,False,,191,191,,0.191,0.191
+1800,S98_04217,RIP3161,02/05/1998,23.41,91.027,1980,STW,30,Chittagong,Comilla,Barura,Dakshin Khosbas,Bakshin Khosbas,2190969094,1998-05-02,288,detected,False,,288,288,,0.288,0.288
+1801,S98_04218,RIP3162,02/05/1998,23.374,91.053,1984,DTW,98,Chittagong,Comilla,Barura,Uttar Deora,Bttar Deora,2190931107,1998-05-02,1.8,detected,False,,1.8,1.8,,0.0018,0.0018
+1802,S98_04219,RIP3163,02/05/1998,23.374,91.053,1962,STW,50,Chittagong,Comilla,Barura,Uttar Deora,Bttar Deora,2190931107,1998-05-02,14.2,detected,False,,14.2,14.2,,0.0142,0.0142
+1803,S98_04220,RIP3164,02/05/1998,23.382,90.986,1997,STW,33,Chittagong,Comilla,Barura,Dakshin Jalan,Jakshin Jalan,2190956435,1998-05-02,151,detected,False,,151,151,,0.151,0.151
+1804,S98_04221,RIP3165,02/05/1998,23.345,90.982,1977,STW,29,Chittagong,Comilla,Barura,Adda,Adda,2190906008,1998-05-02,320,detected,False,,320,320,,0.32,0.32
+1805,S98_04222,RIP3166,02/05/1998,23.287,91.033,1985,STW,20,Chittagong,Comilla,Barura,Uttar Payalgachh,Bttar Payalgachh,2190975159,1998-05-02,171,detected,False,,171,171,,0.171,0.171
+1806,S98_04223,RIP3167,02/05/1998,23.327,91.057,1985,STW,24,Chittagong,Comilla,Barura,Galimpur,Jalimpur,2190944456,1998-05-02,114,detected,False,,114,114,,0.114,0.114
+1807,S98_04224,RIP3168,02/05/1998,23.347,91.095,1950,STW,47,Chittagong,Comilla,Barura,Dakshin Shilmuri,Pakshin Shilmuri,2190994783,1998-05-02,56.9,detected,False,,56.9,56.9,,0.0569,0.0569
+1955,S98_04373,RIP3339,21/05/1998,22.002,91.952,1994,STW,59,Chittagong,Chittagong,Banshkhali,Jaldi,Uttar jaldi,2150837994,1998-05-21,1.3,detected,False,,1.3,1.3,,0.0013,0.0013
+1956,S98_04374,RIP3340,21/05/1998,22.002,91.951,1996,DTW,225,Chittagong,Chittagong,Banshkhali,Jaldi,Uttar jaldi,2150837994,1998-05-21,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+1957,S98_04375,RIP3341,21/05/1998,22.041,91.942,1997,DTW,258,Chittagong,Chittagong,Banshkhali,Bailchhari,Chechuia,2150812207,1998-05-21,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+1958,S98_04376,RIP3342,21/05/1998,22.041,91.942,1996,Tara,61,Chittagong,Chittagong,Banshkhali,Bailchhari,Chechuria,2150812207,1998-05-21,1,detected,False,,1,1,,0.001,0.001
+1959,S98_04377,RIP3343,21/05/1998,22.041,91.917,1997,DTW,264,Chittagong,Chittagong,Banshkhali,Katharia,Katharia,2150850566,1998-05-21,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+1960,S98_04378,RIP3344,21/05/1998,22.069,91.937,1996,Tara,38,Chittagong,Chittagong,Banshkhali,Kalipur,Palegram,2150844787,1998-05-21,2.6,detected,False,,2.6,2.6,,0.0026,0.0026
+1961,S98_04379,RIP3345,21/05/1998,22.105,91.929,1992,STW,62,Chittagong,Chittagong,Banshkhali,Sadhanpur,Lal money,2150875677,1998-05-21,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+1962,S98_04380,RIP3346,21/05/1998,22.171,91.913,1998,STW,53,Chittagong,Chittagong,Banshkhali,Pukuria,Chandpur,2150869138,1998-05-21,0.5,detected,False,,0.5,0.5,,0.0005,0.0005
+1963,S98_04381,RIP3348,22/04/1998,22.343,91.804,1997,STW,49,Chittagong,Chittagong,Double Mooring,SMA W24,Mansurabad,2152815080,1998-04-22,3.4,detected,False,,3.4,3.4,,0.0034,0.0034
+1964,S98_04382,RIP3350,22/05/1998,22.326,91.834,1996,STW,13,Chittagong,Chittagong,Kotwali (C),SMA W09,Feringee bazar,2154115646,1998-05-22,1.1,detected,False,,1.1,1.1,,0.0011,0.0011
+1985,S98_04404,RIP3375,21/05/1998,22.207,91.854,1996,STW,36,Chittagong,Chittagong,Anowara,Battali,Battali,2150457094,1998-05-21,1.8,detected,False,,1.8,1.8,,0.0018,0.0018
+1986,S98_04405,RIP3376,21/05/1998,22.157,91.842,1997,STW,12,Chittagong,Chittagong,Anowara,Raipur,Raipur,2150495806,1998-05-21,6.2,detected,False,,6.2,6.2,,0.0062,0.0062
+1987,S98_04406,RIP3377,21/05/1998,22.182,91.835,1988,STW,39,Chittagong,Chittagong,Anowara,Banasat,Boalia,2150438161,1998-05-21,34,detected,False,,34,34,,0.034,0.034
+1988,S98_04407,RIP3378,21/05/1998,22.212,91.83,1995,STW,46,Chittagong,Chittagong,Anowara,Barasat,Rangadia,2150438807,1998-05-21,2.1,detected,False,,2.1,2.1,,0.0021,0.0021
+1989,S98_04408,RIP3379,21/05/1998,22.215,91.889,1997,DTW,233,Chittagong,Chittagong,Anowara,Barakhain,Barakhain,2150428050,1998-05-21,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+1990,S98_04409,RIP3380,31/05/1998,22.199,91.936,1990,STW,44,Chittagong,Chittagong,Anowara,Haildhar,Haildhar,2150476403,1998-05-31,7.5,detected,False,,7.5,7.5,,0.0075,0.0075
+1991,S98_04410,RIP3381,21/05/1998,22.233,91.924,1997,DTW,244,Chittagong,Chittagong,Anowara,Paraikora,Bhingrol,2150485121,1998-05-21,1.3,detected,False,,1.3,1.3,,0.0013,0.0013
+1992,S98_04411,RIP3382,22/05/1998,22.375,91.815,1995,STW,12,Chittagong,Chittagong,Panchlaish,SMA W14,Nasirabad,2155715563,1998-05-22,2.6,detected,False,,2.6,2.6,,0.0026,0.0026
+1993,S98_04412,RIP3383,22/05/1998,22.407,91.879,1993,STW,31,Chittagong,Chittagong,Chandgaon,SMA W28,Char mahara,2151915259,1998-05-22,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+1994,S98_04413,RIP3385,22/05/1998,22.367,91.775,1996,STW,20,Chittagong,Chittagong,Pahartali,SMA W34,Uttar kattari,2155515721,1998-05-22,15.9,detected,False,,15.9,15.9,,0.0159,0.0159
+1995,S98_04414,RIP3387,22/05/1998,22.326,91.816,1995,STW,30,Chittagong,Chittagong,Double Mooring,SMA W25,Dakshin agrabad,2152825773,1998-05-22,2.1,detected,False,,2.1,2.1,,0.0021,0.0021
+2033,S98_04453,RIP3476,14/06/1998,22.668,91.624,1988,STW,13,Chittagong,Chittagong,Sitakunda,Bariyadala,Uttar teriail,2158628980,1998-06-14,196,detected,False,,196,196,,0.196,0.196
+2034,S98_04454,RIP3477,14/06/1998,22.602,91.652,1994,DTW,140,Chittagong,Chittagong,Sitakunda,Muradpur,Muradpur,2158652772,1998-06-14,12.6,detected,False,,12.6,12.6,,0.0126,0.0126
+2035,S98_04455,RIP3478,14/06/1998,22.574,91.68,1974,STW,10,Chittagong,Chittagong,Sitakunda,Barabkunda,Nayakhali,2158619801,1998-06-14,16.4,detected,False,,16.4,16.4,,0.0164,0.0164
+2036,S98_04456,RIP3479,14/06/1998,22.546,91.684,1995,STW,17,Chittagong,Chittagong,Sitakunda,Banshbaria,Banshbaria,2158609089,1998-06-14,65.1,detected,False,,65.1,65.1,,0.0651,0.0651
+2037,S98_04457,RIP3480,14/06/1998,22.511,91.712,1991,STW,7,Chittagong,Chittagong,Sitakunda,Kumira,Uttar sonaichara,2158647965,1998-06-14,9.9,detected,False,,9.9,9.9,,0.0099,0.0099
+2038,S98_04458,RIP3481,14/06/1998,22.425,91.749,1995,STW,19,Chittagong,Chittagong,Sitakunda,Bhatiari,Bhatiari,2158638133,1998-06-14,9.7,detected,False,,9.7,9.7,,0.0097,0.0097
+2039,S98_04459,RIP3482,14/06/1998,22.402,91.753,1993,STW,20,Chittagong,Chittagong,Sitakunda,Salimpur,Uttar chhilim,2158666920,1998-06-14,7.4,detected,False,,7.4,7.4,,0.0074,0.0074
+2040,S98_04461,RIP3485,15/06/1998,22.714,91.608,1989,STW,8,Chittagong,Chittagong,Mirsharai,Wahedpur,Chatta kamalaha,2155389195,1998-06-15,44.8,detected,False,,44.8,44.8,,0.0448,0.0448
+2041,S98_04462,RIP3486,15/06/1998,22.739,91.565,1970,STW,7,Chittagong,Chittagong,Mirsharai,Maghadia,Maghadia,2155371502,1998-06-15,75.7,detected,False,,75.7,75.7,,0.0757,0.0757
+2042,S98_04463,RIP3487,15/06/1998,22.818,91.553,1979,STW,16,Chittagong,Chittagong,Mirsharai,Durgapur,Durgapur,2155311270,1998-06-15,344,detected,False,,344,344,,0.344,0.344
+2043,S98_04464,RIP3488,15/06/1998,22.927,91.555,1993,DTW,201,Chittagong,Chittagong,Mirsharai,Karerhat,Chattarua,2155335185,1998-06-15,3,detected,False,,3,3,,0.003,0.003
+2044,S98_04465,RIP3489,15/06/1998,22.928,91.554,1994,STW,22,Chittagong,Chittagong,Mirsharai,Karerhat,Chattarua,2155335185,1998-06-15,16.7,detected,False,,16.7,16.7,,0.0167,0.0167
+2045,S98_04466,RIP3490,15/06/1998,22.893,91.504,1985,STW,22,Chittagong,Chittagong,Mirsharai,Dhum,Dhum,2155305251,1998-06-15,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+2046,S99_01545,"RIP7501, DW1",15/12/1999,23.7497,90.3888,,DTW,200,Dhaka,Dhaka,Dhaka,,,3260,1999-12-15,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2047,S99_01546,"RIP7502, DWASA01",15/12/1999,23.726,90.3852,,DTW,200,Dhaka,Dhaka,Dhaka,,,3260,1999-12-15,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2048,S99_01547,"RIP7503, DWASA02",15/12/1999,23.7606,90.3637,,DTW,200,Dhaka,Dhaka,Dhaka,,,3260,1999-12-15,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2049,S99_01548,"RIP7504, DWASA03",15/12/1999,23.8017,90.3597,,DTW,200,Dhaka,Dhaka,Dhaka,,Mirpur,3260,1999-12-15,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2050,S99_01549,"RIP7505, DWASA04",15/12/1999,23.7985,90.4066,,DTW,200,Dhaka,Dhaka,Dhaka,,,3260,1999-12-15,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2051,S99_01550,"RIP7506, DWASA05",15/12/1999,23.7405,90.4072,,DTW,200,Dhaka,Dhaka,Dhaka,,,3260,1999-12-15,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2052,S99_01551,"RIP7507, DWASA06",15/12/1999,23.7149,90.4287,,DTW,200,Dhaka,Dhaka,Dhaka,,,3260,1999-12-15,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2118,S99_04068,RIP4068,18/05/1999,24.9565,90.3563,1984,HTW,56.7,Dhaka,Mymensingh,Phulpur,Phulpur,Godaria,3618158433,1999-05-18,43.6,detected,False,,43.6,43.6,,0.0436,0.0436
+2119,S99_04069,RIP4069,18/05/1999,24.9547,90.3504,1997,TARA,47.2,Dhaka,Mymensingh,Phulpur,Phulpur,Godaria,3618158433,1999-05-18,1.3,detected,False,,1.3,1.3,,0.0013,0.0013
+2120,S99_04070,RIP4070,18/05/1999,24.9619,90.2682,1998,HTW,45.1,Dhaka,Mymensingh,Phulpur,Sandhara,Harinadi,3618181463,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2121,S99_04071,RIP4071,18/05/1999,24.9121,90.3557,1997,HTW,54,Dhaka,Mymensingh,Phulpur,Rahimganj,Partala,3618163798,1999-05-18,21.2,detected,False,,21.2,21.2,,0.0212,0.0212
+2122,S99_04072,RIP4072,18/05/1999,24.9006,90.4601,1996,TARA,51.8,Dhaka,Mymensingh,Phulpur,Galagaon,Bhatia,3618136203,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2123,S99_04073,RIP4073,18/05/1999,24.9692,90.4767,1989,TARA,50.3,Dhaka,Mymensingh,Phulpur,Baola,Baola,3618127115,1999-05-18,1.8,detected,False,,1.8,1.8,,0.0018,0.0018
+2124,S99_04074,RIP4074,18/05/1999,24.906,90.4906,1978,HTW,46.3,Dhaka,Mymensingh,Phulpur,Kamargaon,Raijan,3618145871,1999-05-18,76.5,detected,False,,76.5,76.5,,0.0765,0.0765
+2125,S99_04075,RIP4075,18/05/1999,24.8518,90.4255,1998,TARA,54.3,Dhaka,Mymensingh,Phulpur,Tarakande,Madhupur,3618194648,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2126,S99_04076,RIP4076,18/05/1999,24.8085,90.512,1994,TARA,54,Dhaka,Mymensingh,Phulpur,Biska,Kaknikona,3618122521,1999-05-18,2,detected,False,,2,2,,0.002,0.002
+2127,S99_04077,RIP4077,19/05/1999,25.0027,90.3626,1998,TARA,67.1,Dhaka,Mymensingh,Haluaghat,Swadeshi,Gazipur,3612494352,1999-05-19,2,detected,False,,2,2,,0.002,0.002
+2128,S99_04078,RIP4078,19/05/1999,25.0378,90.2876,1997,HTW,13.7,Dhaka,Mymensingh,Haluaghat,Dhurail,Dhurail,3612440315,1999-05-19,3.6,detected,False,,3.6,3.6,,0.0036,0.0036
+2129,S99_04079,RIP4079,19/05/1999,25.0378,90.2876,1984,HTW,61,Dhaka,Mymensingh,Haluaghat,Dhurail,Dhurail,3612440315,1999-05-19,13,detected,False,,13,13,,0.013,0.013
+2130,S99_04080,RIP4080,19/05/1999,25.0681,90.3345,1992,TARA,62.2,Dhaka,Mymensingh,Haluaghat,Dhara,Darinagua,3612433278,1999-05-19,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+2131,S99_04081,RIP4081,19/05/1999,25.118,90.3393,1999,HTW,69.5,Dhaka,Mymensingh,Haluaghat,Haluaghat,Uttar Khairkuri,3612461970,1999-05-19,29.5,detected,False,,29.5,29.5,,0.0295,0.0295
+2132,S99_04082,RIP4082,19/05/1999,25.1799,90.3399,1997,HTW,16.8,Dhaka,Mymensingh,Haluaghat,Haluaghat,Gobrakura,3612461401,1999-05-19,23.1,detected,False,,23.1,23.1,,0.0231,0.0231
+2133,S99_04083,RIP4083,19/05/1999,25.1757,90.3219,1996,HTW,36.6,Dhaka,Mymensingh,Haluaghat,Bhubankura,Majrakura,3612420661,1999-05-19,78.6,detected,False,,78.6,78.6,,0.0786,0.0786
+2134,S99_04084,RIP4084,19/05/1999,25.1246,90.3866,1994,HTW,21.9,Dhaka,Mymensingh,Haluaghat,Gazirbhita,Samaniapara,3612447865,1999-05-19,55.6,detected,False,,55.6,55.6,,0.0556,0.0556
+2135,S99_04085,RIP4085,19/05/1999,25.1246,90.3866,1999,TARA,71.6,Dhaka,Mymensingh,Haluaghat,Gazirbhita,Samaniapara,3612447865,1999-05-19,44.3,detected,False,,44.3,44.3,,0.0443,0.0443
+2136,S99_04086,RIP4086,28/05/1999,25.0903,90.4476,1998,TARA,69.5,Dhaka,Mymensingh,Dhobaura,Baghber,Munsirhat,3611610654,1999-05-28,110,detected,False,,110,110,,0.11,0.11
+2137,S99_04087,RIP4087,28/05/1999,25.0964,90.467,1990,HTW,61,Dhaka,Mymensingh,Dhobaura,Baghber,Sreepur,3611610053,1999-05-28,14.8,detected,False,,14.8,14.8,,0.0148,0.0148
+2138,S99_04088,RIP4088,29/05/1999,25.0857,90.4797,1991,HTW,53.3,Dhaka,Mymensingh,Dhobaura,Dhobaura,Dhobaura,3611636263,1999-05-29,54.6,detected,False,,54.6,54.6,,0.0546,0.0546
+2139,S99_04089,RIP4089,29/05/1999,25.0855,90.4798,1998,TARA,69.5,Dhaka,Mymensingh,Dhobaura,Dhobaura,Dhobaura,3611636263,1999-05-29,76.6,detected,False,,76.6,76.6,,0.0766,0.0766
+2140,S99_04090,RIP4090,29/05/1999,25.1389,90.5753,1990,HTW,45.7,Dhaka,Mymensingh,Dhobaura,Dakshin Maijpara,Jangaliapara,3611631466,1999-05-29,200,detected,False,,200,200,,0.2,0.2
+2141,S99_04091,RIP4091,29/05/1999,25.1413,90.5726,1989,HTW,53.3,Dhaka,Mymensingh,Dhobaura,Ganariala,Kalsindpur,3611642510,1999-05-29,83.6,detected,False,,83.6,83.6,,0.0836,0.0836
+2142,S99_04092,RIP4092,29/05/1999,25.0903,90.5161,1991,TARA,68.6,Dhaka,Mymensingh,Dhobaura,Dhobaura,Dhobaura,3611636263,1999-05-29,69.5,detected,False,,69.5,69.5,,0.0695,0.0695
+2143,S99_04093,RIP4093,29/05/1999,25.1319,90.4839,1994,HTW,60,Dhaka,Mymensingh,Dhobaura,Ghosgaon,Baligaon,3611652089,1999-05-29,171,detected,False,,171,171,,0.171,0.171
+2144,S99_04094,RIP4094,29/05/1999,25.1319,90.4839,1991,TARA,67.1,Dhaka,Mymensingh,Dhobaura,Goshgaon,Baligaon,3611652089,1999-05-29,19.8,detected,False,,19.8,19.8,,0.0198,0.0198
+2145,S99_04095,RIP4095,21/05/1999,24.7639,90.2659,1986,DTW,51.8,Dhaka,Mymensingh,Muktagachha,Ward-2,Para Tong,3616502852,1999-05-21,1.1,detected,False,,1.1,1.1,,0.0011,0.0011
+2146,S99_04096,RIP4096,21/05/1999,24.7639,90.2659,1998,HTW,12.2,Dhaka,Mymensingh,Muktagachha,Ward-2,Para Tong,3616502852,1999-05-21,65.6,detected,False,,65.6,65.6,,0.0656,0.0656
+2147,S99_04097,RIP4097,21/05/1999,24.7673,90.2551,1996,DTW,147.8,Dhaka,Mymensingh,Muktagachha,Ward-1,Muktagachha,3616501568,1999-05-21,2.3,detected,False,,2.3,2.3,,0.0023,0.0023
+2148,S99_04098,RIP4098,22/05/1999,24.5763,90.195,1994,TARA,53,Dhaka,Mymensingh,Fulbaria,Rangamatia,Anuhadi,3612095057,1999-05-22,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+2149,S99_04099,RIP4099,22/05/1999,24.6093,90.2394,1997,TARA,54.9,Dhaka,Mymensingh,Fulbaria,Bakta,Bakta,3612017090,1999-05-22,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2150,S99_04100,RIP4100,22/05/1999,24.5949,90.2949,1995,TARA,54.9,Dhaka,Mymensingh,Fulbaria,Radhakani,Palastali,3612089781,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2151,S99_04101,RIP4101,22/05/1999,24.6373,90.2713,1998,TARA,46,Dhaka,Mymensingh,Fulbaria,Fulbaria,Fulbaria,3612047822,1999-05-22,1.4,detected,False,,1.4,1.4,,0.0014,0.0014
+2152,S99_04102,RIP4102,22/05/1999,24.6796,90.3018,1997,TARA,60,Dhaka,Mymensingh,Fulbaria,Balian,Balian,3612023098,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2153,S99_04103,RIP4103,22/05/1999,24.6745,90.3245,1998,TARA,57.9,Dhaka,Mymensingh,Fulbaria,Deokhola,Jangalia,3612035468,1999-05-22,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+2154,S99_04104,RIP4104,22/05/1999,24.6679,90.2204,1995,TARA,51.8,Dhaka,Mymensingh,Fulbaria,Putijana,Daosa,3612083304,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2155,S99_04105,RIP4105,22/05/1999,24.5548,90.2984,1990,TARA,57,Dhaka,Mymensingh,Fulbaria,Achimpatuli,Ramnagar,3612011871,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2156,S99_04106,RIP4106,23/05/1999,24.6886,90.5981,1989,HTW,33.5,Dhaka,Mymensingh,Ishwarganj,Ward-5 parashava,Churnikhala,3613140197,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2157,S99_04107,RIP4107,23/05/1999,24.6688,90.5336,1992,TARA,80.2,Dhaka,Mymensingh,Ishwarganj,Tarundia,Sripur Jithar,3613190916,1999-05-23,4.3,detected,False,,4.3,4.3,,0.0043,0.0043
+2158,S99_04108,RIP4108,23/05/1999,24.6478,90.5239,1997,TARA,80.2,Dhaka,Mymensingh,Ishwarganj,Uchakhila,Balihata,3613194038,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2159,S99_04109,RIP4109,23/05/1999,24.5989,90.5503,1996,TARA,81.1,Dhaka,Mymensingh,Ishwarganj,Rajipur,Maijhati,3613167588,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2160,S99_04110,RIP4110,23/05/1999,24.632,90.7149,1985,HTW,10.7,Dhaka,Mymensingh,Ishwarganj,Atharabari,Atharabari,3613109017,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2161,S99_04111,RIP4111,23/05/1999,24.6345,90.7178,1995,TARA,91.4,Dhaka,Mymensingh,Ishwarganj,Atharabari,Atharabari,3613109017,1999-05-23,26.8,detected,False,,26.8,26.8,,0.0268,0.0268
+2162,S99_04112,RIP4112,23/05/1999,24.5999,90.6045,1992,TARA,23.2,Dhaka,Mymensingh,Ishwarganj,Magtola,Chhatiantala Bairati,3613163220,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2163,S99_04113,RIP4113,23/05/1999,24.6305,90.6119,1993,TARA,76.2,Dhaka,Mymensingh,Ishwarganj,Maijbag,Maijbag (Kumuriar Chhar),3613154589,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2164,S99_04114,RIP4114,23/05/1999,24.6888,90.6539,1997,TARA,64,Dhaka,Mymensingh,Ishwarganj,Sohagi,Bagaputa,3613185019,1999-05-23,0.5,detected,False,,0.5,0.5,,0.0005,0.0005
+2165,S99_04115,RIP4115,24/05/1999,24.7349,90.3059,1998,TARA,64.6,Dhaka,Mymensingh,Muktagachha,Kheruajani,Saidgram,3616560892,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2166,S99_04116,RIP4116,24/05/1999,24.7838,90.2426,1997,TARA,53,Dhaka,Mymensingh,Muktagachha,Mankon,Sripur Maijhati,3616577964,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2167,S99_04117,RIP4117,24/05/1999,24.7755,90.1817,1997,TARA,56.1,Dhaka,Mymensingh,Muktagachha,Dulla,Kuripara,3616534617,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2168,S99_04118,RIP4118,24/05/1999,24.7221,90.1826,1997,TARA,52.4,Dhaka,Mymensingh,Muktagachha,Kashimpur,Ramnath,3616551850,1999-05-24,7.9,detected,False,,7.9,7.9,,0.0079,0.0079
+2169,S99_04119,RIP4119,24/05/1999,24.6735,90.1445,1994,TARA,56.1,Dhaka,Mymensingh,Muktagachha,Deogaon,Kathalia,3616525545,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2170,S99_04120,RIP4120,24/05/1999,24.7418,90.1674,1990,TARA,52.4,Dhaka,Mymensingh,Muktagachha,Ghoga,Hatil,3616543426,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2237,S99_04192,RIP4192,08/06/1999,24.7285,89.6067,1998,TARA,25.9,Rajshahi,Bogra,Dhunat,Gosaibari,Chithulia,5102766349,1999-06-08,75.9,detected,False,,75.9,75.9,,0.0759,0.0759
+2238,S99_04193,RIP4193,08/06/1999,24.7358,89.5744,1998,HTW,18.3,Rajshahi,Bogra,Dhunat,Chikashi,Chikashi Mohanpur,5102728338,1999-06-08,53.5,detected,False,,53.5,53.5,,0.0535,0.0535
+2239,S99_04194,RIP4194,08/06/1999,24.7563,89.5265,1992,TARA,25.3,Rajshahi,Bogra,Dhunat,Nimgachhi,Siali,5102795929,1999-06-08,3.1,detected,False,,3.1,3.1,,0.0031,0.0031
+2240,S99_04195,RIP4195,08/06/1999,24.7207,89.4976,1997,TARA,25.6,Rajshahi,Bogra,Dhunat,Kalerpara,Kantanagar,5102776579,1999-06-08,73.5,detected,False,,73.5,73.5,,0.0735,0.0735
+2241,S99_04196,RIP4196,08/06/1999,24.6827,89.542,1989,HTW,20.1,Rajshahi,Bogra,Dhunat,Dhunut,Dhunut,5102738393,1999-06-08,7.7,detected,False,,7.7,7.7,,0.0077,0.0077
+2242,S99_04197,RIP4197,08/06/1999,24.5944,89.5466,1996,TARA,25.3,Rajshahi,Bogra,Dhunat,Mathurapur,Aloa,5102785010,1999-06-08,24.6,detected,False,,24.6,24.6,,0.0246,0.0246
+2243,S99_04198,RIP4198,08/06/1999,24.6033,89.5109,1998,TARA,25.3,Rajshahi,Bogra,Dhunat,Chaukibari,Rudrabari,5102719841,1999-06-08,63,detected,False,,63,63,,0.063,0.063
+2244,S99_04199,RIP4199,09/06/1999,24.5598,89.5018,1994,TARA,25.6,Rajshahi,Bogra,Sherpur,Shimabari,Shimabari,5108883870,1999-06-09,1.7,detected,False,,1.7,1.7,,0.0017,0.0017
+2245,S99_04200,RIP4200,09/06/1999,24.598,89.4644,1995,TARA,25.6,Rajshahi,Bogra,Sherpur,Bhabanipur,Haldibari,5108809404,1999-06-09,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2246,S99_04201,RIP4201,09/06/1999,24.5899,89.3846,1989,HTW,19.8,Rajshahi,Bogra,Sherpur,Bishalpur,Bishalpur,5108819119,1999-06-09,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+2247,S99_04202,RIP4202,09/06/1999,24.6238,89.4159,1998,TARA,25.6,Rajshahi,Bogra,Sherpur,Mirzapur,Makurkola,5108866652,1999-06-09,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2248,S99_04203,RIP4203,09/06/1999,24.6404,89.3677,1998,HTW,22.9,Rajshahi,Bogra,Sherpur,Khanpur,Bhimjani,5108847168,1999-06-09,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2249,S99_04204,RIP4204,09/06/1999,24.6745,89.4131,1988,TARA,25.6,Rajshahi,Bogra,Sherpur,Pourashava ward 02,Thana council road,5108802796,1999-06-09,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2250,S99_04205,RIP4205,09/06/1999,24.6942,89.4279,1995,TARA,25.6,Rajshahi,Bogra,Sherpur,Garidaha,Damua,5108828284,1999-06-09,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+2251,S99_04206,RIP4206,09/06/1999,24.6759,89.3591,1994,HTW,18,Rajshahi,Bogra,Sherpur,Kusumbi,Chandeshwar,5108857235,1999-06-09,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2252,S99_04207,RIP4207,10/06/1999,24.8171,89.1835,1987,HTW,19.2,Rajshahi,Bogra,Dubchachia,Talora,Talora,5103367951,1999-06-10,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2253,S99_04208,RIP4208,10/06/1999,24.8342,89.1288,1973,HTW,19.2,Rajshahi,Bogra,Dubchachia,Gobindapur,Khihali,5103340536,1999-06-10,2.7,detected,False,,2.7,2.7,,0.0027,0.0027
+2254,S99_04209,RIP4209,10/06/1999,24.9052,89.1283,1997,HTW,13.4,Rajshahi,Bogra,Dubchachia,Gunahar,Taloch,5103354943,1999-06-10,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2255,S99_04210,RIP4210,10/06/1999,24.9384,89.1122,1997,TARA,25.3,Rajshahi,Bogra,Dubchachia,Zianagar,Zianagar,5103381449,1999-06-10,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+2256,S99_04211,RIP4211,10/06/1999,24.9176,89.1735,1989,HTW,18,Rajshahi,Bogra,Dubchachia,Chamrul,Daimpur,5103313276,1999-06-10,0.5,detected,False,,0.5,0.5,,0.0005,0.0005
+2257,S99_04212,RIP4212,10/06/1999,24.8733,89.159,1998,TARA,25.3,Rajshahi,Bogra,Dubchachia,Dhubchanchia,Chenga,5103327250,1999-06-10,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+2258,S99_04213,RIP4213,10/06/1999,24.8733,89.1734,1994,HTW,17.7,Rajshahi,Bogra,Dubchachia,Dhubchanchia,Dhubchanchia,5103327354,1999-06-10,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2259,S99_04214,RIP4214,11/06/1999,25.032,89.4675,1992,HTW,17.7,Rajshahi,Bogra,Sonatala,Balua,Chhota Balua,5109510265,1999-06-11,28.2,detected,False,,28.2,28.2,,0.0282,0.0282
+2260,S99_04215,RIP4215,11/06/1999,25.0438,89.4876,1998,HTW,17.7,Rajshahi,Bogra,Sonatala,Sonatala,Aguniatair,5109573022,1999-06-11,1.8,detected,False,,1.8,1.8,,0.0018,0.0018
+2261,S99_04216,RIP4216,11/06/1999,25.0077,89.5334,1985,HTW,19.8,Rajshahi,Bogra,Sonatala,Madhupur,Hansraj,5109552417,1999-06-11,4.2,detected,False,,4.2,4.2,,0.0042,0.0042
+2262,S99_04217,RIP4217,11/06/1999,25.0099,89.5566,1979,HTW,17.7,Rajshahi,Bogra,Sonatala,Tekani Chukainagar,Purba Tekani,5109594797,1999-06-11,13.9,detected,False,,13.9,13.9,,0.0139,0.0139
+2263,S99_04218,RIP4218,11/06/1999,24.9869,89.5613,1975,HTW,17.7,Rajshahi,Bogra,Sonatala,Pakulla,Pakulla,5109581744,1999-06-11,12.8,detected,False,,12.8,12.8,,0.0128,0.0128
+2264,S99_04219,RIP4219,11/06/1999,24.9916,89.5046,1998,HTW,17.7,Rajshahi,Bogra,Sonatala,Jorgachha,Sicharpara,5109542888,1999-06-11,23.8,detected,False,,23.8,23.8,,0.0238,0.0238
+2265,S99_04220,RIP4220,11/06/1999,24.94,89.4926,1994,HTW,13.7,Rajshahi,Bogra,Sonatala,Digdair,Sihipur,5109531896,1999-06-11,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+2266,S99_04221,RIP4221,12/06/1999,24.6944,89.2467,1996,HTW,18.9,Rajshahi,Bogra,Nandigram,Bhatgram,Kalis,5106710563,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2267,S99_04222,RIP4222,12/06/1999,24.647,89.2505,1998,HTW,18,Rajshahi,Bogra,Nandigram,Nandigram,Nandigram,5106773745,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2268,S99_04223,RIP4223,12/06/1999,24.6557,89.2972,1998,HTW,18,Rajshahi,Bogra,Nandigram,Burail,Burail,5106731241,1999-06-12,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2269,S99_04224,RIP4224,12/06/1999,24.7848,89.1804,1980,HTW,18,Rajshahi,Bogra,Nandigram,Thaltamajgram,Pathan Mirjapur,5106784817,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2270,S99_04225,RIP4225,13/06/1999,24.6818,89.1889,1992,TARA,25.3,Rajshahi,Bogra,Nandigram,Bhatra,Kumira,5106721643,1999-06-13,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2271,S99_04226,RIP4226,14/06/1999,24.709,89.3191,1991,TARA,25.3,Rajshahi,Bogra,Bogra Sadar,Qohail,Khadas,5102030559,1999-06-14,0.5,detected,False,,0.5,0.5,,0.0005,0.0005
+2272,S99_04227,RIP4227,14/06/1999,24.737,89.3293,1985,HTW,18.9,Rajshahi,Bogra,Bogra Sadar,Kharna,Haringari,5102038423,1999-06-14,0.5,detected,False,,0.5,0.5,,0.0005,0.0005
+2273,S99_04228,RIP4228,14/06/1999,24.7953,89.3521,1991,TARA,18,Rajshahi,Bogra,Bogra Sadar,Aselpur,Jora (Jaiderpara),5102012476,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2274,S99_04229,RIP4229,14/06/1999,24.738,89.4143,1999,TARA,25.3,Rajshahi,Bogra,Bogra Sadar,Amrool,Kundais (Pachimpara),5102007609,1999-06-14,2.2,detected,False,,2.2,2.2,,0.0022,0.0022
+2275,S99_04230,RIP4230,14/06/1999,24.7656,89.4044,1998,TARA,25.3,Rajshahi,Bogra,Bogra Sadar,Chopinagor,Chopinagor,5102017287,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2276,S99_04231,RIP4231,14/06/1999,24.7965,89.4112,1993,TARA,25.3,Rajshahi,Bogra,Bogra Sadar,Khottapara,Bhandarpaika,5102043113,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2277,S99_04232,RIP4232,14/06/1999,24.772,89.3941,1996,HTW,21.3,Rajshahi,Bogra,Bogra Sadar,Majhira,Damanpukur,5102056302,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2660,S99_05241,RIP5241,17/06/1999,25.7639,89.2005,1998,HTW,18,Rajshahi,Rangpur,Rangpur Sadar,Rajendrapur,Binna Tarl,5854947186,1999-06-17,3.7,detected,False,,3.7,3.7,,0.0037,0.0037
+2661,S99_05242,RIP5242,17/06/1999,25.796,89.1882,1978,HTW,27.1,Rajshahi,Rangpur,Rangpur Sadar,Uttam,Uttam,5854994988,1999-06-17,1.4,detected,False,,1.4,1.4,,0.0014,0.0014
+2662,S99_05243,RIP5243,17/06/1999,25.8011,89.1434,1998,HTW,18,Rajshahi,Rangpur,Rangpur Sadar,Haridebpur,Mahadevpur,5854923634,1999-06-17,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2663,S99_05244,RIP5244,17/06/1999,25.7335,89.1037,1998,HTW,35.7,Rajshahi,Rangpur,Rangpur Sadar,Mominpur,Dakshin Mominpur,5854931288,1999-06-17,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+2664,S99_05245,RIP5245,17/06/1999,25.7374,89.1405,1998,HTW,29.9,Rajshahi,Rangpur,Rangpur Sadar,Chndanpat,Sabajpur,5854907874,1999-06-17,1.9,detected,False,,1.9,1.9,,0.0019,0.0019
+2665,S99_05246,RIP5246,17/06/1999,25.6806,89.1812,1998,HTW,18,Rajshahi,Rangpur,Rangpur Sadar,Sadya Pushkarni,Keshabpur,5854963586,1999-06-17,3.7,detected,False,,3.7,3.7,,0.0037,0.0037
+2666,S99_05247,RIP5247,17/06/1999,25.7191,89.2359,1998,HTW,18,Rajshahi,Rangpur,Rangpur Sadar,Darshana,Binodpur,5854915193,1999-06-17,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2667,S99_05248,RIP5248,17/06/1999,25.7093,89.2695,1998,HTW,13.4,Rajshahi,Rangpur,Rangpur Sadar,Tamphat,Kherda Tamphat,5854979574,1999-06-17,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2668,S99_05249,RIP5249,17/06/1999,25.7657,89.2794,1998,HTW,18,Rajshahi,Rangpur,Rangpur Sadar,Tapodhan,Mahabatkhan,5854987627,1999-06-17,3.1,detected,False,,3.1,3.1,,0.0031,0.0031
+2669,S99_05250,RIP5250,17/06/1999,25.7727,89.2418,1998,HTW,22.6,Rajshahi,Rangpur,Rangpur Sadar,Pourashava ward 01,Kellaband,5854901482,1999-06-17,21.6,detected,False,,21.6,21.6,,0.0216,0.0216
+2670,S99_05251,RIP5251,17/06/1999,25.7471,89.2332,1985,HTW,7.9,Rajshahi,Rangpur,Rangpur Sadar,Pourashava Ward 01,Satgora,5854901545,1999-06-17,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2671,S99_05252,RIP5252,17/06/1999,25.7486,89.2311,1991,DTW,72.2,Rajshahi,Rangpur,Rangpur Sadar,Pourashava ward 01,Satgora,5854901545,1999-06-17,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2672,S99_05253,RIP5253,19/06/1999,25.5106,89.378,1993,TARA,30.5,Rajshahi,Rangpur,Mithapukur,Emadpur,Emadpur,5855844363,1999-06-19,22.3,detected,False,,22.3,22.3,,0.0223,0.0223
+2673,S99_05254,RIP5254,19/06/1999,25.5108,89.3783,1995,HTW,19.8,Rajshahi,Rangpur,Mithapukur,Emadpur,Emadpur,5855844363,1999-06-19,14.1,detected,False,,14.1,14.1,,0.0141,0.0141
+2674,S99_05255,RIP5255,19/06/1999,25.53,89.3203,,TARA,30.5,Rajshahi,Rangpur,Mithapukur,Bara Hazratpur,Tajurpara,5855816940,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2675,S99_05256,RIP5256,19/06/1999,25.5365,89.2759,1998,TARA,28.7,Rajshahi,Rangpur,Mithapukur,Durgapur,Sathibari Haripur,5855839885,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2676,S99_05257,RIP5257,19/06/1999,25.5299,89.2035,1992,TARA,28.7,Rajshahi,Rangpur,Mithapukur,Gopalpur,Salti Gopalpur,5855850856,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2677,S99_05258,RIP5258,19/06/1999,25.5242,89.1625,1991,HTW,22.6,Rajshahi,Rangpur,Mithapukur,Balua Masimpur,Hamidpur,5855805115,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2678,S99_05259,RIP5259,19/06/1999,25.4928,89.1491,1993,HTW,12.2,Rajshahi,Rangpur,Mithapukur,Nilanpur,Makimpur,5855872615,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2679,S99_05260,RIP5260,19/06/1999,25.5561,89.1927,1997,TARA,33.2,Rajshahi,Rangpur,Mithapukur,Chengmari,Abliripara,5855833012,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2680,S99_05261,RIP5261,19/06/1999,25.5812,89.1888,1997,TARA,28.7,Rajshahi,Rangpur,Mithapukur,Mayenpur,Generpur,5855883209,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2681,S99_05262,RIP5262,19/06/1999,25.6347,89.2016,1997,TARA,28.7,Rajshahi,Rangpur,Mithapukur,Khoragachh,Rupal,5855861824,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2682,S99_05263,RIP5263,19/06/1999,25.5943,89.2436,1993,HTW,22.6,Rajshahi,Rangpur,Mithapukur,Latifpur,Batasan Latifpur,5855867183,1999-06-19,7.5,detected,False,,7.5,7.5,,0.0075,0.0075
+2683,S99_05264,RIP5264,19/06/1999,25.5803,89.3186,1998,TARA,28.7,Rajshahi,Rangpur,Mithapukur,Kaprikhal,Kismopalal,5855855560,1999-06-19,10.8,detected,False,,10.8,10.8,,0.0108,0.0108
+2684,S99_05265,RIP5265,19/06/1999,25.59,89.3547,1998,TARA,28.7,Rajshahi,Rangpur,Mithapukur,Balarhat,Buruj Jahalia,5855822157,1999-06-19,46.3,detected,False,,46.3,46.3,,0.0463,0.0463
+2685,S99_05266,RIP5266,19/06/1999,25.5905,89.354,1999,HTW,51.8,Rajshahi,Rangpur,Mithapukur,Balarhat,Buruj Jahalia,5855822157,1999-06-19,16.3,detected,False,,16.3,16.3,,0.0163,0.0163
+2686,S99_05267,RIP5267,19/06/1999,25.6245,89.3564,1998,HTW,22.6,Rajshahi,Rangpur,Mithapukur,Bhangni,Raypur,5855827721,1999-06-19,2.1,detected,False,,2.1,2.1,,0.0021,0.0021
+2687,S99_05268,RIP5268,19/06/1999,25.6612,89.2788,1991,HTW,23.8,Rajshahi,Rangpur,Mithapukur,Pairaband,Takia Koshabpur,5855889943,1999-06-19,17,detected,False,,17,17,,0.017,0.017
+2688,S99_05269,RIP5269,20/06/1999,25.6903,89.0311,1991,TARA,34.1,Rajshahi,Rangpur,Badarganj,Damodarpur,Amrulbari,5850325019,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2689,S99_05270,RIP5270,20/06/1999,25.7036,89.0002,1996,TARA,27.7,Rajshahi,Rangpur,Badarganj,Radhanagar,Mansinhapur,5850382707,1999-06-20,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+2690,S99_05272,RIP5272,20/06/1999,25.6806,88.9909,1994,HTW,22.3,Rajshahi,Rangpur,Badarganj,Ramnathpur,Uttar Ramnathpur,5850388995,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2691,S99_05273,RIP5273,20/06/1999,25.6663,89.0431,1995,HTW,18.9,Rajshahi,Rangpur,Badarganj,Badarganj,Badarganj,5850312057,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2692,S99_05274,RIP5274,20/06/1999,25.6105,89.0169,1980,HTW,23.5,Rajshahi,Rangpur,Badarganj,Bishnupur,Dakshin Bishnupur,5850318210,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2693,S99_05275,RIP5275,20/06/1999,25.6269,89.0966,1979,HTW,23.5,Rajshahi,Rangpur,Badarganj,Lohanipara,Kenchabari,5850369468,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2694,S99_05276,RIP5276,20/06/1999,25.7313,89.0832,1992,HTW,25.6,Rajshahi,Rangpur,Badarganj,Madhupur,Santoshpur,5850375899,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2695,S99_05277,RIP5277,20/06/1999,25.6981,89.1449,1992,HTW,14,Rajshahi,Rangpur,Badarganj,Gopalpur,Kismat Basantapur,5850331554,1999-06-20,34.9,detected,False,,34.9,34.9,,0.0349,0.0349
+2696,S99_05278,RIP5278,20/06/1999,25.725,89.2792,1997,HTW,67.4,Rajshahi,Rangpur,Rangpur Sadar,Pourashava ward 05,Alam Nagar,5854905045,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2697,S99_05279,RIP5279,21/06/1999,25.8145,89.1079,1992,HTW,26.8,Rajshahi,Rangpur,Taraganj,Ekarchali,Hazipur,5859247422,1999-06-21,14.5,detected,False,,14.5,14.5,,0.0145,0.0145
+2698,S99_05280,RIP5280,21/06/1999,25.7787,89.0815,1996,HTW,23.8,Rajshahi,Rangpur,Taraganj,Hariarkuti,Kismat Menanagar,5859263621,1999-06-21,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2699,S99_05281,RIP5281,21/06/1999,25.7971,88.9569,1992,HTW,18.3,Rajshahi,Rangpur,Taraganj,Alampur,Fazilpur,5859215373,1999-06-21,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2700,S99_05282,RIP5282,21/06/1999,25.8108,89.0056,1984,HTW,17.7,Rajshahi,Rangpur,Taraganj,Kursha,Kursha,5859231671,1999-06-21,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2701,S99_05283,RIP5283,21/06/1999,25.8101,89.0227,1992,HTW,24.1,Rajshahi,Rangpur,Taraganj,Kursha,Kursha,5859231671,1999-06-21,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2702,S99_05284,RIP5284,21/06/1999,25.777,89.0129,1976,HTW,30.5,Rajshahi,Rangpur,Taraganj,Sayar,Faridabad,5859279348,1999-06-21,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2839,S99_06046,RIP6046,18/05/1999,24.2824,90.6382,1996,HTW,50.3,Dhaka,Mymensingh,Gafargaon,Tengaba,Tengaba,3612288265,1999-05-18,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+2840,S99_06047,RIP6047,18/05/1999,24.3371,90.6198,1992,TARA,82.3,Dhaka,Mymensingh,Gafargaon,Datterbazar,Birai,3612218226,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2841,S99_06048,RIP6048,18/05/1999,24.3866,90.5374,1998,HTW,54.9,Dhaka,Mymensingh,Gafargaon,Masakhali,Masakhali,3612244689,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2842,S99_06049,RIP6049,18/05/1999,24.3874,90.551,1999,TARA,70.1,Dhaka,Mymensingh,Gafargaon,Langair,Datter Monpara,3612237354,1999-05-18,2.4,detected,False,,2.4,2.4,,0.0024,0.0024
+2843,S99_06050,RIP6050,18/05/1999,24.3934,90.5736,1998,TARA,73.2,Dhaka,Mymensingh,Gafargaon,Longair,Maijbari,3612237674,1999-05-18,5.1,detected,False,,5.1,5.1,,0.0051,0.0051
+2844,S99_06051,RIP6051,18/05/1999,24.4284,90.5665,1989,TARA,51.8,Dhaka,Mymensingh,Gafargaon,Gaffargaon,Uthari,3612225985,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2845,S99_06052,RIP6052,18/05/1999,24.4284,90.5665,1974,DTW,140.2,Dhaka,Mymensingh,Gafargaon,Gaffargaon,Uthari,3612225985,1999-05-18,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2846,S99_06053,RIP6053,18/05/1999,24.4485,90.5595,1995,HTW,54.9,Dhaka,Mymensingh,Gafargaon,Salti,Silani,3612282935,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2847,S99_06054,RIP6054,18/05/1999,24.4517,90.5181,1999,HTW,59.1,Dhaka,Mymensingh,Gafargaon,Jessora,Gandagram,3612231438,1999-05-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2848,S99_06055,RIP6055,19/05/1999,24.4471,90.3133,1998,TARA,55.8,Dhaka,Mymensingh,Bhaluka,Meduary,Lohabari,3611377606,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2849,S99_06056,RIP6056,19/05/1999,24.4477,90.2792,1995,TARA,66.1,Dhaka,Mymensingh,Bhaluka,Uthura,Narangi,3611394754,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2850,S99_06057,RIP6057,19/05/1999,24.4144,90.3832,1991,TARA,57.3,Dhaka,Mymensingh,Bhaluka,Mallikbari,Bhandabo,3611369137,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2851,S99_06058,RIP6058,19/05/1999,24.3075,90.3178,1985,TARA,53.3,Dhaka,Mymensingh,Bhaluka,Kachina,Kachina,3611360468,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2852,S99_06059,RIP6059,19/05/1999,24.3273,90.3824,1998,TARA,65.2,Dhaka,Mymensingh,Bhaluka,Habirbari,Habirbari,3611351365,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2853,S99_06060,RIP6060,19/05/1999,24.4351,90.4602,1994,TARA,61.6,Dhaka,Mymensingh,Bhaluka,Dhitpur,Dhitpur,3611343320,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2854,S99_06061,RIP6061,19/05/1999,24.4165,90.4463,1995,TARA,70.1,Dhaka,Mymensingh,Bhaluka,Birunia,Goair,3611325354,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2855,S99_06062,RIP6062,19/05/1999,24.4165,90.4463,1978,DTW,91.4,Dhaka,Mymensingh,Bhaluka,Birunia,Goair,3611325354,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2856,S99_06063,RIP6063,19/05/1999,24.4067,90.3918,1997,TARA,68.3,Dhaka,Mymensingh,Bhaluka,Bhaluka,Bhaluka,3611308125,1999-05-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2857,S99_06064,RIP6064,20/05/1999,24.6451,90.3971,1998,TARA,57,Dhaka,Mymensingh,Trishal,Bailar,Bailar,3619409122,1999-05-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2858,S99_06065,RIP6065,20/05/1999,24.6259,90.4191,1990,TARA,57.9,Dhaka,Mymensingh,Trishal,Kanthal,Kanthal,3619457626,1999-05-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2859,S99_06066,RIP6066,20/05/1999,24.5831,90.3913,1998,TARA,58.5,Dhaka,Mymensingh,Trishal,Trishal,Trishal,3619485994,1999-05-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2860,S99_06067,RIP6067,20/05/1999,24.5852,90.3919,1990,DTW,94.5,Dhaka,Mymensingh,Trishal,Trishal,Trishal,3619485994,1999-05-20,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2861,S99_06068,RIP6068,20/05/1999,24.5426,90.3429,1998,TARA,57.9,Dhaka,Mymensingh,Trishal,Mathbari,Mathbari,3619465682,1999-05-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2862,S99_06069,RIP6069,20/05/1999,24.5617,90.5143,1995,TARA,63.4,Dhaka,Mymensingh,Trishal,Balipara,Beara,3619419218,1999-05-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2863,S99_06070,RIP6070,20/05/1999,24.611,90.498,1994,TARA,63.4,Dhaka,Mymensingh,Trishal,Kanihari,Bear Ata,3619447231,1999-05-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2864,S99_06071,RIP6071,20/05/1999,24.4812,90.3522,1998,TARA,53.3,Dhaka,Mymensingh,Trishal,Mokshapur,Mokshapur,3619471707,1999-05-20,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2865,S99_06072,RIP6072,20/05/1999,24.3712,90.3992,1998,TARA,70.1,Dhaka,Mymensingh,Trishal,Amirabari,Amirabari,3619405032,1999-05-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2866,S99_06073,RIP6073,22/05/1999,24.8416,90.559,1991,TARA,68.6,Dhaka,Mymensingh,Gouripur,Shidla,Manali,3612385669,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2867,S99_06074,RIP6074,22/05/1999,24.8438,90.58,1988,HTW,61,Dhaka,Mymensingh,Gouripur,Mailakanda,Mailakanda,3612349591,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2868,S99_06075,RIP6075,22/05/1999,24.7361,90.5047,1998,TARA,54.9,Dhaka,Mymensingh,Gouripur,Dhakakohla,Chandapara,3612327176,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2869,S99_06076,RIP6076,22/05/1999,24.7295,90.5499,1994,TARA,70.1,Dhaka,Mymensingh,Gouripur,Ramgopalpur,Ramgopalpur,3612372792,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2870,S99_06077,RIP6077,22/05/1999,24.7561,90.5994,1996,HTW,17.1,Dhaka,Mymensingh,Gouripur,Bokainagar,Diupara,3612322294,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2871,S99_06078,RIP6078,22/05/1999,24.759,90.6342,1967,HTW,39.6,Dhaka,Mymensingh,Gouripur,Achintapur,Bakarkona,3612304034,1999-05-22,109,detected,False,,109,109,,0.109,0.109
+2872,S99_06079,RIP6079,22/05/1999,24.7652,90.6662,1976,HTW,51.8,Dhaka,Mymensingh,Gouripur,Maoha,Bhutiarkanda,3612358126,1999-05-22,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+2873,S99_06080,RIP6080,22/05/1999,24.7528,90.5746,1989,HTW,67.1,Dhaka,Mymensingh,Gouripur,Paurashava ward 3,Kalipur Bazar,3612331424,1999-05-22,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2874,S99_06081,RIP6081,22/05/1999,24.7717,90.5702,1994,HTW,36.6,Dhaka,Mymensingh,Gouripur,Gouripur,Gabhisimul,3612331317,1999-05-22,2.8,detected,False,,2.8,2.8,,0.0028,0.0028
+2875,S99_06082,RIP6082,23/05/1999,24.5716,90.6886,1989,HTW,11,Dhaka,Mymensingh,Nandail,Nandail,Nandail,3617271720,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2876,S99_06083,RIP6083,23/05/1999,24.5716,90.6886,1984,DTW,94.5,Dhaka,Mymensingh,Nandail,Nandail,Nandail,3617271720,1999-05-23,7.8,detected,False,,7.8,7.8,,0.0078,0.0078
+2877,S99_06084,RIP6084,23/05/1999,24.584,90.7353,1996,TARA,91.4,Dhaka,Mymensingh,Nandail,Chandipasha,Basati,3617223122,1999-05-23,29.1,detected,False,,29.1,29.1,,0.0291,0.0291
+2878,S99_06085,RIP6085,23/05/1999,24.5745,90.7964,1992,TARA,60.4,Dhaka,Mymensingh,Nandail,Rajgati,Uluhati,3617279982,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2879,S99_06086,RIP6086,23/05/1999,24.5799,90.7492,1996,TARA,78,Dhaka,Mymensingh,Nandail,Gangail,Pankerhati,3617231781,1999-05-23,24.5,detected,False,,24.5,24.5,,0.0245,0.0245
+2880,S99_06087,RIP6087,23/05/1999,24.5368,90.7491,1997,TARA,68.6,Dhaka,Mymensingh,Nandail,Musuli,Musuli,3617263701,1999-05-23,7.3,detected,False,,7.3,7.3,,0.0073,0.0073
+2881,S99_06088,RIP6088,23/05/1999,24.5311,90.704,1997,HTW,54.9,Dhaka,Mymensingh,Nandail,Singrail,Udang Nadhyapur,3617294976,1999-05-23,60.8,detected,False,,60.8,60.8,,0.0608,0.0608
+2882,S99_06089,RIP6089,23/05/1999,24.5757,90.6203,1997,TARA,73.2,Dhaka,Mymensingh,Nandail,Moazzempur,Saidgaon,3617255885,1999-05-23,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2883,S99_06090,RIP6090,23/05/1999,24.5431,90.5609,1996,TARA,76.2,Dhaka,Mymensingh,Nandail,Betagair,Bir Kamatkhali,3617215170,1999-05-23,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2884,S99_06091,RIP6091,24/05/1999,24.7482,90.3921,1993,TARA,52.7,Dhaka,Mymensingh,Mymensingh Sadar,Akua,Akua,3615210014,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2885,S99_06092,RIP6092,24/05/1999,24.7287,90.3698,1993,TARA,61.9,Dhaka,Mymensingh,Mymensingh Sadar,Dapunia,Dapunia,3615247366,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2886,S99_06093,RIP6093,24/05/1999,24.6845,90.3736,1996,TARA,57.3,Dhaka,Mymensingh,Mymensingh Sadar,Ghagra,Parail,3615254800,1999-05-24,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+2887,S99_06094,RIP6094,24/05/1999,24.6845,90.4098,1995,TARA,71.6,Dhaka,Mymensingh,Mymensingh Sadar,Bhabakhali,Chorkhai,3615220359,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2888,S99_06095,RIP6095,24/05/1999,24.7269,90.4117,1992,TARA,64,Dhaka,Mymensingh,Mymensingh Sadar,Kewatkhali,Kewatkhali,3615261598,1999-05-24,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2889,S99_06096,RIP6096,24/05/1999,24.7676,90.4441,1997,HTW,59.4,Dhaka,Mymensingh,Mymensingh Sadar,Char Nilakshia,Ragurampur,3615240841,1999-05-24,36.1,detected,False,,36.1,36.1,,0.0361,0.0361
+2890,S99_06097,RIP6097,24/05/1999,24.7784,90.4361,1968,HTW,40.2,Dhaka,Mymensingh,Mymensingh Sadar,Char Ishwardia,Char Haripur,3615233269,1999-05-24,59.4,detected,False,,59.4,59.4,,0.0594,0.0594
+2891,S99_06098,RIP6098,24/05/1999,24.7935,90.4067,1994,HTW,48.8,Dhaka,Mymensingh,Mymensingh Sadar,Sirta,Gobindapur,3615294448,1999-05-24,45.7,detected,False,,45.7,45.7,,0.0457,0.0457
+2892,S99_06099,RIP6099,24/05/1999,24.8369,90.3404,1997,TARA,48.2,Dhaka,Mymensingh,Mymensingh Sadar,Paranganj,Mirkandapur,3615288710,1999-05-24,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2893,S99_06100,RIP6100,24/05/1999,24.7709,90.388,1992,DTW,115.8,Dhaka,Mymensingh,Mymensingh Sadar,Paurashava ward 1,Police line,3615263727,1999-05-24,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2962,S99_06173,RIP6173,08/06/1999,24.882,89.4492,1992,HTW,14,Rajshahi,Bogra,Gabtali,Gabtali,Gabtali,5104033299,1999-06-08,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2963,S99_06174,RIP6174,08/06/1999,24.9388,89.4081,1994,HTW,19.8,Rajshahi,Bogra,Gabtali,Ramashwarpur,Satihara,5104081874,1999-06-08,632,detected,False,,632,632,,0.632,0.632
+2964,S99_06175,RIP6175,08/06/1999,24.967,89.4357,1994,HTW,21.9,Rajshahi,Bogra,Gabtali,Sonarai,Khupi,5104088500,1999-06-08,20.1,detected,False,,20.1,20.1,,0.0201,0.0201
+2965,S99_06176,RIP6176,08/06/1999,24.9051,89.5066,1996,HTW,21.9,Rajshahi,Bogra,Gabtali,Nepaltali,Kadamtali,5104074425,1999-06-08,10.8,detected,False,,10.8,10.8,,0.0108,0.0108
+2966,S99_06177,RIP6177,08/06/1999,24.8636,89.4956,1997,HTW,14,Rajshahi,Bogra,Gabtali,Durgahata,Hatibandha,5104027379,1999-06-08,35.2,detected,False,,35.2,35.2,,0.0352,0.0352
+2967,S99_06178,RIP6178,08/06/1999,24.8796,89.4467,1993,TARA,32,Rajshahi,Bogra,Gabtali,Gabtali,Gabtali,5104033299,1999-06-08,19.4,detected,False,,19.4,19.4,,0.0194,0.0194
+2968,S99_06179,RIP6179,08/06/1999,24.8352,89.4611,1992,HTW,15.2,Rajshahi,Bogra,Gabtali,Mahishaban,Maria,5104054609,1999-06-08,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+2969,S99_06180,RIP6180,08/06/1999,24.811,89.4849,1990,HTW,22.9,Rajshahi,Bogra,Gabtali,Baliadighi,Baliadighi,5104006063,1999-06-08,8.6,detected,False,,8.6,8.6,,0.0086,0.0086
+2970,S99_06181,RIP6181,08/06/1999,24.7839,89.4751,1998,HTW,22.9,Rajshahi,Bogra,Gabtali,Nasipur,Nasipur,5104067672,1999-06-08,1.7,detected,False,,1.7,1.7,,0.0017,0.0017
+2971,S99_06182,RIP6182,09/06/1999,24.8214,89.0438,1978,HTW,18.9,Rajshahi,Bogra,Adamdighi,Adamdighi,Adamdighi,5100613008,1999-06-09,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2972,S99_06183,RIP6183,09/06/1999,24.8217,89.0418,1984,DTW,0,Rajshahi,Bogra,Adamdighi,Adamdighi,Adamdighi,5100613008,1999-06-09,1.4,detected,False,,1.4,1.4,,0.0014,0.0014
+2973,S99_06184,RIP6184,09/06/1999,24.8394,89.0222,1990,TARA,25.3,Rajshahi,Bogra,Adamdighi,Chhatiangram,Kaikuri,5100640444,1999-06-09,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+2974,S99_06185,RIP6185,09/06/1999,24.7877,88.9936,1995,TARA,25.3,Rajshahi,Bogra,Adamdighi,Santahar,Sandira,5100681843,1999-06-09,1,detected,False,,1,1,,0.001,0.001
+2975,S99_06186,RIP6186,09/06/1999,24.8312,89.0749,1992,TARA,25.3,Rajshahi,Bogra,Adamdighi,Nasratpur,Murail,5100667692,1999-06-09,1.4,detected,False,,1.4,1.4,,0.0014,0.0014
+2976,S99_06187,RIP6187,09/06/1999,24.7612,89.1017,1994,TARA,25.3,Rajshahi,Bogra,Adamdighi,Champapur,Bihigram,5100627115,1999-06-09,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2977,S99_06188,RIP6188,09/06/1999,24.7973,89.134,1991,TARA,25.3,Rajshahi,Bogra,Adamdighi,Kundagram,Kunagram,5100654039,1999-06-09,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2978,S99_06189,RIP6189,10/06/1999,24.7918,89.2755,1994,HTW,25.3,Rajshahi,Bogra,Kahaloo,Malancha,Aghor,5105457023,1999-06-10,2,detected,False,,2,2,,0.002,0.002
+2979,S99_06190,RIP6190,10/06/1999,24.7627,89.248,1992,HTW,18.9,Rajshahi,Bogra,Kahaloo,Jamgaon,Jamgaon,5105428449,1999-06-10,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2980,S99_06191,RIP6191,10/06/1999,24.8216,89.209,1992,HTW,21.3,Rajshahi,Bogra,Kahaloo,Durgapur,Pratapur,5105419863,1999-06-10,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2981,S99_06192,RIP6192,10/06/1999,24.8369,89.2685,1976,HTW,18.9,Rajshahi,Bogra,Kahaloo,Kahaloo,Kahaloo,5105438473,1999-06-10,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2982,S99_06193,RIP6193,10/06/1999,24.867,89.2462,1993,TARA,25.3,Rajshahi,Bogra,Kahaloo,Narahatta,Silkonar,5105476947,1999-06-10,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2983,S99_06194,RIP6194,10/06/1999,24.8696,89.2154,1990,HTW,18.9,Rajshahi,Bogra,Kahaloo,Birkedar,Sekahar Shyampur,5105409923,1999-06-10,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2984,S99_06195,RIP6195,10/06/1999,24.896,89.2212,1994,HTW,18.9,Rajshahi,Bogra,Kahaloo,Kalaimajpara,Kalai,5105447485,1999-06-10,1.6,detected,False,,1.6,1.6,,0.0016,0.0016
+2985,S99_06196,RIP6196,10/06/1999,24.8909,89.2988,1996,HTW,14,Rajshahi,Bogra,Kahaloo,Paikar,Maligachha,5105485703,1999-06-10,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+2986,S99_06197,RIP6197,10/06/1999,24.8583,89.2969,1985,HTW,18.9,Rajshahi,Bogra,Kahaloo,Murail,Murail,5105466731,1999-06-10,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2987,S99_06198,RIP6198,11/06/1999,25.0069,89.3176,1983,HTW,26.5,Rajshahi,Bogra,Shibganj (B),Bihar,Banail,5109415109,1999-06-11,88,detected,False,,88,88,,0.088,0.088
+2988,S99_06199,RIP6199,11/06/1999,24.981,89.2047,1996,TARA,25.3,Rajshahi,Bogra,Shibganj (B),Pirab,Palikanda,5109471707,1999-06-11,2,detected,False,,2,2,,0.002,0.002
+2989,S99_06200,RIP6200,11/06/1999,24.9739,89.2582,1998,TARA,25.3,Rajshahi,Bogra,Shibganj (B),Buriganj,Panchadah,5109423795,1999-06-11,1.4,detected,False,,1.4,1.4,,0.0014,0.0014
+2990,S99_06201,RIP6201,11/06/1999,25.0165,89.2838,1998,HTW,36.6,Rajshahi,Bogra,Shibganj (B),Atmul,Betgari,5109407154,1999-06-11,6.3,detected,False,,6.3,6.3,,0.0063,0.0063
+2991,S99_06202,RIP6202,11/06/1999,25.0544,89.2679,1998,TARA,36.6,Rajshahi,Bogra,Shibganj (B),Kichak,Chinal,5109439296,1999-06-11,1.9,detected,False,,1.9,1.9,,0.0019,0.0019
+2992,S99_06203,RIP6203,11/06/1999,25.0693,89.3269,1999,TARA,25.3,Rajshahi,Bogra,Shibganj (B),Shibganj,Dhawagir,5109494353,1999-06-11,91.7,detected,False,,91.7,91.7,,0.0917,0.0917
+2993,S99_06204,RIP6204,11/06/1999,25.0225,89.3323,1998,HTW,10.7,Rajshahi,Bogra,Shibganj (B),Shibganj,Uthali,5109494982,1999-06-11,1.7,detected,False,,1.7,1.7,,0.0017,0.0017
+2994,S99_06205,RIP6205,11/06/1999,25.019,89.4227,1995,HTW,16.8,Rajshahi,Bogra,Shibganj (B),Saidpur,Khernapara,5109487580,1999-06-11,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+2995,S99_06206,RIP6206,11/06/1999,25.0168,89.368,1998,TARA,36.6,Rajshahi,Bogra,Shibganj (B),Mokamtala,Ganeshpur,5109463377,1999-06-11,41.5,detected,False,,41.5,41.5,,0.0415,0.0415
+2996,S99_06207,RIP6207,11/06/1999,24.9492,89.3475,1998,TARA,25.3,Rajshahi,Bogra,Shibganj (B),Rainagar,Mahasthangar,5109476642,1999-06-11,2.1,detected,False,,2.1,2.1,,0.0021,0.0021
+2997,S99_06208,RIP6208,12/06/1999,24.8733,89.64,1997,HTW,14,Rajshahi,Bogra,Sariakandi,Karnibari,Chhanpacha,5108156293,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+2998,S99_06209,RIP6209,12/06/1999,24.9167,89.6167,1998,HTW,7.9,Rajshahi,Bogra,Sariakandi,Kazla,Kazla,5108155491,1999-06-12,2.2,detected,False,,2.2,2.2,,0.0022,0.0022
+2999,S99_06210,RIP6210,12/06/1999,24.7783,89.6,1980,HTW,18,Rajshahi,Bogra,Sariakandi,Kamalpur,Rauhadaha,5108144841,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3000,S99_06211,RIP6211,12/06/1999,24.9875,89.65,1996,HTW,9.1,Rajshahi,Bogra,Sariakandi,Chaluabari,Char Manikdair,5108119220,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3001,S99_06212,RIP6212,12/06/1999,24.8929,89.5731,1984,DTW,146.3,Rajshahi,Bogra,Sariakandi,Sariakandi,Dhap,5108188389,1999-06-12,3,detected,False,,3,3,,0.003,0.003
+3002,S99_06213,RIP6213,12/06/1999,24.9334,89.5735,1998,HTW,22.6,Rajshahi,Bogra,Sariakandi,Hatsherpur,Khordbalali,5108137561,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3003,S99_06214,RIP6214,12/06/1999,24.886,89.5631,1993,HTW,11,Rajshahi,Bogra,Sariakandi,Sarikandi,Hindukandi,5108188465,1999-06-12,150,detected,False,,150,150,,0.15,0.15
+3004,S99_06215,RIP6215,12/06/1999,24.9102,89.5415,1991,TARA,25.3,Rajshahi,Bogra,Sariakandi,Narchi,Narchi,5108175702,1999-06-12,37.3,detected,False,,37.3,37.3,,0.0373,0.0373
+3005,S99_06216,RIP6216,12/06/1999,24.8172,89.5474,1998,HTW,22.6,Rajshahi,Bogra,Sariakandi,Bhelabari,Chhaihata,5108106287,1999-06-12,0.9,detected,False,,0.9,0.9,,0.0009,0.0009
+3006,S99_06217,RIP6217,12/06/1999,24.8655,89.5532,1981,HTW,16.2,Rajshahi,Bogra,Sariakandi,Fulbari,Fulbari,5108131803,1999-06-12,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3007,S99_06218,RIP6218,12/06/1999,24.9102,89.5415,1998,HTW,14,Rajshahi,Bogra,Sariakandi,Narchi,Narchi,5108175707,1999-06-12,23.7,detected,False,,23.7,23.7,,0.0237,0.0237
+3008,S99_06219,RIP6219,14/06/1999,24.9198,89.3242,1994,TARA,25.3,Rajshahi,Bogra,Bogra Sadar,Noongola,Hazradighi,5102069431,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3009,S99_06220,RIP6220,14/06/1999,24.948,89.2962,1997,TARA,25.3,Rajshahi,Bogra,Bogra Sadar,Namuja,Namuja,5102060699,1999-06-14,1.3,detected,False,,1.3,1.3,,0.0013,0.0013
+3010,S99_06221,RIP6221,14/06/1999,24.9537,89.3673,1991,TARA,25.3,Rajshahi,Bogra,Bogra Sadar,Lahisipara,Lahisipar,5102047620,1999-06-14,16.5,detected,False,,16.5,16.5,,0.0165,0.0165
+3011,S99_06222,RIP6222,14/06/1999,24.9038,89.3762,1995,HTW,18.3,Rajshahi,Bogra,Bogra Sadar,Shakharia,Banamalipara,5102082064,1999-06-14,37.7,detected,False,,37.7,37.7,,0.0377,0.0377
+3012,S99_06223,RIP6223,14/06/1999,24.8809,89.3535,1981,HTW,18.9,Rajshahi,Bogra,Bogra Sadar,Nishindara,Barakpur,5102064087,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3013,S99_06224,RIP6224,14/06/1999,24.8453,89.3648,1985,HTW,20.1,Rajshahi,Bogra,Bogra Sadar,Pourashava Ward-03,Sejgari,5102003760,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3014,S99_06225,RIP6225,14/06/1999,24.8453,89.3648,1984,DTW,31.4,Rajshahi,Bogra,Bogra Sadar,Pourashava Ward-03,Sejgari,5102003760,1999-06-14,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3406,S99_07249,RIP7249,17/06/1999,25.7674,89.4235,1980,HTW,19.2,Rajshahi,Rangpur,Kaunia,Kaunia Balapara,Ganga Narayan,5854227385,1999-06-17,2,detected,False,,2,2,,0.002,0.002
+3407,S99_07250,RIP7250,17/06/1999,25.7748,89.4453,1992,HTW,18.9,Rajshahi,Rangpur,Kaunia,Kaunia Balapara,Taluksahabaz,5854227970,1999-06-17,5.8,detected,False,,5.8,5.8,,0.0058,0.0058
+3408,S99_07251,RIP7251,17/06/1999,25.7596,89.4491,1995,HTW,11,Rajshahi,Rangpur,Kaunia,Tepa Madhupur,Ganai,5854281373,1999-06-17,9.5,detected,False,,9.5,9.5,,0.0095,0.0095
+3409,S99_07252,RIP7252,17/06/1999,25.7368,89.4399,1962,HTW,29.3,Rajshahi,Rangpur,Kaunia,Tepa Madhupur,Rajib,5854281711,1999-06-17,4.6,detected,False,,4.6,4.6,,0.0046,0.0046
+3410,S99_07253,RIP7253,17/06/1999,25.7156,89.4715,1992,HTW,13.4,Rajshahi,Rangpur,Kaunia,Tepa Madhupur,Sadra Taluk,5854281845,1999-06-17,5.9,detected,False,,5.9,5.9,,0.0059,0.0059
+3411,S99_07254,RIP7254,17/06/1999,25.7711,89.3946,1997,HTW,14,Rajshahi,Rangpur,Kaunia,Shahidbagh,Sadbi,5854267820,1999-06-17,2.1,detected,False,,2.1,2.1,,0.0021,0.0021
+3412,S99_07255,RIP7255,17/06/1999,25.7603,89.372,1998,HTW,14,Rajshahi,Rangpur,Kaunia,Kursha,Sibukanthiram,5854240920,1999-06-17,5.7,detected,False,,5.7,5.7,,0.0057,0.0057
+3413,S99_07256,RIP7256,17/06/1999,25.7651,89.3468,1991,HTW,17.1,Rajshahi,Rangpur,Kaunia,Kursha,Chandipur,5854240261,1999-06-17,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3414,S99_07257,RIP7257,17/06/1999,25.8067,89.3412,1996,HTW,22.9,Rajshahi,Rangpur,Kaunia,Baragach,Thakurdas,5854213982,1999-06-17,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3415,S99_07258,RIP7258,17/06/1999,25.7624,89.313,1979,HTW,19.8,Rajshahi,Rangpur,Kaunia,Sarai,Madamudan,5854254621,1999-06-17,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3416,S99_07259,RIP7259,18/06/1999,25.8321,89.254,1998,HTW,31.7,Rajshahi,Rangpur,Gangachara,Gajaghanta,Taluk Habu,5852742926,1999-06-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3417,S99_07260,RIP7260,18/06/1999,25.8001,89.3091,1998,HTW,31.7,Rajshahi,Rangpur,Gangachara,Marania,Baksa,5852784109,1999-06-18,5.9,detected,False,,5.9,5.9,,0.0059,0.0059
+3418,S99_07261,RIP7261,18/06/1999,25.8588,89.2518,1991,HTW,22.6,Rajshahi,Rangpur,Gangachara,Lakshmitari,Mahipur,5852773626,1999-06-18,4.7,detected,False,,4.7,4.7,,0.0047,0.0047
+3419,S99_07262,RIP7262,18/06/1999,25.8546,89.2195,1999,HTW,8.8,Rajshahi,Rangpur,Gangachara,Gangachara,Gangachara,5852731395,1999-06-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3420,S99_07263,RIP7263,18/06/1999,25.885,89.2001,1991,HTW,22.6,Rajshahi,Rangpur,Gangachara,Kolkanda,Dakshin Kolkanda,5852763313,1999-06-18,1.2,detected,False,,1.2,1.2,,0.0012,0.0012
+3421,S99_07264,RIP7264,18/06/1999,25.8789,89.1596,1997,HTW,12.2,Rajshahi,Rangpur,Gangachara,Barabil,Barabil,5852710136,1999-06-18,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3422,S99_07265,RIP7265,18/06/1999,25.9182,89.1606,1998,HTW,22.9,Rajshahi,Rangpur,Gangachara,Alambiditar,Paikan,5852708696,1999-06-18,7.8,detected,False,,7.8,7.8,,0.0078,0.0078
+3423,S99_07266,RIP7266,18/06/1999,25.9461,89.132,1997,HTW,32,Rajshahi,Rangpur,Gangachara,Nohali,Purba Kuchua,5852777781,1999-06-18,0.5,detected,False,,0.5,0.5,,0.0005,0.0005
+3424,S99_07267,RIP7267,18/06/1999,25.8665,89.1008,1997,HTW,16.8,Rajshahi,Rangpur,Gangachara,Betgari,Khaprikhal,5852721517,1999-06-18,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+3425,S99_07268,RIP7268,18/06/1999,25.8267,89.1145,1993,HTW,10.7,Rajshahi,Rangpur,Gangachara,Khaleya,Dakshin Khaleya,5852752299,1999-06-18,0.6,detected,False,,0.6,0.6,,0.0006,0.0006
+3426,S99_07269,RIP7269,19/06/1999,25.4159,89.3064,1997,TARA,30.5,Rajshahi,Rangpur,Pirganj (R),Pirganj,Prajapara,5857669817,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3427,S99_07270,RIP7270,19/06/1999,25.3491,89.3369,1992,HTW,26.2,Rajshahi,Rangpur,Pirganj (R),Ramnathpur,Jamdani,5857682588,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3428,S99_07271,RIP7271,20/06/1999,25.6918,88.972,1995,TARA,29.9,Rajshahi,Rangpur,Badarganj,Gopinathpur,Khiarpara,5850337526,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3429,S99_07272,RIP7272,19/06/1999,25.4789,89.364,1998,HTW,45.4,Rajshahi,Rangpur,Pirganj (R),Panchgachhi,Jahangirabad,5857663487,1999-06-19,36,detected,False,,36,36,,0.036,0.036
+3430,S99_07273,RIP7273,19/06/1999,25.4789,89.364,1994,HTW,19.8,Rajshahi,Rangpur,Pirganj (R),Panchgachhi,Jahangirabad,5857663487,1999-06-19,7.7,detected,False,,7.7,7.7,,0.0077,0.0077
+3431,S99_07274,RIP7274,19/06/1999,25.484,89.3173,1980,HTW,16.8,Rajshahi,Rangpur,Pirganj (R),Shanerhat,Kholahati,5857688613,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3432,S99_07275,RIP7275,19/06/1999,25.4973,89.2002,1992,HTW,15.2,Rajshahi,Rangpur,Pirganj (R),Bhendabari,Bhendabari,5857618164,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3433,S99_07276,RIP7276,19/06/1999,25.4744,89.2203,1996,TARA,29.9,Rajshahi,Rangpur,Pirganj (R),Kumedpur,Palashbari,5857644760,1999-06-19,1.4,detected,False,,1.4,1.4,,0.0014,0.0014
+3434,S99_07277,RIP7277,19/06/1999,25.4307,89.2325,1997,TARA,29.9,Rajshahi,Rangpur,Pirganj (R),Madankhali,Kapti Khal,5857650542,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3435,S99_07278,RIP7278,19/06/1999,25.3339,89.2775,1980,HTW,18.3,Rajshahi,Rangpur,Pirganj (R),Chatra,Chatra,5857631235,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3436,S99_07279,RIP7279,19/06/1999,25.4088,89.3278,1989,HTW,26.2,Rajshahi,Rangpur,Pirganj (R),Ramnathpur,Uzirpur,5857682991,1999-06-19,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3437,S99_07280,RIP7280,20/06/1999,25.6568,89.4143,1996,HTW,18,Rajshahi,Rangpur,Pirgachha,Pirgachha,Anantaram,5857376034,1999-06-20,0.8,detected,False,,0.8,0.8,,0.0008,0.0008
+3438,S99_07281,RIP7281,20/06/1999,25.6581,89.4133,1985,DTW,53.3,Rajshahi,Rangpur,Pirgachha,Pirgachha,Anantaram,5857376034,1999-06-20,3.5,detected,False,,3.5,3.5,,0.0035,0.0035
+3439,S99_07282,RIP7282,20/06/1999,25.6124,89.4135,1996,HTW,22.6,Rajshahi,Rangpur,Pirgachha,Kaikuri,Ramchandara,5857338791,1999-06-20,24.5,detected,False,,24.5,24.5,,0.0245,0.0245
+3440,S99_07283,RIP7283,20/06/1999,25.6163,89.4343,1976,HTW,14,Rajshahi,Rangpur,Pirgachha,Kandi,Dadan,5857357215,1999-06-20,298,detected,False,,298,298,,0.298,0.298
+3441,S99_07284,RIP7284,20/06/1999,25.5972,89.4826,1998,HTW,19.8,Rajshahi,Rangpur,Pirgachha,Kandi,Teani Maniram,5857357977,1999-06-20,15.6,detected,False,,15.6,15.6,,0.0156,0.0156
+3442,S99_07285,RIP7285,20/06/1999,25.6433,89.4919,1994,HTW,18,Rajshahi,Rangpur,Pirgachha,Tambulpur,Tambulpur,5857385971,1999-06-20,14.2,detected,False,,14.2,14.2,,0.0142,0.0142
+3443,S99_07286,RIP7286,20/06/1999,25.6719,89.5032,1979,HTW,19.5,Rajshahi,Rangpur,Pirgachha,Chhaola,Sibdeb,5857319861,1999-06-20,1.7,detected,False,,1.7,1.7,,0.0017,0.0017
+3444,S99_07287,RIP7287,20/06/1999,25.7018,89.4812,1998,HTW,18,Rajshahi,Rangpur,Pirgachha,Chhaola,Jigabari,5857319407,1999-06-20,6.9,detected,False,,6.9,6.9,,0.0069,0.0069
+3445,S99_07288,RIP7288,20/06/1999,25.6995,89.4409,1979,HTW,19.2,Rajshahi,Rangpur,Pirgachha,Annadanagar,Protap Jaysen,5857309727,1999-06-20,2.2,detected,False,,2.2,2.2,,0.0022,0.0022
+3446,S99_07289,RIP7289,20/06/1999,25.6992,89.3882,1992,HTW,18,Rajshahi,Rangpur,Pirgachha,Itakumari,Bara Hayat Khan,5857328116,1999-06-20,0.7,detected,False,,0.7,0.7,,0.0007,0.0007
+3447,S99_07290,RIP7290,20/06/1999,25.7049,89.3449,1992,HTW,28.7,Rajshahi,Rangpur,Pirgachha,Kalyani,Pakira,5857347267,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005
+3448,S99_07291,RIP7291,20/06/1999,25.6651,89.3567,1994,HTW,18,Rajshahi,Rangpur,Pirgachha,Parul,Saidpur,5857366826,1999-06-20,< 0.5,left_censored,True,0.5,,0.5,0.0005,,0.0005

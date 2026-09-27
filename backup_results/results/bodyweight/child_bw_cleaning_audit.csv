@@ -1,0 +1,18 @@
+population,step,rule,description,rows_before,removed,rows_after,raw_rows_matching
+child,0,start,rows read from ch.sav,24680,0,24680,24680
+child,1,missing_AN8,measured weight AN8 missing,24680,1323,23357,1323
+child,2,AN8_code_99.3,AN8 == 99.3 (CHILD NOT PRESENT AFTER REVISITS),23357,182,23175,182
+child,3,AN8_code_99.4,AN8 == 99.4 (CHILD REFUSED),23175,87,23088,87
+child,4,AN8_code_99.5,AN8 == 99.5 (RESPONDENT REFUSED),23088,306,22782,306
+child,5,AN8_code_99.6,AN8 == 99.6 (OTHER),22782,149,22633,149
+child,6,AN8_unexpected_ge_90,AN8 >= 90 not a documented code (held for codebook review),22633,0,22633,724
+child,7,AN8_nonpositive,AN8 <= 0,22633,0,22633,0
+child,8,missing_CAGE,age in months CAGE missing,22633,0,22633,1323
+child,9,CAGE_outside_0_59,CAGE outside 0-59 months,22633,0,22633,1323
+child,10,missing_HL4,sex HL4 missing,22633,0,22633,0
+child,11,chweight_missing_or_nonpositive,survey weight chweight missing or <= 0,22633,0,22633,1323
+child,12,WAZFLAG_missing,WHO weight-for-age flag missing,22633,0,22633,1323
+child,13,WAZFLAG_1,WAZFLAG == 1 (WHO weight-for-age error flag),22633,57,22576,781
+child,14,duplicate_child_id,"rows sharing (HH1, HH2, LN) (diagnostic only; not removed)",22576,0,22576,0
+child,15,HAZFLAG_1_retained,HAZFLAG == 1 retained for weight-only fit (diagnostic only; not removed),22576,0,22576,286
+child,16,WHZFLAG_1_retained,WHZFLAG == 1 retained for weight-only fit (diagnostic only; not removed),22576,0,22576,288

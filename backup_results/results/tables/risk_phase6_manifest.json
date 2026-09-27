@@ -1,0 +1,43 @@
+{
+  "generated_utc": "2026-09-25T18:43:32+00:00",
+  "script": "scripts/run_risk_phase6.py",
+  "config_version": "1.0.0",
+  "config_sha256": "61a31723b8b8bb3bde5859f1dbc3f5e41dc3339c59d75c2e4f9b9f6484095d5b",
+  "inputs": {
+    "results/bodyweight/bodyweight_weighted_summary.csv": "535d7c6934e3955def8566862e2243421cba184cd448e4c444400656c9eecd08"
+  },
+  "software": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1"
+  },
+  "risk_model": {
+    "plus_minus_interpretation": "arithmetic_mean_sd",
+    "cancer_averaging_time": "lifetime",
+    "base_paper": "Yadav & Kalkal (2024), J. Water Health 22(12):2304-2319, doi:10.2166/wh.2024.188, Table 2"
+  },
+  "deterministic_BW_kg": {
+    "source": "Phase 5 survey-weighted mean",
+    "adult": 55.88612513420205,
+    "child": 10.868294953449016
+  },
+  "paper_table4": {
+    "cells": 28,
+    "within_rounding": 25,
+    "known_paper_discrepancies": [
+      "Amritsar/adult/ELCR",
+      "Amritsar/child/ELCR",
+      "Ferozepur/child/ELCR"
+    ],
+    "unexplained_deviations": 0,
+    "rtol": 0.005
+  },
+  "random_seed": null,
+  "outputs": {
+    "equations": "results/tables/risk_equation_specification.csv",
+    "parameters": "results/tables/risk_parameter_table.csv",
+    "paper_table4": "results/tables/risk_paper_table4_reproduction.csv",
+    "benchmark": "results/tables/risk_deterministic_benchmark.csv"
+  }
+}
