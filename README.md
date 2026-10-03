@@ -4,6 +4,9 @@ This repository contains a reproducible probabilistic health-risk assessment for
 
 The primary outputs are district-level non-carcinogenic hazard index (HI) and excess lifetime cancer risk (ELCR) estimates for adults and children.
 
+The comprehensive report of this project is stored in the B_03.pdf. 
+
+
 ## Project Scope
 
 The analysis covers 10 Bangladesh districts:
